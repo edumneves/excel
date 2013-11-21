@@ -8,6 +8,17 @@
 		private $banda;
 		private $categoria;
 		private $tipoModelo; // Camisa = CM, Camiseta, Baby look = BL
+        private $descricaoResumida;
+
+        public function setDescricaoResumida($descricaoResumida)
+        {
+            $this->descricaoResumida = $descricaoResumida;
+        }
+
+        public function getDescricaoResumida()
+        {
+            return $this->descricaoResumida;
+        }
 
         public static function valido($item){
             if (!ItemEstoque::valido($item))
@@ -47,9 +58,11 @@
                 $tipoModeloExtenso = "CM";
 
             $descricao = trim(str_replace("CAMISA " . $tipoModeloExtenso . " " . $tamanho . " ", "", $descricao));
-            $descricao = trim(str_replace("CAMISA ", "", $descricao));
-            $descricao = trim(str_replace($tipoModeloExtenso . " " , "", $descricao));
-            $descricao = trim(str_replace($tamanho . " ", "", $descricao));
+            $descricao = trim(str_replace("CAMISA", "", $descricao));
+            $descricao = trim(str_replace(" " . $tipoModeloExtenso, "", $descricao));
+            $descricao = trim(str_replace(" " . $tamanho . " ", "", $descricao));
+
+            $this->setDescricaoResumida($descricao);
 
             // Monta as formas possíveis de nome de banda para buscar
             $palavras = explode(" ", $descricao);
@@ -88,7 +101,6 @@
         }
 		
 		public function configuraItem(){
-		
 
 			$codigo = $this->getCodigo();
 			$tamCodigo = strlen($codigo);
@@ -150,17 +162,32 @@
 		}
 		
 		public function __toString(){
-			$retorno = "Camisa " . $this->getTipoModeloExtenso();
-			$retorno .= " Descricao = " . $this->getDescricao();
-			$retorno .= " Tamanho = " . $this->getTamanho();
-			$retorno .= " Cor = " . $this->getCor();
-			$retorno .= " Banda = " . $this->getBanda();
-			$retorno .= " Cod Fornecedor = " . $this->getCodFornecedor();
-			$retorno .= " Ref Fornecedor = " . $this->getRefFornecedor();
-			$retorno .= " Preco Custo = " . $this->getPrecoCusto();
-			$retorno .= " Preco Venda = " . $this->getPrecoVenda();
-			$retorno .= " Saldo Estoque = " . $this->getSaldo();
+			$retorno = "Camisa " . ";";
+            $retorno .= $this->getTipoModeloExtenso() . ";";
+            $retorno .= $this->getDescricaoResumida() . ";";
+			$retorno .= $this->getTamanho() . ";";
+			$retorno .= $this->getCor() . ";";
+			$retorno .= $this->getBanda() . ";";
+            $retorno .= $this->getDescricao() . ";";
+			$retorno .= $this->getCodFornecedor() . ";";
+			$retorno .= $this->getRefFornecedor() . ";";
+			$retorno .= $this->getPrecoCusto() . ";";
+			$retorno .= $this->getPrecoVenda() . ";";
+			$retorno .= $this->getSaldo() . ";";
 
+/*
+            $retorno = "Camisa " . $this->getTipoModeloExtenso() . ",";
+            $retorno .= " Descricao Resumida = " . $this->getDescricaoResumida() . ",";
+            $retorno .= " Tamanho = " . $this->getTamanho() . ",";
+            $retorno .= " Cor = " . $this->getCor() . ",";
+            $retorno .= " Banda = " . $this->getBanda() . ",";
+            $retorno .= " Descricao = " . $this->getDescricao() . ",";
+            $retorno .= " Cod Fornecedor = " . $this->getCodFornecedor() . ",";
+            $retorno .= " Ref Fornecedor = " . $this->getRefFornecedor() . ",";
+            $retorno .= " Preco Custo = " . $this->getPrecoCusto() . ",";
+            $retorno .= " Preco Venda = " . $this->getPrecoVenda() . ",";
+            $retorno .= " Saldo Estoque = " . $this->getSaldo() . ",";
+*/
 			return $retorno;			
 		}
 	}
