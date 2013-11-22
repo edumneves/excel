@@ -97,7 +97,7 @@
 			
 			$this->setTipoModelo($tipoModelo);
 			$this->setTamanho($tamanho);
-			
+
             $definicao = $this->getDefinicao();
             if ($definicao != null) {
                 $this->setBanda($definicao["Banda"]);
@@ -141,14 +141,16 @@
             $retorno .= $this->getTipoModeloExtenso() . ";";
             $retorno .= $this->getDescricaoResumida() . ";";
 			$retorno .= $this->getTamanho() . ";";
-			$retorno .= $this->getCor() . ";";
 			$retorno .= $this->getBanda() . ";";
+            $retorno .= $this->getCor() . ";";
+            $retorno .= $this->getTitulo() . ";";
             $retorno .= $this->getDescricao() . ";";
 			$retorno .= $this->getCodFornecedor() . ";";
 			$retorno .= $this->getRefFornecedor() . ";";
 			$retorno .= $this->getPrecoCusto() . ";";
 			$retorno .= $this->getPrecoVenda() . ";";
 			$retorno .= $this->getSaldo() . ";";
+            $retorno .= $this->getCodigoBarra() . ";";
 
 /*
             $retorno = "Camisa " . $this->getTipoModeloExtenso() . ",";
@@ -165,6 +167,32 @@
 */
 			return $retorno;			
 		}
-	}
+
+        public function copiaDados(Camisa $camisa)
+        {
+            parent::copiaDados($camisa);
+
+            $this->setBanda($camisa->getBanda());
+            $this->setTipoModelo($camisa->getTipoModelo());
+            $this->setTamanho($camisa->getTamanho());
+        }
+
+        public function setDescricaoResumida($descricaoResumida)
+        {
+            parent::setDescricaoResumida($descricaoResumida);
+
+            $titulo = "Camisa ";
+            if ($this->getTipoModelo() == "BL")
+                $titulo .= "Baby Look ";
+            else
+                $titulo .= "Com Manga ";
+
+            $titulo .= ucwords(strtolower($descricaoResumida));
+
+            $this->setTitulo($titulo);
+        }
+
+
+    }
 	
 ?>

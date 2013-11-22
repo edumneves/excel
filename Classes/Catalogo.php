@@ -1,10 +1,12 @@
 <?php
 	include_once 'ItemFactory.php';
     include_once 'Camisa.php';
+    include_once 'CamisaAgrupada.php';
     include_once 'ImportacaoGlobal.php';
 
 	class Catalogo {
 		private $listaCamisas;
+        private $listaCamisasAgrupadas;
 		private $listaAcessorios;
 
         function comparaCamisas(Camisa $item1, Camisa $item2){
@@ -41,7 +43,26 @@
 
             //Ordena o array pela descricaoResumida, TipoModelo, Tamanho
             usort($listaCamisas, array($this, "comparaCamisas"));
+            //Confere e cria os itens agrupados
 
+            $camisaAgrupada = new CamisaAgrupada($listaCamisas[10]);
+            echo "<br><br>" . $camisaAgrupada . "<br>" . $listaCamisas[10] . "<br><br>";
+
+//
+//            for ($indCamisa = 1, $camisaAnterior = $listaCamisas[0]; $indCamisa < count($listaCamisas); $indCamisa++){
+//                $camisaAtual = $listaCamisas[$indCamisa];
+//
+//                // Se não tem camisa anterior
+//                if ($camisaAnterior )
+//
+//
+//                // Já tem camisa anterior
+//                if ((strcmp($camisaAgrupada->getDescricaoResumida(), $camisaAtual->getDescricaoResumida())==0) &&
+//                    (strcmp($camisaAgrupada->getTipoModelo(),$camisaAtual->getTipoModelo())==0){
+//                    $camisaAgrupada->addListaCamisa($camisaAtual);
+//
+//                }
+//            }
 
             $csvCamisas = fopen("camisas.csv", "w");
             //Confere e cria os itens agrupados

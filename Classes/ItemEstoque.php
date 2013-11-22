@@ -13,6 +13,17 @@
 		private $saldoPeso;
         private $categoria;
         private $cor;
+        private $titulo;
+
+        public function setTitulo($titulo)
+        {
+            $this->titulo = $titulo;
+        }
+
+        public function getTitulo()
+        {
+            return $this->titulo;
+        }
 
         private $descricaoResumida;
 
@@ -51,6 +62,9 @@
 			$this->setPrecoVenda(ImportacaoGlobal::extraiPrecoVenda($item));
 			$this->setSaldo(ImportacaoGlobal::extraiSaldo($item));
 			$this->setSaldoPeso(ImportacaoGlobal::extraiSaldoPeso($item));
+
+            $this->setTitulo($this->getDescricao());
+
 			$this->configuraItem();
 		}
 		
@@ -166,6 +180,19 @@
 			$this->saldoPeso = trim($valor);
 		}
 
+        public function copiaDados(ItemEstoque $item){
+            $this->setCodigo($item->getCodigo());
+            $this->setCodigoBarra($item->getCodigoBarra());
+            $this->setDescricao($item->getDescricao());
+            $this->setCodFornecedor($item->getCodFornecedor());
+            $this->setRefFornecedor($item->getRefFornecedor());
+            $this->setPrecoCusto($item->getPrecoCusto());
+            $this->setPrecoVenda($item->getPrecoVenda());
+            $this->setSaldo($item->getSaldo());
+            $this->setSaldoPeso($item->getSaldoPeso());
+            $this->setDescricaoResumida($item->getDescricaoResumida());
+            $this->setTitulo($this->getTitulo());
+        }
 
 	}
 ?>
