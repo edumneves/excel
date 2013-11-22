@@ -9,6 +9,8 @@ const IND_PREC_VENDA 	= 'G';
 const IND_SALDO 		= 'H';
 const IND_SALDO_PESO 	= 'I';
 
+$tamanhos = array ("PP", "P", "M", "G", "GG", "XGG");
+
 $arqListaBandasJSON = "./Conf/listaBandas.json";
 
 $listaBandas = $json = json_decode(file_get_contents($arqListaBandasJSON), true);

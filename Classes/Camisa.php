@@ -4,21 +4,8 @@
 	
 	class Camisa extends ItemEstoque {
 		private $tamanho; // PP, P, M, G, GG, XGG
-		private $cor;
 		private $banda;
-		private $categoria;
 		private $tipoModelo; // Camisa = CM, Camiseta, Baby look = BL
-        private $descricaoResumida;
-
-        public function setDescricaoResumida($descricaoResumida)
-        {
-            $this->descricaoResumida = $descricaoResumida;
-        }
-
-        public function getDescricaoResumida()
-        {
-            return $this->descricaoResumida;
-        }
 
         public static function valido($item){
             if (!ItemEstoque::valido($item))
@@ -123,14 +110,8 @@
 		public function getTamanho(){
 			return $this->tamanho;
 		}
-		public function getCor(){
-			return $this->cor;
-		}
 		public function getBanda(){
 			return $this->banda;
-		}
-		public function getCategoria(){
-			return $this->categoria;
 		}
 		public function getTipoModelo(){
 			return $this->tipoModelo;
@@ -151,16 +132,10 @@
 		public function setTipoModelo($valor){
 			$this->tipoModelo = trim($valor);
 		}
-		public function setCor($valor){
-			$this->cor = trim($valor);
-		}
 		public function setBanda($valor){
 			$this->banda = trim($valor);
 		}
-		public function setCategoria($valor){
-			$this->categoria = trim($valor);
-		}
-		
+
 		public function __toString(){
 			$retorno = "Camisa " . ";";
             $retorno .= $this->getTipoModeloExtenso() . ";";

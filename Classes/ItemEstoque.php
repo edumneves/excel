@@ -11,7 +11,35 @@
 		private $precoVenda;
 		private $saldo;
 		private $saldoPeso;
+        private $categoria;
+        private $cor;
 
+        private $descricaoResumida;
+
+        public function setDescricaoResumida($descricaoResumida)
+        {
+            $this->descricaoResumida = $descricaoResumida;
+        }
+
+        public function getDescricaoResumida()
+        {
+            return $this->descricaoResumida;
+        }
+
+        public function setCor($valor){
+            $this->cor = trim($valor);
+        }
+
+        public function getCor(){
+            return $this->cor;
+        }
+
+        public function getCategoria(){
+            return $this->categoria;
+        }
+        public function setCategoria($valor){
+            $this->categoria = trim($valor);
+        }
 
 		public function ItemEstoque($item){
 			$this->setCodigo(ImportacaoGlobal::extraiCodigo($item));

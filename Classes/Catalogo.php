@@ -1,9 +1,26 @@
 <?php
 	include_once 'ItemFactory.php';
-	
+    include_once 'Camisa.php';
+    include_once 'ImportacaoGlobal.php';
+
 	class Catalogo {
 		private $listaCamisas;
 		private $listaAcessorios;
+
+        function comparaCamisas(Camisa $item1, Camisa $item2){
+            $cmpDescResumida = strcmp($item1->getDescricaoResumida(), $item2->getDescricaoResumida());
+            if ($cmpDescResumida == 0){
+                $cmpTipoModelo = strcmp($item1->getTipoModelo(), $item2->getTipoModelo());
+                if ($cmpTipoModelo == 0){
+                    global $tamanhos;
+                    $ind1 = array_search($item1->getTamanho(), $tamanhos);
+                    $ind2 = array_search($item2->getTamanho(), $tamanhos);
+                    return ($ind1 - $ind2);
+                }
+                return $cmpTipoModelo;
+            }
+            return $cmpDescResumida;
+        }
 		
 		public function montaCatalogo($sheetData){
 			// Percorre os objetos montando os ites do estoque
@@ -22,7 +39,21 @@
 				} 
 			}
 
-            echo "<br><br>";
+            //Ordena o array pela descricaoResumida, TipoModelo, Tamanho
+            usort($listaCamisas, array($this, "comparaCamisas"));
+
+
+            $csvCamisas = fopen("camisas.csv", "w");
+            //Confere e cria os itens agrupados
+            foreach($listaCamisas as $camisa){
+                echo $camisa . "<br>";
+                fwrite($csvCamisas, $camisa . "\n");
+//                fputcsv($csvCamisas, $camisa, ";");
+            }
+            fclose($csvCamisas);
+
+
+/*            echo "<br><br>";
             $retorno = "Tipo item ;";
             $retorno .= " Modelo ;";
             $retorno .= " Descricao Resumida ;";
@@ -42,7 +73,7 @@
 					echo $camisa . "<br>";
 			}
 
-            $this->geraCatalogoCSV("export.csv");
+            $this->geraCatalogoCSV("export.csv");*/
 
 			echo "<br/>Quantidade de Acessórios: " . count($listaAcessorios) . "<br>";
 			echo "Quantidade de Camisas: " . count($listaCamisas) . "<br>";
