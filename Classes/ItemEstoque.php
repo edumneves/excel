@@ -14,6 +14,17 @@
         private $categoria;
         private $cor;
         private $titulo;
+        private $temGrupo = false;
+
+        public function setTemGrupo($temGrupo)
+        {
+            $this->temGrupo = $temGrupo;
+        }
+
+        public function getTemGrupo()
+        {
+            return $this->temGrupo;
+        }
 
         public function setTitulo($titulo)
         {
@@ -192,6 +203,10 @@
             $this->setSaldoPeso($item->getSaldoPeso());
             $this->setDescricaoResumida($item->getDescricaoResumida());
             $this->setTitulo($this->getTitulo());
+        }
+
+        public function isSimpleProduct(){
+            return true;
         }
 
 	}

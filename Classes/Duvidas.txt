@@ -1,0 +1,27 @@
+--> Colocar constantes para Baby look (BL) e camisa (CM)
+
+Camisa com fornecedores diferentes e mesma descrição
+    O que fazer?
+    -> Exemplo: CAMISA CM M NIRVANA SMILE
+
+Utilizar como SKU código ou código de barras?
+    -> Atualmente está sendo usado código
+
+--> Importação com Magmi
+1) Criar diretório media\import dentro do magento.
+2) Configurar categoria de atributos
+    - Camisas
+        - Tamanho
+        - Fornecedor
+
+
+Categorias
+
+Camisas masculinas
+    Bandas de Rock
+    Sambistas
+    Anime e Games
+    Filmes e Series
+    Caveiras e Tatoo
+Camisas femininas
+    Baby Look

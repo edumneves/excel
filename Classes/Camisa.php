@@ -119,7 +119,7 @@
 		public function getTipoModeloExtenso(){
 			switch ($this->tipoModelo){
 				case "CM":
-					return "Com manga";
+					return "com manga";
 				case "BL":
 					return "Baby Look";
 			}
@@ -136,6 +136,14 @@
 			$this->banda = trim($valor);
 		}
 
+        public function feminina(){
+            return (strcmp($this->getTipoModelo(), "BL")==0);
+        }
+
+        public function masculina(){
+            return !feminina();
+        }
+
 		public function __toString(){
 			$retorno = "Camisa " . ";";
             $retorno .= $this->getTipoModeloExtenso() . ";";
@@ -150,7 +158,8 @@
 			$retorno .= $this->getPrecoCusto() . ";";
 			$retorno .= $this->getPrecoVenda() . ";";
 			$retorno .= $this->getSaldo() . ";";
-            $retorno .= $this->getCodigoBarra() . ";";
+            $retorno .= $this->getCodigo() . ";";
+            $retorno .= $this->getTemGrupo() . ";";
 
 /*
             $retorno = "Camisa " . $this->getTipoModeloExtenso() . ",";
@@ -170,11 +179,13 @@
 
         public function copiaDados(Camisa $camisa)
         {
-            parent::copiaDados($camisa);
-
             $this->setBanda($camisa->getBanda());
             $this->setTipoModelo($camisa->getTipoModelo());
             $this->setTamanho($camisa->getTamanho());
+
+            // Tem que ser no final, pois já tem que estar com o Tipo de Modelo definido para ficar
+            // com o título correto
+            parent::copiaDados($camisa);
         }
 
         public function setDescricaoResumida($descricaoResumida)
@@ -182,16 +193,11 @@
             parent::setDescricaoResumida($descricaoResumida);
 
             $titulo = "Camisa ";
-            if ($this->getTipoModelo() == "BL")
-                $titulo .= "Baby Look ";
-            else
-                $titulo .= "Com Manga ";
-
+            $titulo .= $this->getTipoModeloExtenso() . " ";
             $titulo .= ucwords(strtolower($descricaoResumida));
 
             $this->setTitulo($titulo);
         }
-
 
     }
 	
