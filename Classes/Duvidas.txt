@@ -20,8 +20,12 @@ Categorias
 Camisas masculinas
     Bandas de Rock
     Sambistas
-    Anime e Games
+    Animes, Games e Quadrinhos
     Filmes e Series
     Caveiras e Tatoo
 Camisas femininas
     Baby Look
+
+
+Resize de imagens
+http://turnkeye.com/blog/images-resize-in-magento/

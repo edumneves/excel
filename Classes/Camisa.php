@@ -101,6 +101,7 @@
             $definicao = $this->getDefinicao();
             if ($definicao != null) {
                 $this->setBanda($definicao["Banda"]);
+                $this->setCategoria($definicao["Categoria"]);
             } else {
                 error_log("Camisa sem definição. Código = " . $codigo);
             }
@@ -161,20 +162,7 @@
             $retorno .= $this->getCodigo() . ";";
             $retorno .= $this->getTemGrupo() . ";";
 
-/*
-            $retorno = "Camisa " . $this->getTipoModeloExtenso() . ",";
-            $retorno .= " Descricao Resumida = " . $this->getDescricaoResumida() . ",";
-            $retorno .= " Tamanho = " . $this->getTamanho() . ",";
-            $retorno .= " Cor = " . $this->getCor() . ",";
-            $retorno .= " Banda = " . $this->getBanda() . ",";
-            $retorno .= " Descricao = " . $this->getDescricao() . ",";
-            $retorno .= " Cod Fornecedor = " . $this->getCodFornecedor() . ",";
-            $retorno .= " Ref Fornecedor = " . $this->getRefFornecedor() . ",";
-            $retorno .= " Preco Custo = " . $this->getPrecoCusto() . ",";
-            $retorno .= " Preco Venda = " . $this->getPrecoVenda() . ",";
-            $retorno .= " Saldo Estoque = " . $this->getSaldo() . ",";
-*/
-			return $retorno;			
+			return $retorno;
 		}
 
         public function copiaDados(Camisa $camisa)

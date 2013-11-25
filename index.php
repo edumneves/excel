@@ -43,8 +43,6 @@ $catalogoFisico = new Catalogo;
 $catalogoFisico->montaCatalogo($sheetData);
 
 
-
-
 /*
  *
     [1] => Array

@@ -8,6 +8,7 @@
 		private $listaCamisas;
         private $listaCamisasAgrupadas;
 		private $listaAcessorios;
+        private $listaCamisasHabilitadas;
 
         function comparaCamisas(Camisa $item1, Camisa $item2){
             $cmpDescResumida = strcmp($item1->getDescricaoResumida(), $item2->getDescricaoResumida());
@@ -76,46 +77,31 @@
             }
 
 
-            $csvCamisas = fopen("camisasAgrupadas.csv", "w");
-            //Confere e cria os itens agrupados
-            foreach($this->listaCamisasAgrupadas as $camisa){
-//                echo $camisa . "<br>";
-                fwrite($csvCamisas, $camisa . "\n");
-//                fputcsv($csvCamisas, $camisa, ";");
-            }
-            fclose($csvCamisas);
+//            $csvCamisas = fopen("camisasAgrupadas.csv", "w");
+//            //Confere e cria os itens agrupados
+//            foreach($this->listaCamisasAgrupadas as $camisa){
+//                fwrite($csvCamisas, $camisa . "\n");
+//            }
+//            fclose($csvCamisas);
+//
+//            $csvCamisas = fopen("camisas.csv", "w");
+//            //Confere e cria os itens agrupados
+//            foreach($this->listaCamisas as $camisa){
+//                fwrite($csvCamisas, $camisa . "\n");
+//            }
+//            fclose($csvCamisas);
 
-            $csvCamisas = fopen("camisas.csv", "w");
-            //Confere e cria os itens agrupados
-            foreach($this->listaCamisas as $camisa){
-//                echo $camisa . "<br>";
-                fwrite($csvCamisas, $camisa . "\n");
-//                fputcsv($csvCamisas, $camisa, ";");
-            }
-            fclose($csvCamisas);
-
-
-/*            echo "<br><br>";
-            $retorno = "Tipo item ;";
-            $retorno .= " Modelo ;";
-            $retorno .= " Descricao Resumida ;";
-            $retorno .= " Tamanho ;";
-            $retorno .= " Cor ;";
-            $retorno .= " Banda ;";
-            $retorno .= " Descricao ;";
-            $retorno .= " Cod Fornecedor ;";
-            $retorno .= " Ref Fornecedor ;";
-            $retorno .= " Preco Custo ;";
-            $retorno .= " Preco Venda ;";
-            $retorno .= " Saldo Estoque ;";
-
-            echo $retorno . "<br>";
-
-            foreach($this->listaCamisas as $camisa){
-					echo $camisa . "<br>";
-			}
-*/
             $this->geraCatalogoCSV("C:\\xampp\\htdocs\\magento\\var\\import\\export.csv");
+
+            // Gera lista de camisas habilitadas na loja, usada como insumo para montar imagens
+            usort($this->listaCamisasHabilitadas, array($this, "comparaCamisas"));
+            $csvCamisasHabilitadas = fopen("camisasHabilitadas.csv", "w");
+            //Confere e cria os itens agrupados
+            foreach($this->listaCamisasHabilitadas as $camisa){
+                fwrite($csvCamisasHabilitadas, $camisa->getCodigo() . ";" . $camisa->getTitulo() . "\n");
+            }
+            fclose($csvCamisasHabilitadas);
+
             $this->geraCatalogoDeleteCSV("C:\\xampp\\htdocs\\magento\\var\\import\\delete.csv");
 
 
@@ -255,11 +241,14 @@
 
             //visibility
             if ($camisa->isSimpleProduct()){
-                if (!$camisa->getTemGrupo())
+                if (!$camisa->getTemGrupo()) {
                     $textoCamisa[] = "4";
+                    $this->listaCamisasHabilitadas[] = $camisa;
+                }
                 else
                     $textoCamisa[] = "1";
             } else {
+                $this->listaCamisasHabilitadas[] = $camisa;
                 $textoCamisa[] = "4";
             }
 
@@ -276,9 +265,9 @@
             $textoCamisa[] = "1"; //use_config_max_sale_qty
 
             //is_in_stock
-            if($camisa->getSaldo()>0 || !$camisa->isSimpleProduct())
+            if($camisa->getSaldo()>0 || !$camisa->isSimpleProduct()) {
                 $textoCamisa[] = "1";
-            else
+            } else
                 $textoCamisa[] = "0";
 
             //notify_stock_qty
@@ -314,8 +303,13 @@
             //categories
             if ($camisa->feminina())
                 $textoCamisa[] = "Camisas femininas::1::1::1/Baby Look::1::1::1";
-            else
-                 $textoCamisa[] = "Camisas masculinas::1::1::1";
+            else {
+                if ($camisa->getCategoria() == ""){
+                    $textoCamisa[] = "Camisas masculinas::1::1::1/Outros::1::1::1";
+                }
+                else
+                    $textoCamisa[] = "Camisas masculinas::1::1::1/" . $camisa->getCategoria() . "::1::1::1";
+            }
 
 
             //configurable_attributes

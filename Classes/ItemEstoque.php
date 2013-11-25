@@ -193,6 +193,7 @@
 
         public function copiaDados(ItemEstoque $item){
             $this->setCodigo($item->getCodigo());
+            $this->setCategoria($item->getCategoria());
             $this->setCodigoBarra($item->getCodigoBarra());
             $this->setDescricao($item->getDescricao());
             $this->setCodFornecedor($item->getCodFornecedor());
