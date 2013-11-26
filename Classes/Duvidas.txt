@@ -29,3 +29,9 @@ Camisas femininas
 
 Resize de imagens
 http://turnkeye.com/blog/images-resize-in-magento/
+
+Games of Thrones --> Series
+G_CM_GAMES_DRAGAO
+G_CM_GAMES_LOBO
+
+Conferir camisas que não estão agrupadas.
