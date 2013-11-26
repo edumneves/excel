@@ -35,3 +35,12 @@ G_CM_GAMES_DRAGAO
 G_CM_GAMES_LOBO
 
 Conferir camisas que não estão agrupadas.
+
+Henrique,
+
+Acho que essas camisas estão cadastradas com erro:
+CMCMP00140 --> CAMISA CM P ALICE SOL
+já existe uma CMCMP00100 --> CAMISA CM P ALICE IN CHAINS SOL
+do mesmo fornecedor.
+
+Depois talvez fosse bom apagar

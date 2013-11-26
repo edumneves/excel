@@ -81,6 +81,7 @@
     "PEARL": {"Banda" : "Pearl Jam", "Categoria" : "Bandas"},
     "PEARL JAM": {"Banda" : "Pearl Jam", "Categoria" : "Bandas"},
     "DOORS": {"Banda" : "The Doors", "Categoria" : "Bandas"},
+    "THE DOORS": {"Banda" : "The Doors", "Categoria" : "Bandas"},
     "JANIS": {"Banda" : "Janis Joplin", "Categoria" : "Bandas"},
     "RAUL": {"Banda" : "Raul Seixas", "Categoria" : "Bandas"},
     "LINKIN": {"Banda" : "Linkin Park", "Categoria" : "Bandas"},

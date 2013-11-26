@@ -77,19 +77,19 @@
             }
 
 
-//            $csvCamisas = fopen("camisasAgrupadas.csv", "w");
-//            //Confere e cria os itens agrupados
-//            foreach($this->listaCamisasAgrupadas as $camisa){
-//                fwrite($csvCamisas, $camisa . "\n");
-//            }
-//            fclose($csvCamisas);
-//
-//            $csvCamisas = fopen("camisas.csv", "w");
-//            //Confere e cria os itens agrupados
-//            foreach($this->listaCamisas as $camisa){
-//                fwrite($csvCamisas, $camisa . "\n");
-//            }
-//            fclose($csvCamisas);
+            $csvCamisas = fopen("camisasAgrupadas.csv", "w");
+            //Confere e cria os itens agrupados
+            foreach($this->listaCamisasAgrupadas as $camisa){
+                fwrite($csvCamisas, $camisa . "\n");
+            }
+            fclose($csvCamisas);
+
+            $csvCamisas = fopen("camisas.csv", "w");
+            //Confere e cria os itens agrupados
+            foreach($this->listaCamisas as $camisa){
+                fwrite($csvCamisas, $camisa . "\n");
+            }
+            fclose($csvCamisas);
 
             $this->geraCatalogoCSV("C:\\xampp\\htdocs\\magento\\var\\import\\export.csv");
 

@@ -12,8 +12,12 @@ const IND_SALDO_PESO 	= 'I';
 $tamanhos = array ("PP", "P", "M", "G", "GG", "XGG");
 
 $arqListaBandasJSON = "./Conf/listaBandas.json";
+$arqListaAcertosJSON = "./Conf/listaAcertos.json";
+$arqListaSubstituicoesJSON = "./Conf/listaSubstituicoes.json";
 
 $listaBandas = $json = json_decode(file_get_contents($arqListaBandasJSON), true);
+$listaAcertos = $json = json_decode(file_get_contents($arqListaAcertosJSON), true);
+$listaSubstituicoes = $json = json_decode(file_get_contents($arqListaSubstituicoesJSON), true);
 
 ksort($listaBandas);
 
@@ -55,31 +59,68 @@ class ImportacaoGlobal {
     }
 
     public static function extraiCodigo(array $item){
-        return (trim($item[IND_COD]));
+        $texto = trim($item[IND_COD]);
+        $texto = preg_replace( '/\s+/', ' ', $texto);
+        return ($texto);
     }
     public static function extraiCodigoBarra(array $item){
-        return (trim($item[IND_COD_BARRA]));
+        $texto = trim($item[IND_COD_BARRA]);
+        $texto = preg_replace( '/\s+/', ' ', $texto);
+        return ($texto);
     }
     public static function extraiDescricao(array $item){
-        return (trim($item[IND_DESC]));
+        global $listaSubstituicoes;
+        global $listaAcertos;
+
+        $texto = trim($item[IND_DESC]);
+        $texto = preg_replace( '/\s+/', ' ', $texto);
+
+        $codigo = ImportacaoGlobal::extraiCodigo($item);
+
+        //Faz replace dos acertos de texto
+        foreach($listaAcertos as $chave => $valor){
+            if ($chave == $codigo){
+                $texto = $valor;
+            }
+        }
+
+
+        //Faz replace dos acertos de texto
+        foreach($listaSubstituicoes as $chave => $valor){
+            $texto = str_replace($chave, $valor, $texto);
+        }
+
+        return ($texto);
     }
     public static function extraiCodFornecedor(array $item){
-        return (trim($item[IND_COD_FORN]));
+        $texto = trim($item[IND_COD_FORN]);
+        $texto = preg_replace( '/\s+/', ' ', $texto);
+        return ($texto);
     }
     public static function extraiRefFornecedor(array $item){
-        return (trim($item[IND_REF_FORN]));
+        $texto = trim($item[IND_REF_FORN]);
+        $texto = preg_replace( '/\s+/', ' ', $texto);
+        return ($texto);
     }
     public static function extraiPrecoCusto(array $item){
-        return (trim($item[IND_PREC_CUSTO]));
+        $texto = trim($item[IND_PREC_CUSTO]);
+        $texto = preg_replace( '/\s+/', ' ', $texto);
+        return ($texto);
     }
     public static function extraiPrecoVenda(array $item){
-        return (trim($item[IND_PREC_VENDA]));
+        $texto = trim($item[IND_PREC_VENDA]);
+        $texto = preg_replace( '/\s+/', ' ', $texto);
+        return ($texto);
     }
     public static function extraiSaldo(array $item){
-        return (trim($item[IND_SALDO]));
+        $texto = trim($item[IND_SALDO]);
+        $texto = preg_replace( '/\s+/', ' ', $texto);
+        return ($texto);
     }
     public static function extraiSaldoPeso(array $item){
-        return (trim($item[IND_SALDO_PESO]));
+        $texto = trim($item[IND_SALDO_PESO]);
+        $texto = preg_replace( '/\s+/', ' ', $texto);
+        return ($texto);
     }
 }
 
