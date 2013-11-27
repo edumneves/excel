@@ -30,17 +30,38 @@ Camisas femininas
 Resize de imagens
 http://turnkeye.com/blog/images-resize-in-magento/
 
-Games of Thrones --> Series
-G_CM_GAMES_DRAGAO
-G_CM_GAMES_LOBO
+############################
+Mudanças de Categorias:
+    Games of Thrones --> Series
+        G_CM_GAMES_DRAGAO
+        G_CM_GAMES_LOBO
 
-Conferir camisas que não estão agrupadas.
+    Caveiras
+        G_CM_TIO_SAM	Camisa com manga Tio Sam
 
-Henrique,
+############################
 
-Acho que essas camisas estão cadastradas com erro:
-CMCMP00140 --> CAMISA CM P ALICE SOL
-já existe uma CMCMP00100 --> CAMISA CM P ALICE IN CHAINS SOL
-do mesmo fornecedor.
+Mandar e-mail para ajudar os cadastros das camisas escritas erradas
 
-Depois talvez fosse bom apagar
+############################
+
+Camisas em dúvidas de imagens
+G_CM_WALKING_DEAD_MASTER
+G_CM_WALKING_DEAD_VIRUS
+G_CM_CORINGA_CABELO_VERDE
+G_CM_CORINGA_CARTA
+G_CM_ONE_PIECE_PRETA_HCD
+G_CM_ONE_PIECE_PRETA_VIRUS
+G_CM_CAVEIRA_MEXICANA_ROSAS
+G_CM_INDIO_COCAR
+G_CM_ALICE_IN_CHAINS_CAVEIRA_P/B
+G_CM_CAVEIRA_MEXICANA_ROSAS
+
+
+
+Sem camisas:
+Filmes/08.jpg
+Filmes/09.jpg
+Caveiras/07.jpg
+Caveiras/14.jpg
+Caveiras/15.jpg

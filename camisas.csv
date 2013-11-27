@@ -27,8 +27,8 @@ Camisa ;com manga;ACDC HELLS BELLS;GG;AC/DC;;Camisa com manga Acdc Hells Bells;C
 Camisa ;com manga;ACDC HELLS BELLS;XGG;AC/DC;;Camisa com manga Acdc Hells Bells;CAMISA CM XGG ACDC HELLS BELLS;PROFANUS;296;13;25;7;CMCMXGG00006;1;
 Camisa ;com manga;ACDC HIGHWAY;P;AC/DC;;Camisa com manga Acdc Highway;CAMISA CM P ACDC HIGHWAY;PROFANUS;353;12,5;25;0;CMCMP00197;1;
 Camisa ;com manga;ACDC HIGHWAY;M;AC/DC;;Camisa com manga Acdc Highway;CAMISA CM M ACDC HIGHWAY;PROFANUS;353;12,5;25;0;CMCMM00240;1;
-Camisa ;com manga;ACDC HIGHWAY;G;AC/DC;;Camisa com manga Acdc Highway;CAMISA CM G ACDC HIGHWAY;PROFANUS;353;12,5;25;0;CMCMG00241;1;
 Camisa ;com manga;ACDC HIGHWAY;G;AC/DC;;Camisa com manga Acdc Highway;CAMISA CM G ACDC HIGHWAY;PROFANUS;353;12,5;25;-3;CMCMG00242;1;
+Camisa ;com manga;ACDC HIGHWAY;G;AC/DC;;Camisa com manga Acdc Highway;CAMISA CM G ACDC HIGHWAY;PROFANUS;353;12,5;25;0;CMCMG00241;1;
 Camisa ;com manga;ACDC HIGHWAY;GG;AC/DC;;Camisa com manga Acdc Highway;CAMISA CM GG ACDC HIGHWAY;PROFANUS;353;12,5;25;0;CMCMGG00175;1;
 Camisa ;com manga;ALICE CACHORRO;M;Alice in Chains;;Camisa com manga Alice Cachorro;CAMISA CM M ALICE CACHORRO;PROFANUS;305;12,5;25;14;CMCMM00226;1;
 Camisa ;com manga;ALICE CACHORRO;G;Alice in Chains;;Camisa com manga Alice Cachorro;CAMISA CM G ALICE CACHORRO;PROFANUS;305;12,5;25;20;CMCMG00227;1;
@@ -94,7 +94,6 @@ Camisa ;com manga;AVENGED TRADICONAL;P;Avenged Sevenfold;;Camisa com manga Aveng
 Camisa ;com manga;AVENGED TRADICONAL;M;Avenged Sevenfold;;Camisa com manga Avenged Tradiconal;CAMISA CM M AVENGED TRADICONAL;JO;;11;25;4;CMCMM00313;1;
 Camisa ;com manga;AVENGED TRADICONAL;G;Avenged Sevenfold;;Camisa com manga Avenged Tradiconal;CAMISA CM G AVENGED TRADICONAL;JO;;11;25;1;CMCMG00316;1;
 Camisa ;com manga;AVENGED TRADICONAL;GG;Avenged Sevenfold;;Camisa com manga Avenged Tradiconal;CAMISA CM GG AVENGED TRADICONAL;JO;;11;25;0;CMCMGG00236;1;
-Camisa ;com manga;BACK SABBATH US TOUR;XGG;Black Sabbath;;Camisa com manga Back Sabbath Us Tour;CAMISA CM XGG BACK SABBATH US TOUR;BLACK ANGE;78;13;25;0;CMCMXGG00004;;
 Camisa ;com manga;BAD RELIGION CRUZ;P;Bad Religion;;Camisa com manga Bad Religion Cruz;CAMISA CM P BAD RELIGION CRUZ;EQ;550;10,5;25;0;CMCMP00094;1;
 Camisa ;com manga;BAD RELIGION CRUZ;M;Bad Religion;;Camisa com manga Bad Religion Cruz;CAMISA CM M BAD RELIGION CRUZ;EQ;550;10,5;25;2;CMCMM00094;1;
 Camisa ;com manga;BAD RELIGION CRUZ;G;Bad Religion;;Camisa com manga Bad Religion Cruz;CAMISA CM G BAD RELIGION CRUZ;EQ;550;10,5;25;2;CMCMG00090;1;
@@ -186,6 +185,7 @@ Camisa ;com manga;BLACK SABBATH ROXA;GG;Black Sabbath;;Camisa com manga Black Sa
 Camisa ;Baby Look;BLACK SABBATH US TOUR;G;Black Sabbath;;Camisa Baby Look Black Sabbath Us Tour;CAMISA BABY G BLACK SABBATH US TOUR;BLACK ANGE;78;10;20;0;CMBLG00056;;
 Camisa ;com manga;BLACK SABBATH US TOUR;M;Black Sabbath;;Camisa com manga Black Sabbath Us Tour;CAMISA CM M BLACK SABBATH US TOUR;BLACK ANGE;78;12;25;2;CMCMM00334;1;
 Camisa ;com manga;BLACK SABBATH US TOUR;G;Black Sabbath;;Camisa com manga Black Sabbath Us Tour;CAMISA CM G BLACK SABBATH US TOUR;BLACK ANGE;78;12;25;0;CMCMG00337;1;
+Camisa ;com manga;BLACK SABBATH US TOUR;XGG;Black Sabbath;;Camisa com manga Black Sabbath Us Tour;CAMISA CM XGG BLACK SABBATH US TOUR;BLACK ANGE;78;13;25;0;CMCMXGG00004;1;
 Camisa ;Baby Look;BLACK SABBATH VOL 4;G;Black Sabbath;;Camisa Baby Look Black Sabbath Vol 4;CAMISA BABY G BLACK SABBATH VOL 4;VIRUS;64;10;20;9;CMBLG00052;;
 Camisa ;com manga;BLACK SABBATH VOL 4;P;Black Sabbath;;Camisa com manga Black Sabbath Vol 4;CAMISA CM P BLACK SABBATH VOL 4;EQ;128;10,5;25;0;CMCMP00029;1;
 Camisa ;com manga;BLACK SABBATH VOL 4;M;Black Sabbath;;Camisa com manga Black Sabbath Vol 4;CAMISA CM M BLACK SABBATH VOL 4;EQ;128;11;25;0;CMCMM00028;1;
@@ -292,7 +292,6 @@ Camisa ;com manga;CHUCKY;M;Terror;;Camisa com manga Chucky;CAMISA CM M CHUCKY;HC
 Camisa ;com manga;CHUCKY;G;Terror;;Camisa com manga Chucky;CAMISA CM G CHUCKY;HCD;166;12,5;25;9;CMCMG00162;1;
 Camisa ;com manga;CHUCKY;GG;Terror;;Camisa com manga Chucky;CAMISA CM GG CHUCKY;HCD;166;12,5;25;11;CMCMGG00105;1;
 Camisa ;com manga;CM G;G;;;Camisa com manga Cm G;CAMISA CM G;HCD;278;12,5;25;0;CMCMG00164;;
-Camisa ;com manga;CM G STONES LINGUA PRETA;GG;;;Camisa com manga Cm G Stones Lingua Preta;CAMISA CM G STONES LINGUA PRETA;AN;9;11;25;4;CMCMGG00229;;
 Camisa ;com manga;CM M;M;;;Camisa com manga Cm M;CAMISA CM M;BLACK ANGE;5;12,5;25;-4;CMCMM00246;;
 Camisa ;com manga;CM P;P;;;Camisa com manga Cm P;CAMISA CM P;HCD;230;12,5;25;0;CMCMP00147;;
 Camisa ;com manga;CM P ACDC BLACK ICE;GG;;;Camisa com manga Cm P Acdc Black Ice;CAMISA CM P ACDC BLACK ICE;VIRUS;13;12,5;25;15;CMCMGG00135;;
@@ -389,8 +388,8 @@ Camisa ;com manga;EVANESCENCE OLHOS AZUIS;P;Evanescence;;Camisa com manga Evanes
 Camisa ;com manga;EVANESCENCE OLHOS AZUIS;M;Evanescence;;Camisa com manga Evanescence Olhos Azuis;CAMISA CM M EVANESCENCE OLHOS AZUIS;EQ;431;10,5;25;10;CMCMM00084;1;
 Camisa ;com manga;EXODUS BLACK ANGEL;M;Exodus;;Camisa com manga Exodus Black Angel;CAMISA CM M EXODUS BLACK ANGEL;BLACK ANGE;1;12,5;25;8;CMCMM00242;1;
 Camisa ;com manga;EXODUS BLACK ANGEL;G;Exodus;;Camisa com manga Exodus Black Angel;CAMISA CM G EXODUS BLACK ANGEL;BLACK ANGE;1;12,5;25;7;CMCMG00244;1;
-Camisa ;com manga;EXODUS BLACK ANGEL;GG;Exodus;;Camisa com manga Exodus Black Angel;CAMISA CM GG EXODUS BLACK ANGEL;BLACK ANGE;1;12,4;25;12;CMCMGG00189;1;
 Camisa ;com manga;EXODUS BLACK ANGEL;GG;Exodus;;Camisa com manga Exodus Black Angel;CAMISA CM GG EXODUS BLACK ANGEL;BLACK ANGE;1;12,5;25;-4;CMCMGG00177;1;
+Camisa ;com manga;EXODUS BLACK ANGEL;GG;Exodus;;Camisa com manga Exodus Black Angel;CAMISA CM GG EXODUS BLACK ANGEL;BLACK ANGE;1;12,4;25;12;CMCMGG00189;1;
 Camisa ;com manga;FENDER;P;Guitarra;;Camisa com manga Fender;CAMISA CM P FENDER;EQ;455;11;25;7;CMCMP00093;1;
 Camisa ;com manga;FENDER;M;Guitarra;;Camisa com manga Fender;CAMISA CM M FENDER;EQ;455;11;25;8;CMCMM00093;1;
 Camisa ;com manga;FENDER;G;Guitarra;;Camisa com manga Fender;CAMISA CM G FENDER;EQ;455;11;25;3;CMCMG00096;1;
@@ -433,10 +432,10 @@ Camisa ;Baby Look;GREEN DAY AMERICAN IDIOT;G;Green Day;;Camisa Baby Look Green D
 Camisa ;com manga;GREEN DAY AMERICAN IDIOT;P;Green Day;;Camisa com manga Green Day American Idiot;CAMISA CM P GREEN DAY AMERICAN IDIOT;EQ;429;11;25;6;CMCMP00083;1;
 Camisa ;com manga;GREEN DAY AMERICAN IDIOT;M;Green Day;;Camisa com manga Green Day American Idiot;CAMISA CM M GREEN DAY AMERICAN IDIOT;EQ;429;10,5;25;8;CMCMM00082;1;
 Camisa ;com manga;GREEN DAY AMERICAN IDIOT;G;Green Day;;Camisa com manga Green Day American Idiot;CAMISA CM G GREEN DAY AMERICAN IDIOT;EQ;429;10,5;25;2;CMCMG00081;1;
-Camisa ;com manga;GUITARRA;P;Instrumentos Musicais;;Camisa com manga Guitarra;CAMISA CM P GUITARRA;HCD;163;12,5;25;9;CMCMP00157;1;
-Camisa ;com manga;GUITARRA;M;Instrumentos Musicais;;Camisa com manga Guitarra;CAMISA CM M GUITARRA;HCD;163;12,5;25;8;CMCMM00152;1;
-Camisa ;com manga;GUITARRA;G;Instrumentos Musicais;;Camisa com manga Guitarra;CAMISA CM G GUITARRA;HCD;163;12,5;25;4;CMCMG00146;1;
-Camisa ;com manga;GUITARRA;GG;Instrumentos Musicais;;Camisa com manga Guitarra;CAMISA CM GG GUITARRA;HCD;163;12,5;25;5;CMCMGG00089;1;
+Camisa ;com manga;GUITARRA;P;Caveira;;Camisa com manga Guitarra;CAMISA CM P GUITARRA;HCD;163;12,5;25;9;CMCMP00157;1;
+Camisa ;com manga;GUITARRA;M;Caveira;;Camisa com manga Guitarra;CAMISA CM M GUITARRA;HCD;163;12,5;25;8;CMCMM00152;1;
+Camisa ;com manga;GUITARRA;G;Caveira;;Camisa com manga Guitarra;CAMISA CM G GUITARRA;HCD;163;12,5;25;4;CMCMG00146;1;
+Camisa ;com manga;GUITARRA;GG;Caveira;;Camisa com manga Guitarra;CAMISA CM GG GUITARRA;HCD;163;12,5;25;5;CMCMGG00089;1;
 Camisa ;com manga;GUNS APPETITE;P;Guns n' Roses;;Camisa com manga Guns Appetite;CAMISA CM P GUNS APPETITE;MR;180;12,5;25;10;CMCMP00220;1;
 Camisa ;com manga;GUNS APPETITE;M;Guns n' Roses;;Camisa com manga Guns Appetite;CAMISA CM M GUNS APPETITE;MR;180;12,5;25;4;CMCMM00294;1;
 Camisa ;com manga;GUNS APPETITE;G;Guns n' Roses;;Camisa com manga Guns Appetite;CAMISA CM G GUNS APPETITE;MR;180;12,5;25;1;CMCMG00296;1;
@@ -763,8 +762,8 @@ Camisa ;com manga;MARSHALL;G;Instrumentos Musicais;;Camisa com manga Marshall;CA
 Camisa ;com manga;MAYHEM;P;Mayhem;;Camisa com manga Mayhem;CAMISA CM P MAYHEM;EQ;361;11;25;-1;CMCMP00068;1;
 Camisa ;com manga;MAYHEM;M;Mayhem;;Camisa com manga Mayhem;CAMISA CM M MAYHEM;EQ;361;10,5;20;0;CMCMM00068;1;
 Camisa ;com manga;MAYHEM;G;Mayhem;;Camisa com manga Mayhem;CAMISA CM G MAYHEM;EQ;361;10,5;20;0;CMCMG00068;1;
-Camisa ;com manga;MAYHEM AZUL;P;Mayhem;;Camisa com manga Mayhem Azul;CAMISA CM P MAYHEM AZUL;EQ;353;10,5;25;0;CMCMP00062;1;
 Camisa ;com manga;MAYHEM AZUL;P;Mayhem;;Camisa com manga Mayhem Azul;CAMISA CM P MAYHEM AZUL;EQ;353;11;25;-4;CMCMP00175;1;
+Camisa ;com manga;MAYHEM AZUL;P;Mayhem;;Camisa com manga Mayhem Azul;CAMISA CM P MAYHEM AZUL;EQ;353;10,5;25;0;CMCMP00062;1;
 Camisa ;com manga;MAYHEM AZUL;M;Mayhem;;Camisa com manga Mayhem Azul;CAMISA CM M MAYHEM AZUL;EQ;353;10,5;25;5;CMCMM00062;1;
 Camisa ;com manga;MAYHEM AZUL;G;Mayhem;;Camisa com manga Mayhem Azul;CAMISA CM G MAYHEM AZUL;EQ;353;10,5;25;9;CMCMG00062;1;
 Camisa ;Baby Look;MEGADETH BOMBA;G;Megadeth;;Camisa Baby Look Megadeth Bomba;CAMISA BABY G MEGADETH BOMBA;VIRUS;91;10;20;3;CMBLG00054;;
@@ -887,8 +886,8 @@ Camisa ;Baby Look;NIRVANA SMILE;G;Nirvana;;Camisa Baby Look Nirvana Smile;CAMISA
 Camisa ;Baby Look;NIRVANA SMILE;GG;Nirvana;;Camisa Baby Look Nirvana Smile;CAMISA BABY GG NIRVANA SMILE;AN;6;10;20;-4;CMBLGG00001;1;
 Camisa ;com manga;NIRVANA SMILE;PP;Nirvana;;Camisa com manga Nirvana Smile;CAMISA CM PP NIRVANA SMILE;AN;6;11;25;3;CMCMPP00014;1;
 Camisa ;com manga;NIRVANA SMILE;P;Nirvana;;Camisa com manga Nirvana Smile;CAMISA CM P NIRVANA SMILE;AN;6;11;25;7;CMCMP00236;1;
-Camisa ;com manga;NIRVANA SMILE;M;Nirvana;;Camisa com manga Nirvana Smile;CAMISA CM M NIRVANA SMILE;EQ;632;10,5;20;0;CMCMM00109;1;
 Camisa ;com manga;NIRVANA SMILE;M;Nirvana;;Camisa com manga Nirvana Smile;CAMISA CM M NIRVANA SMILE;AN;6;11;25;4;CMCMM00315;1;
+Camisa ;com manga;NIRVANA SMILE;M;Nirvana;;Camisa com manga Nirvana Smile;CAMISA CM M NIRVANA SMILE;EQ;632;10,5;20;0;CMCMM00109;1;
 Camisa ;com manga;NIRVANA SMILE;G;Nirvana;;Camisa com manga Nirvana Smile;CAMISA CM G NIRVANA SMILE;AN;6;11;25;7;CMCMG00318;1;
 Camisa ;com manga;NIRVANA SMILE;GG;Nirvana;;Camisa com manga Nirvana Smile;CAMISA CM GG NIRVANA SMILE;AN;6;11;25;10;CMCMGG00238;1;
 Camisa ;com manga;NOEL;P;Noel Rosa;;Camisa com manga Noel;CAMISA CM P NOEL;HCD;S02;12,5;25;5;CMCMP00148;1;
@@ -1139,6 +1138,7 @@ Camisa ;com manga;STONES LINGUA PRETA;PP;Rolling Stones;;Camisa com manga Stones
 Camisa ;com manga;STONES LINGUA PRETA;P;Rolling Stones;;Camisa com manga Stones Lingua Preta;CAMISA CM P STONES LINGUA PRETA;AN;9;11;25;13;CMCMP00226;1;
 Camisa ;com manga;STONES LINGUA PRETA;M;Rolling Stones;;Camisa com manga Stones Lingua Preta;CAMISA CM M STONES LINGUA PRETA;AN;9;11;25;9;CMCMM00306;1;
 Camisa ;com manga;STONES LINGUA PRETA;G;Rolling Stones;;Camisa com manga Stones Lingua Preta;CAMISA CM G STONES LINGUA PRETA;AN;9;11;25;7;CMCMG00309;1;
+Camisa ;com manga;STONES LINGUA PRETA;GG;Rolling Stones;;Camisa com manga Stones Lingua Preta;CAMISA CM GG STONES LINGUA PRETA;AN;9;11;25;4;CMCMGG00229;1;
 Camisa ;com manga;STROKES BRANCA;P;The Strokes;;Camisa com manga Strokes Branca;CAMISA CM P STROKES BRANCA;EQ;790;11;25;0;CMCMP00146;1;
 Camisa ;com manga;STROKES BRANCA;M;The Strokes;;Camisa com manga Strokes Branca;CAMISA CM M STROKES BRANCA;EQ;790;11;25;0;CMCMM00145;1;
 Camisa ;com manga;STROKES BRANCA;G;The Strokes;;Camisa com manga Strokes Branca;CAMISA CM G STROKES BRANCA;EQ;790;11;25;7;CMCMG00141;1;
