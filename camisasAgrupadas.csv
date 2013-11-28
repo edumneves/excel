@@ -58,7 +58,7 @@ Camisa ;com manga;CANDEIA;;Candeia;;Camisa com manga Candeia;;;S05;12,5;25;;G_CM
 Camisa ;com manga;CANNIBAL CORPSE THE WRETCHED;;Cannibal Corpse;;Camisa com manga Cannibal Corpse The Wretched;;;281;12,5;25;;G_CM_CANNIBAL_CORPSE_THE_WRETCHED;;CMCMM00220,CMCMG00221,CMCMGG00155
 Camisa ;com manga;CANNIBAL CORPSES ESCRITO;;Cannibal Corpse;;Camisa com manga Cannibal Corpses Escrito;;;446;10,5;20;;G_CM_CANNIBAL_CORPSES_ESCRITO;;CMCMM00098,CMCMG00095
 Camisa ;com manga;CANNIBAL ESVICERATION;;Cannibal Corpse;;Camisa com manga Cannibal Esviceration;;;106;12,5;25;;G_CM_CANNIBAL_ESVICERATION;;CMCMM00197,CMCMG00195,CMCMGG00131
-Camisa ;com manga;CARPA;;;;Camisa com manga Carpa;;;290;12,5;25;;G_CM_CARPA;;CMCMP00205,CMCMM00262,CMCMG00263,CMCMGG00196
+Camisa ;com manga;CARPA;;Tattoo;;Camisa com manga Carpa;;;290;12,5;25;;G_CM_CARPA;;CMCMP00205,CMCMM00262,CMCMG00263,CMCMGG00196
 Camisa ;com manga;CARTOLA CAFE;;Cartola;;Camisa com manga Cartola Cafe;;;S03;12,5;25;;G_CM_CARTOLA_CAFE;;CMCMP00152,CMCMM00154,CMCMG00148,CMCMGG00091
 Camisa ;com manga;CARTOLA VIOLAO;;Cartola;;Camisa com manga Cartola Violao;;;S 07;12;25;;G_CM_CARTOLA_VIOLAO;;CMCMP00248,CMCMM00322,CMCMG00326,CMCMGG00246
 Camisa ;com manga;CAVEIRA BATERISTA;;Caveira;;Camisa com manga Caveira Baterista;;;285;12,5;25;;G_CM_CAVEIRA_BATERISTA;;CMCMP00201,CMCMM00258,CMCMG00259,CMCMGG00193
@@ -103,8 +103,8 @@ Camisa ;com manga;EVANESCENCE OLHOS AZUIS;;Evanescence;;Camisa com manga Evanesc
 Camisa ;com manga;EXODUS BLACK ANGEL;;Exodus;;Camisa com manga Exodus Black Angel;;;1;12,5;25;;G_CM_EXODUS_BLACK_ANGEL;;CMCMM00242,CMCMG00244,CMCMGG00177,CMCMGG00189
 Camisa ;com manga;FENDER;;Guitarra;;Camisa com manga Fender;;;455;11;25;;G_CM_FENDER;;CMCMP00093,CMCMM00093,CMCMG00096
 Camisa ;com manga;FOO FIGHTERS;;Foo Fighters;;Camisa com manga Foo Fighters;;;233;10,5;25;;G_CM_FOO_FIGHTERS;;CMCMP00042,CMCMM00041,CMCMG00042
-Camisa ;com manga;GAMES DRAGAO;;Games;;Camisa com manga Games Dragao;;;2;11;25;;G_CM_GAMES_DRAGAO;;CMCMPP00005,CMCMP00225,CMCMM00305,CMCMG00308,CMCMGG00228
-Camisa ;com manga;GAMES LOBO;;Games;;Camisa com manga Games Lobo;;;4;11;25;;G_CM_GAMES_LOBO;;CMCMPP00004,CMCMP00224,CMCMM00304,CMCMG00307,CMCMGG00227
+Camisa ;com manga;GAMES DRAGAO;;Game of Thrones;;Camisa com manga Games Dragao;;;2;11;25;;G_CM_GAMES_DRAGAO;;CMCMPP00005,CMCMP00225,CMCMM00305,CMCMG00308,CMCMGG00228
+Camisa ;com manga;GAMES LOBO;;Game of Thrones;;Camisa com manga Games Lobo;;;4;11;25;;G_CM_GAMES_LOBO;;CMCMPP00004,CMCMP00224,CMCMM00304,CMCMG00307,CMCMGG00227
 Camisa ;com manga;GHOST;;Ghost;;Camisa com manga Ghost;;;;12,5;25;;G_CM_GHOST;;CMCMM00245,CMCMG00247,CMCMGG00180
 Camisa ;com manga;GHOST MULHER;;Ghost;;Camisa com manga Ghost Mulher;;;44;12;25;;G_CM_GHOST_MULHER;;CMCMM00342,CMCMG00349,CMCMGG00268
 Camisa ;com manga;GIBSON;;Guitarra;;Camisa com manga Gibson;;;454;11;25;;G_CM_GIBSON;;CMCMP00092,CMCMM00092,CMCMG00089

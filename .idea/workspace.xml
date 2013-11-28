@@ -56,7 +56,7 @@
       <file leaf-file-name="ImportacaoGlobal.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="38" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="2720">
+            <state line="61" column="38" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="2720">
               <folding />
             </state>
           </provider>
@@ -74,7 +74,7 @@
       <file leaf-file-name="Duvidas.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Duvidas.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="1241">
+            <state line="32" column="19" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
@@ -83,7 +83,7 @@
       <file leaf-file-name="listaBandas.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="10" selection-start="9528" selection-end="9528" vertical-scroll-proportion="2.857143" vertical-offset="0" max-vertical-offset="3281">
+            <state line="22" column="73" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.4170792" vertical-offset="37" max-vertical-offset="3281">
               <folding />
             </state>
           </provider>
@@ -92,7 +92,7 @@
       <file leaf-file-name="listaAcertos.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conf/listaAcertos.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="2143" selection-end="2143" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="816">
+            <state line="42" column="0" selection-start="2143" selection-end="2143" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -101,7 +101,7 @@
       <file leaf-file-name="listaSubstituicoes.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conf/listaSubstituicoes.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357">
+            <state line="6" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/Classes/Catalogo.php" />
         <option value="$PROJECT_DIR$/Conf/listaAcertos.json" />
         <option value="$PROJECT_DIR$/Conf/listaSubstituicoes.json" />
-        <option value="$PROJECT_DIR$/Conf/listaBandas.json" />
         <option value="$PROJECT_DIR$/Classes/Duvidas.txt" />
+        <option value="$PROJECT_DIR$/Conf/listaBandas.json" />
       </list>
     </option>
   </component>
@@ -372,30 +372,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaAcertos.json">
+    <entry file="file://$PROJECT_DIR$/Conf/listaSubstituicoes.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="2143" selection-end="2143" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="816">
+        <state line="6" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaSubstituicoes.json">
+    <entry file="file://$PROJECT_DIR$/Conf/listaAcertos.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357">
+        <state line="42" column="0" selection-start="2143" selection-end="2143" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/Duvidas.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="1241">
+        <state line="32" column="19" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="10" selection-start="9528" selection-end="9528" vertical-scroll-proportion="2.857143" vertical-offset="0" max-vertical-offset="3281">
+        <state line="22" column="73" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.4170792" vertical-offset="37" max-vertical-offset="3281">
           <folding />
         </state>
       </provider>
