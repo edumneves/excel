@@ -91,7 +91,7 @@
             }
             fclose($csvCamisas);
 
-            $this->geraCatalogoCSV("C:\\xampp\\htdocs\\magento\\var\\import\\export.csv");
+            $this->geraCatalogoCSV("C:\\xampp\\htdocs\\jfx\\var\\import\\export.csv");
 
             // Gera lista de camisas habilitadas na loja, usada como insumo para montar imagens
             usort($this->listaCamisasHabilitadas, array($this, "comparaCamisas"));
@@ -102,7 +102,7 @@
             }
             fclose($csvCamisasHabilitadas);
 
-            $this->geraCatalogoDeleteCSV("C:\\xampp\\htdocs\\magento\\var\\import\\delete.csv");
+            $this->geraCatalogoDeleteCSV("C:\\xampp\\htdocs\\jfx\\var\\import\\delete.csv");
 
 
             echo "<br/>Quantidade de Acessórios: " . count($this->listaAcessorios) . "<br>";
@@ -192,7 +192,7 @@
             $textoCamisa[] = "0"; // has_options
             //$header[] = "image";
             //$header[] = "image_label";
-            $textoCamisa[] = $camisa->getRefFornecedor(); // has_options
+            $textoCamisa[] = $camisa->getCodFornecedor(); // manufacturer
             //media_gallery
             //meta_description
             //meta_keyword

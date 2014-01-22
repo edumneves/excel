@@ -29,8 +29,12 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1394">
+              <folding>
+                <marker date="1385417237424" expanded="true" signature="148:1654" placeholder="..." />
+                <marker date="1385417237424" expanded="true" signature="155:233" placeholder="..." />
+                <marker date="1385417237424" expanded="true" signature="240:1647" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,16 +42,16 @@
       <file leaf-file-name="Camisa.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="19" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="3349">
+            <state line="175" column="24" selection-start="6054" selection-end="6054" vertical-scroll-proportion="-12.730769" vertical-offset="2644" max-vertical-offset="3349">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemEstoque.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ItemEstoque.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="49" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="4233">
+            <state line="201" column="57" selection-start="5163" selection-end="5163" vertical-scroll-proportion="0.565812" vertical-offset="3086" max-vertical-offset="4233">
               <folding />
             </state>
           </provider>
@@ -56,7 +60,7 @@
       <file leaf-file-name="ImportacaoGlobal.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="38" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="2720">
+            <state line="61" column="38" selection-start="1648" selection-end="1648" vertical-scroll-proportion="-0.0" vertical-offset="1037" max-vertical-offset="2720">
               <folding />
             </state>
           </provider>
@@ -65,7 +69,7 @@
       <file leaf-file-name="CamisaAgrupada.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/CamisaAgrupada.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="952">
+            <state line="7" column="21" selection-start="165" selection-end="165" vertical-scroll-proportion="-2.4230769" vertical-offset="56" max-vertical-offset="952">
               <folding />
             </state>
           </provider>
@@ -80,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listaBandas.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="listaBandas.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="73" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.4170792" vertical-offset="37" max-vertical-offset="3281">
+            <state line="22" column="73" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="3281">
               <folding />
             </state>
           </provider>
@@ -92,7 +96,7 @@
       <file leaf-file-name="listaAcertos.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conf/listaAcertos.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="2143" selection-end="2143" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="816">
+            <state line="42" column="0" selection-start="2143" selection-end="2143" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -101,7 +105,7 @@
       <file leaf-file-name="listaSubstituicoes.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conf/listaSubstituicoes.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
+            <state line="6" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -110,7 +114,7 @@
       <file leaf-file-name="Catalogo.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="0" selection-start="0" selection-end="16718" vertical-scroll-proportion="0.0" vertical-offset="1049" max-vertical-offset="7650">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="7650">
               <folding />
             </state>
           </provider>
@@ -131,24 +135,26 @@
         <option value="$PROJECT_DIR$/Classes/ItemFactory.php" />
         <option value="$PROJECT_DIR$/Classes/ItemEstoqueAgrupado.php" />
         <option value="$PROJECT_DIR$/Classes/Duvidas" />
-        <option value="$PROJECT_DIR$/Classes/CamisaAgrupada.php" />
         <option value="$PROJECT_DIR$/Classes/Camisa.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Classes/ItemEstoque.php" />
         <option value="$PROJECT_DIR$/Conf/acertos.json" />
         <option value="$PROJECT_DIR$/Classes/ImportacaoGlobal.php" />
-        <option value="$PROJECT_DIR$/Classes/Catalogo.php" />
         <option value="$PROJECT_DIR$/Conf/listaAcertos.json" />
         <option value="$PROJECT_DIR$/Conf/listaSubstituicoes.json" />
         <option value="$PROJECT_DIR$/Classes/Duvidas.txt" />
         <option value="$PROJECT_DIR$/Conf/listaBandas.json" />
+        <option value="$PROJECT_DIR$/Classes/Catalogo.php" />
+        <option value="$PROJECT_DIR$/Classes/CamisaAgrupada.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,7 +170,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -175,7 +181,29 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -183,25 +211,11 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Conf/listaBandas.json" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-  </component>
-  <component name="PublishConfig" serverName="Importacao Excel" serverId="d540b31f-4f49-4fb8-949a-3970c83159e9">
-    <servers>
-      <server id="d540b31f-4f49-4fb8-949a-3970c83159e9">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="index.html" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="d7de818e-3f60-431a-8548-5979f0c8aa0b">
-        <serverdata />
-      </server>
-    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -263,28 +277,34 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32805908" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14479166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398641" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -300,8 +320,86 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="60" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="765">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
+          <folding>
+            <marker date="1385417237424" expanded="true" signature="148:1654" placeholder="..." />
+            <marker date="1385417237424" expanded="true" signature="155:233" placeholder="..." />
+            <marker date="1385417237424" expanded="true" signature="240:1647" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="19" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="3349">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="49" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="4233">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="38" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="2720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/CamisaAgrupada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Duvidas.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="19" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="73" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="3281">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/listaAcertos.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="2143" selection-end="2143" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/listaSubstituicoes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="303" column="36" selection-start="11890" selection-end="11890" vertical-scroll-proportion="0.0" vertical-offset="4976" max-vertical-offset="7650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="60" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="765">
+          <folding>
+            <marker date="1385417237424" expanded="true" signature="148:1654" placeholder="..." />
+            <marker date="1385417237424" expanded="true" signature="155:233" placeholder="..." />
+            <marker date="1385417237424" expanded="true" signature="240:1647" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -330,58 +428,23 @@
         <state line="715" column="9" selection-start="21191" selection-end="21202" vertical-scroll-proportion="0.34309134" vertical-offset="11862" max-vertical-offset="19142" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/CamisaAgrupada.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="49" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="4233">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="38" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="2720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="19" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="3349">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="0" selection-end="16718" vertical-scroll-proportion="0.0" vertical-offset="1049" max-vertical-offset="7650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Conf/listaSubstituicoes.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
+        <state line="6" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="73" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="3281">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Conf/listaAcertos.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="2143" selection-end="2143" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="816">
+        <state line="42" column="0" selection-start="2143" selection-end="2143" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
@@ -393,9 +456,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
+    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="73" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.4170792" vertical-offset="37" max-vertical-offset="3281">
+        <state line="61" column="38" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="2720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1394">
+          <folding>
+            <marker date="1385417237424" expanded="true" signature="148:1654" placeholder="..." />
+            <marker date="1385417237424" expanded="true" signature="155:233" placeholder="..." />
+            <marker date="1385417237424" expanded="true" signature="240:1647" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="7650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/CamisaAgrupada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="165" selection-end="165" vertical-scroll-proportion="-2.4230769" vertical-offset="56" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="24" selection-start="6054" selection-end="6054" vertical-scroll-proportion="-12.730769" vertical-offset="2644" max-vertical-offset="3349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="57" selection-start="5163" selection-end="5163" vertical-scroll-proportion="0.565812" vertical-offset="3086" max-vertical-offset="4233">
           <folding />
         </state>
       </provider>

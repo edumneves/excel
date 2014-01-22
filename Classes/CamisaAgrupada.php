@@ -8,7 +8,7 @@ class CamisaAgrupada extends Camisa{
         $this->copiaDados($camisa);
         $this->setTamanho("");
         $this->setCodigoBarra("");
-        $this->setCodFornecedor("");
+        $this->setRefFornecedor("");
         $this->setSaldo("");
         $this->setDescricao("");
         $this->setCodigo("G_" . $this->getTipoModelo() . "_" . str_replace(" ", "_", $this->getDescricaoResumida()));
