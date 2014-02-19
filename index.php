@@ -25,7 +25,8 @@ include_once 'Camisa.php';
 include_once 'ItemFactory.php';
 include_once 'Catalogo.php';
 
-$inputFileName = './relatorio estoque.xls';  // File to read
+//$inputFileName = './relatorio estoque.xls';  // File to read
+$inputFileName = './dudu.xls';  // File to read
 
 //echo 'Loading file ',pathinfo($inputFileName,PATHINFO_BASENAME),' using IOFactory to identify the format<br />';
 try {
@@ -37,6 +38,9 @@ try {
 
 echo '<hr />';
 echo "<pre>";
+
+$today = getdate();
+error_log("Importação de " . $today['mday'] . "/" . $today['mon'] . "/" .$today['year']);
 $sheetData = $objPHPExcel->getActiveSheet()->toArray(null,true,true,true);
 
 $catalogoFisico = new Catalogo;

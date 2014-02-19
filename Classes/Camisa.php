@@ -98,6 +98,13 @@
 			$this->setTipoModelo($tipoModelo);
 			$this->setTamanho($tamanho);
 
+            $vetorCamisa = explode(" ", $this->getDescricao());
+            $tamanhoDescricao = $vetorCamisa[2];
+
+            if ($tamanhoDescricao != $tamanho){
+                error_log("Camisa com tamanhos diferentes. Tamanho código = " . $tamanho . " Tamnho descrição = " . $tamanhoDescricao . " Código = " . $codigo);
+            }
+
             $definicao = $this->getDefinicao();
             if ($definicao != null) {
                 $this->setBanda($definicao["Banda"]);
@@ -180,9 +187,11 @@
         {
             parent::setDescricaoResumida($descricaoResumida);
 
-            $titulo = "Camisa ";
-            $titulo .= $this->getTipoModeloExtenso() . " ";
-            $titulo .= ucwords(strtolower($descricaoResumida));
+//            $titulo = "Camisa ";
+//            $titulo .= $this->getTipoModeloExtenso() . " ";
+//            $titulo .= ucwords(strtolower($descricaoResumida));
+
+            $titulo = ucwords(strtolower($descricaoResumida));
 
             $this->setTitulo($titulo);
         }

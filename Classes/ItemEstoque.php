@@ -95,6 +95,9 @@
 			
 			// Confere preco de venda
             $precoVenda = ImportacaoGlobal::extraiPrecoVenda($item);
+            if ($precoVenda == "")
+                $precoVenda = PRECO_VENDA;
+
 			if ($precoVenda <= 0) {
 				error_log ("Preco venda incorreto!" . $precoVenda);
 				return false;
@@ -102,18 +105,24 @@
 
 			// Confere o preço de custo
             $precoCusto = ImportacaoGlobal::extraiPrecoCusto($item);
+            if ($precoCusto == "")
+                $precoCusto = PRECO_CUSTO;
+
 			if ($precoCusto < 0) {
 				error_log ("Preco custo incorreto!" . $precoCusto);
 				return false;
 			}
 			
-			// Confere o estoque
-			/*
-			if ($this->getSaldo() < 0) {
-				echo "Saldo incorreto!" . $this->getSaldo();
+			// Confere o estoque, não cadastra itens sem estoque
+
+            $saldo = ImportacaoGlobal::extraiSaldo($item);
+            if ($saldo == "")
+                $saldo = 0;
+
+            if ($saldo <= 0) {
+				echo "Saldo incorreto!" . $saldo;
 				return false;
 			}
-			*/
 			return true;
 		}
 

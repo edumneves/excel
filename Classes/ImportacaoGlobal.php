@@ -9,6 +9,10 @@ const IND_PREC_VENDA 	= 'G';
 const IND_SALDO 		= 'H';
 const IND_SALDO_PESO 	= 'I';
 
+const PRECO_VENDA = 25;
+const PRECO_CUSTO = 15;
+
+
 $tamanhos = array ("PP", "P", "M", "G", "GG", "XGG");
 
 $arqListaBandasJSON = "./Conf/listaBandas.json";
