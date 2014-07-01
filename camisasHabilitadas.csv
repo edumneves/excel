@@ -1,9 +1,10 @@
-G_BL_ACDC_ANGUS;Acdc Angus
-CMBLG00077;Acdc Angus
-G_BL_ACDC_BACK_IN_BLACK;Acdc Back In Black
-G_BL_ACDC_BLACK_ICE;Acdc Black Ice
-G_BL_ACDC_CANHAO_BRANCA;Acdc Canhao Branca
+G_CM_ACDC_ANGUS;Acdc Angus
+CMCMP00216;Acdc Angus
+G_CM_ACDC_BACK_IN_BLACK;Acdc Back In Black
+G_CM_ACDC_BLACK_ICE;Acdc Black Ice
+G_CM_ACDC_CANHAO_BRANCA;Acdc Canhao Branca
 G_CM_ACDC_HELLS_BELLS;Acdc Hells Bells
+G_CM_ACDC_HIGHWAY;Acdc Highway
 G_CM_ALICE_CACHORRO;Alice Cachorro
 G_CM_ALICE_IN_CHAINS_CAVEIRA_COLORIDA;Alice In Chains Caveira Colorida
 G_CM_ALICE_IN_CHAINS_SOL;Alice In Chains Sol
@@ -13,27 +14,26 @@ G_CM_AMON_AMARTH_VERSUS;Amon Amarth Versus
 G_CM_AMY_CAVEIRA;Amy Caveira
 G_CM_ANGRA_TEMPLE;Angra Temple
 G_CM_ANTHRAX_LAW;Anthrax Law
-CMBLG00035;Artic Monkeys
-CMBLG00055;Asking
+G_CM_ARTIC_MONKEYS;Artic Monkeys
+G_CM_ASKING;Asking
+G_CM_ASKING_COBRA;Asking Cobra
+G_CM_ASKING_MULHER;Asking Mulher
 G_CM_ASSASSINS_CREED;Assassins Creed
+G_CM_ASSASSINS_CREED_FLAG;Assassins Creed Flag
 G_CM_AVENGED_BANDA_AMARELA;Avenged Banda Amarela
-G_BL_AVENGED_NIGHTMARE;Avenged Nightmare
-CMBLG00063;Avenged Nightmare Master
-CMCMG00316;Avenged Tradiconal
-CMCMG00090;Bad Religion Cruz
+G_CM_AVENGED_NIGHTMARE;Avenged Nightmare
+G_CM_AVENGED_TRADICONAL;Avenged Tradiconal
+G_CM_BAD_RELIGION_CRUZ;Bad Religion Cruz
 G_CM_BATERIA_BRANCA;Bateria Branca
 G_CM_BATERIA_PRETA;Bateria Preta
 G_CM_BATHORY;Bathory
 G_CM_BAZINGA;Bazinga
-CMBLG00068;Beatles Atravessando Road
 G_CM_BEATLES_AVIAO;Beatles Aviao
-G_BL_BEATLES_BANDA_BRANCA;Beatles Banda Branca
+G_CM_BEATLES_BANDA_BRANCA;Beatles Banda Branca
 G_CM_BEATLES_ROAD_ATRAVESSANDO;Beatles Road Atravessando
-G_BL_BEATLES_SGT_PEPPERS;Beatles Sgt Peppers
-G_BL_BEATLES_SUBMARINO_AMARELO;Beatles Submarino Amarelo
+G_CM_BEATLES_SGT_PEPPERS;Beatles Sgt Peppers
 G_CM_BEATLES_YELLOW;Beatles Yellow
 G_CM_BEZERRA;Bezerra
-CMBLG00034;Bigode
 G_CM_BLACK_LABEL_SOCIETY_PROFANUS;Black Label Society Profanus
 G_CM_BLACK_LABEL_SOCIETY_SIMBOLO;Black Label Society Simbolo
 G_CM_BLACK_SABBATH_BANDA_OZZY;Black Sabbath Banda Ozzy
@@ -41,23 +41,22 @@ G_CM_BLACK_SABBATH_BANDA_OZZY_BRANCA;Black Sabbath Banda Ozzy Branca
 G_CM_BLACK_SABBATH_CARICATURA_BRANCA;Black Sabbath Caricatura Branca
 G_CM_BLACK_SABBATH_COM_DIO;Black Sabbath Com Dio
 G_CM_BLACK_SABBATH_HEAVEN;Black Sabbath Heaven
-CMBLG00057;Black Sabbath Heaven And Hell
 G_CM_BLACK_SABBATH_MOB_RULES;Black Sabbath Mob Rules
 G_CM_BLACK_SABBATH_ROXA;Black Sabbath Roxa
-G_BL_BLACK_SABBATH_US_TOUR;Black Sabbath Us Tour
-G_BL_BLACK_SABBATH_VOL_4;Black Sabbath Vol 4
+G_CM_BLACK_SABBATH_US_TOUR;Black Sabbath Us Tour
+G_CM_BLACK_SABBATH_VOL_4;Black Sabbath Vol 4
 G_CM_BLEACH_BRANCA_VIRUS;Bleach Branca Virus
 G_CM_BLEACH_PRETA_HCD;Bleach Preta Hcd
 G_CM_BLIND_GUARDIAN;Blind Guardian
 G_CM_BON_JOVI_LOGO;Bon Jovi Logo
-CMBLG00022;Bon Jovi Logo Dourado
 G_CM_BURZUM_DET_SOM;Burzum Det Som
 G_CM_BURZUM_FILOSOFEN;Burzum Filosofen
+G_CM_CALL_OF_DUTY_GHOSTS;Call Of Duty Ghosts
+G_CM_CALL_OF_DUTY_MASCARA;Call Of Duty Mascara
 G_CM_CANDEIA;Candeia
 G_CM_CANNIBAL_CORPSE_THE_WRETCHED;Cannibal Corpse The Wretched
 G_CM_CANNIBAL_ESVICERATION;Cannibal Esviceration
-CMBLG00023;Capacete Stormtrooper
-CMCMP00205;Carpa
+G_CM_CARPA;Carpa
 G_CM_CARTOLA_CAFE;Cartola Cafe
 G_CM_CARTOLA_VIOLAO;Cartola Violao
 G_CM_CAVEIRA_BATERISTA;Caveira Baterista
@@ -65,15 +64,16 @@ G_CM_CAVEIRA_CHAPEU_RAY;Caveira Chapeu Ray
 G_CM_CAVEIRA_FONE;Caveira Fone
 G_CM_CAVEIRA_GUITARRA_MACHADO;Caveira Guitarra Machado
 G_CM_CAVEIRA_MEXICANA_COLORIDA;Caveira Mexicana Colorida
-G_BL_CAVEIRA_MEXICANA_COLORIDA_BRANCA;Caveira Mexicana Colorida Branca
-CMBLG00080;Caveira Mexicana Colorida Preta
+G_CM_CAVEIRA_MEXICANA_COLORIDA_BRANCA;Caveira Mexicana Colorida Branca
 G_CM_CAVEIRA_MEXICANA_P/B;Caveira Mexicana P/b
-CMBLG00082;Caveira Mexicana Rosa
 G_CM_CAVEIRA_MEXICANA_ROSAS;Caveira Mexicana Rosas
 G_CM_CAVEIRA_MOTO_CINZA;Caveira Moto Cinza
 G_CM_CAVEIRA_MOTO_FOGO;Caveira Moto Fogo
 G_CM_CAVEIRA_TRONO;Caveira Trono
 G_CM_CHUCKY;Chucky
+CMCMG00164;Cm G
+CMCMM00246;Cm M
+CMCMP00147;Cm P
 CMCMGG00135;Cm P Acdc Black Ice
 G_CM_CORINGA_CABELO_VERDE;Coringa Cabelo Verde
 G_CM_CORINGA_CARTA;Coringa Carta
@@ -81,13 +81,15 @@ G_CM_CURE_BOYS;Cure Boys
 G_CM_DARK_SIDE_VADER;Dark Side Vader
 G_CM_DARK_THRONE;Dark Throne
 G_CM_DARTH_VADER_BRANCA;Darth Vader Branca
-G_BL_DAVID_CAVEIRA;David Caveira
-G_BL_DAVID_ROSTO;David Rosto
+G_CM_DAVID_CAVEIRA;David Caveira
+G_CM_DAVID_ROSTO;David Rosto
 G_CM_DEATH_LOGO;Death Logo
 G_CM_DEATH_NOTE_BRANCA_VIRUS;Death Note Branca Virus
 G_CM_DEATH_NOTE_PRETA_HCD;Death Note Preta Hcd
+G_CM_DEEP_PURPLE_IN_ROCK;Deep Purple In Rock
 G_CM_DEF_LEPPARD_PYROMANIA;Def Leppard Pyromania
 G_CM_DEICEIDE_TO_HELL;Deiceide To Hell
+G_CM_DESTRUCTION;Destruction
 G_CM_DIMMU_BORGIR_PENTAGRAMA;Dimmu Borgir Pentagrama
 G_CM_DIO_HOLY_DIVER;Dio Holy Diver
 G_CM_DISTURBED;Disturbed
@@ -97,41 +99,44 @@ G_CM_DREAM_THEATER_BLACK_CLOUDS;Dream Theater Black Clouds
 G_CM_DREAM_THEATER_METROPOLIS;Dream Theater Metropolis
 G_CM_DRI_AZUL;Dri Azul
 G_CM_DRI_BRANCA;Dri Branca
+G_CM_ELVIS_VIOL√ÉO;Elvis Viol„Éo
 G_CM_ENGENHEIROS_AZUL;Engenheiros Azul
-CMBLG00061;Evanescence Banda Antiga
-CMBLG00066;Evanescence Banda Nova
 G_CM_EVANESCENCE_BANDA_NOVA_MASTER;Evanescence Banda Nova Master
 G_CM_EVANESCENCE_BANDA_VELHA_AZUL;Evanescence Banda Velha Azul
-CMCMM00084;Evanescence Olhos Azuis
+G_CM_EVANESCENCE_OLHOS_AZUIS;Evanescence Olhos Azuis
 G_CM_EXODUS_BLACK_ANGEL;Exodus Black Angel
 G_CM_FENDER;Fender
 G_CM_FOO_FIGHTERS;Foo Fighters
+G_CM_GAMES_ANAO;Games Anao
 G_CM_GAMES_DRAGAO;Games Dragao
 G_CM_GAMES_LOBO;Games Lobo
 G_CM_GHOST_AZUL;Ghost Azul
 G_CM_GHOST_MULHER;Ghost Mulher
 G_CM_GIBSON;Gibson
 G_CM_GOD_OF_WAR_HCD;God Of War Hcd
-CMCMGG00235;God Of War Joao
+G_CM_GOD_OF_WAR_JOAO;God Of War Joao
+G_CM_GOD_OF_WAR_MASTER;God Of War Master
 G_CM_GOD_OF_WAR_NOVA;God Of War Nova
-G_BL_GREEN_DAY_AMERICAN_IDIOT;Green Day American Idiot
+G_CM_GREEN_DAY_AMERICAN_IDIOT;Green Day American Idiot
 G_CM_GUITARRA;Guitarra
 G_CM_GUNS_APPETITE;Guns Appetite
-G_BL_GUNS_AXL_CANTANDO;Guns Axl Cantando
-CMBLG00030;Guns Cartola Equinox
+G_CM_GUNS_AXL_CANTANDO;Guns Axl Cantando
+G_CM_GUNS_BANDA_PROFANUS;Guns Banda Profanus
+G_CM_GUNS_BANDA_VIRUS;Guns Banda Virus
 G_CM_GUNS_CAVEIRA_CARTOLA_EQUINOX;Guns Caveira Cartola Equinox
 G_CM_GUNS_CAVEIRA_CARTOLA_MASTER;Guns Caveira Cartola Master
-CMBLG00075;Guns Caveira Master
-CMBLGG00012;Guns Logo Grande
+G_CM_GUNS_DOURADA;Guns Dourada
 G_CM_GUNS_LOGO_GRANDE_JOAO;Guns Logo Grande Joao
-G_BL_GUNS_LOGO_GRANDE_MASTER;Guns Logo Grande Master
+G_CM_GUNS_LOGO_GRANDE_MASTER;Guns Logo Grande Master
 G_CM_GUNS_NOME_GRANDE;Guns Nome Grande
+G_CM_GUNS_PRATA;Guns Prata
 G_CM_GUNS_SLASH_CINZA;Guns Slash Cinza
 G_CM_HARLEY_AGUIA;Harley Aguia
-CMCMP00303;Harley Cinza
+G_CM_HARLEY_CINZA;Harley Cinza
 G_CM_HARLEY_DAVIDSON_TRADICIONAL;Harley Davidson Tradicional
 G_CM_HARLEY_MOTO_CINZA;Harley Moto Cinza
 G_CM_HARLEY_MOTO_COLOR;Harley Moto Color
+G_CM_HARLEY_MOTO_VIRUS;Harley Moto Virus
 G_CM_HEINEKEN_HENDRIX;Heineken Hendrix
 G_CM_HEINEKEN_VERDE;Heineken Verde
 G_CM_HELLOWEEN_HELL;Helloween Hell
@@ -139,19 +144,24 @@ G_CM_HELLOWEEN_KEEPER_PART_1;Helloween Keeper Part 1
 G_CM_HELLRAISER;Hellraiser
 G_CM_HENDRIX_CIGARRO;Hendrix Cigarro
 G_CM_HENDRIX_EXPERIENCE;Hendrix Experience
+CMCMM00045;Hendrix Rosto
+G_CM_IBANEZ;Ibanez
 G_CM_INDIO_COCAR;Indio Cocar
 G_CM_IRON_ALBUM_MASTER;Iron Album Master
-CMCMG00186;Iron Eddie Comendo
-G_BL_IRON_FEAR;Iron Fear
+CMCMP00108;Iron Cara Amarela
+G_CM_IRON_EDDIE_COMENDO;Iron Eddie Comendo
+G_CM_IRON_FEAR;Iron Fear
 G_CM_IRON_FRONTIER;Iron Frontier
+G_CM_IRON_FUZIL;Iron Fuzil
 G_CM_IRON_KILLERS_EQUINOX;Iron Killers Equinox
 G_CM_IRON_KILLERS_MASTER;Iron Killers Master
-CMBLG00002;Iron Killers Virus
-G_BL_IRON_NUMBER;Iron Number
+G_CM_IRON_LIVE_AFTER;Iron Live After
+G_CM_IRON_NUMBER;Iron Number
 G_CM_IRON_POWERSLAVE;Iron Powerslave
 G_CM_IRON_TROOPER_A_PE;Iron Trooper A Pe
-G_BL_IRON_TROOPER_CAVALO;Iron Trooper Cavalo
-G_BL_JACK_DANIELS;Jack Daniels
+G_CM_IRON_TROOPER_CAVALO;Iron Trooper Cavalo
+G_CM_JACK_DANIELS;Jack Daniels
+G_CM_JAMES_BROWN;James Brown
 G_CM_JANIS_ESCRITO_LADO;Janis Escrito Lado
 G_CM_JASON_FACAO;Jason Facao
 G_CM_JASON_MASCARA;Jason Mascara
@@ -166,95 +176,113 @@ G_CM_JOY_DIVISION;Joy Division
 G_CM_JOY_DIVISION_CANTANDO;Joy Division Cantando
 G_CM_JUDAS_PAINKILLER;Judas Painkiller
 G_CM_JUDAS_PRIEST_STEEL;Judas Priest Steel
+G_CM_JUSTICEIRO_CAVEIRA_BRANCA;Justiceiro Caveira Branca
 G_CM_JUSTICEIRO_CINZA;Justiceiro Cinza
+CMCMP00280;Killers Master
 G_CM_KISS_DESTROYER;Kiss Destroyer
 G_CM_KISS_DYNASTY;Kiss Dynasty
-G_BL_KISS_ROCK_AND_ROLL;Kiss Rock And Roll
+G_CM_KISS_ROCK_AND_ROLL;Kiss Rock And Roll
 G_CM_KORN_ESCRITO;Korn Escrito
-CMCMG00064;Korn Untouchbles
+G_CM_KORN_UNTOUCHBLES;Korn Untouchbles
 G_CM_KREATOR_PHANTOM;Kreator Phantom
 G_CM_KREATOR_PLEASURE;Kreator Pleasure
-G_BL_LARANJA_MECANICA;Laranja Mecanica
+G_CM_LARANJA_MECANICA;Laranja Mecanica
 G_CM_LEAGUE_OF_LEGENDS;League Of Legends
-CMBLG00048;Led Anjo Color
 G_CM_LED_ANJO_COLORIDO;Led Anjo Colorido
-G_BL_LED_ANJO_DOURADO;Led Anjo Dourado
+G_CM_LED_ANJO_DOURADO;Led Anjo Dourado
 G_CM_LED_BANDA_AMARELA;Led Banda Amarela
-CMBLG00025;Led Eremita
-CMBLG00026;Led Mothership Branca
 G_CM_LED_ZEPPELIN_EREMITA;Led Zeppelin Eremita
 G_CM_LED_ZEPPELIN_MOTHERSHIP;Led Zeppelin Mothership
 G_CM_LEGIAO_4_ESTACOES;Legiao 4 Estacoes
 G_CM_LEGIAO_BANDA_AZUL_MASTER;Legiao Banda Azul Master
+CMCMGG00051;Legiao Bonequinhos
 G_CM_LEGIAO_DOURADA;Legiao Dourada
 G_CM_LEGIAO_FAROESTE;Legiao Faroeste
-CMBLG00029;Legiao Logo Dourada
 G_CM_LEGIAO_VERDE;Legiao Verde
-CMBLG00041;Linkin Meteora
 G_CM_LINKIN_PARK_METEORA;Linkin Park Meteora
-G_BL_LINKIN_PARK_ROAD_ESCRITO_BRANCO;Linkin Park Road Escrito Branco
-CMCMG00053;Linkin Park Soldado Hybrid
+G_CM_LINKIN_PARK_ROAD_ESCRITO_BRANCO;Linkin Park Road Escrito Branco
+G_CM_LINKIN_PARK_SOLDADO_HYBRID;Linkin Park Soldado Hybrid
 G_CM_LYNYRD_CAVEIRA;Lynyrd Caveira
+CMCMP00133;Lynyrd Escrito
+G_CM_MARILYN_CAVEIRA;Marilyn Caveira
 G_CM_MARILYN_MANSON_MASTER;Marilyn Manson Master
 G_CM_MARIO_LUIGI;Mario Luigi
 G_CM_MARSHALL;Marshall
+CMCMG00397;Masculina
+G_CM_MAYHEM;Mayhem
 G_CM_MAYHEM_AZUL;Mayhem Azul
-G_BL_MEGADETH_BOMBA;Megadeth Bomba
+G_CM_MEGADETH_BOMBA;Megadeth Bomba
+G_CM_MEGADETH_CAVEIRA;Megadeth Caveira
 G_CM_MEGADETH_CAVEIRA_MASTER;Megadeth Caveira Master
 G_CM_MEGADETH_CAVEIRA_PROFANUS;Megadeth Caveira Profanus
-G_BL_MEGADETH_RUST;Megadeth Rust
+G_CM_MEGADETH_RUST;Megadeth Rust
 G_CM_MERCYFUL_FATE;Mercyful Fate
 G_CM_METALLICA_COBRA;Metallica Cobra
 G_CM_METALLICA_DEATH_MAGNETIC_BRANCA;Metallica Death Magnetic Branca
-G_BL_METALLICA_KILL;Metallica Kill
+G_CM_METALLICA_DEATH_MAGNETIC_PRETA;Metallica Death Magnetic Preta
+G_CM_METALLICA_DEATH_MAGNETIC_VIRUS;Metallica Death Magnetic Virus
+G_CM_METALLICA_JUSTICE;Metallica Justice
+G_CM_METALLICA_JUSTICE_PRETA;Metallica Justice Preta
+G_CM_METALLICA_KILL;Metallica Kill
 G_CM_METALLICA_MASTER;Metallica Master
+G_CM_METALLICA_MASTER_ALBUM;Metallica Master Album
 G_CM_METALLICA_MASTER_ROCK;Metallica Master Rock
-G_BL_METALLICA_RIDE;Metallica Ride
-CMBLG00053;Metallica St Anger
+G_CM_METALLICA_RIDE;Metallica Ride
 G_CM_METALLICA_ST_ANGER_PUNHO;Metallica St Anger Punho
 G_CM_MEXICANA_TATTOO;Mexicana Tattoo
+CMCMM00103;Misfits Legacy
 G_CM_MISFITS_ROXA;Misfits Roxa
 G_CM_MISFITS_VERDE;Misfits Verde
 G_CM_MORBID_ANGEL_ALTARS;Morbid Angel Altars
 G_CM_MORBID_ANGEL_LOGO;Morbid Angel Logo
 G_CM_MOTO_INDIAN;Moto Indian
-CMBLG00028;Motorhead Tradicional
-CMCMGG00276;Naruto Branca Virus
+G_CM_MOTORHEAD_KISS_OF_DEATH;Motorhead Kiss Of Death
+G_CM_MOTORHEAD_TRADICIONAL;Motorhead Tradicional
+G_CM_NARUTO_BRANCA_VIRUS;Naruto Branca Virus
 G_CM_NIRVANA_BANDA_MASTER;Nirvana Banda Master
+G_CM_NIRVANA_BATERIA;Nirvana Bateria
+CMCMP00136;Nirvana Bleach
+G_CM_NIRVANA_MALHA_CINZA;Nirvana Malha Cinza
 G_CM_NIRVANA_NEVERMIND;Nirvana Nevermind
-G_BL_NIRVANA_SMILE;Nirvana Smile
+G_CM_NIRVANA_NEVERMIND_ALBUM;Nirvana Nevermind Album
+G_CM_NIRVANA_SMILE;Nirvana Smile
 G_CM_NOEL;Noel
 G_CM_OASIS;Oasis
 G_CM_OBITUARY_ESTAMPA;Obituary Estampa
 G_CM_OBITUARY_LOGO;Obituary Logo
+G_CM_OFFSPRING_P/B;Offspring P/b
 G_CM_ONE_PIECE_PRETA_HCD;One Piece Preta Hcd
 G_CM_ONE_PIECE_PRETA_VIRUS;One Piece Preta Virus
-CMCMGG00163;Ozzy Morcego
+G_CM_OZZY_MORCEGO;Ozzy Morcego
 G_CM_PANTERA_COWBOYS;Pantera Cowboys
-CMBLG00040;Pantera Dourada Official
 G_CM_PANTERA_OFFICIAL;Pantera Official
 G_CM_PANTERA_SOCO;Pantera Soco
-G_BL_PASSARO_VERMELHO;Passaro Vermelho
+G_CM_PASSARO_VERMELHO;Passaro Vermelho
 G_CM_PEARL;Pearl
-G_BL_PEARL_JAM_BONEQUINHO;Pearl Jam Bonequinho
+G_CM_PEARL_JAM_BONEQUINHO;Pearl Jam Bonequinho
+G_CM_PINK_FLOYD_BANDA;Pink Floyd Banda
 G_CM_PINK_FLOYD_DESENHO;Pink Floyd Desenho
+G_CM_PINK_FLOYD_DIVISION;Pink Floyd Division
 G_CM_PINK_FLOYD_PRISMA;Pink Floyd Prisma
+G_CM_PINK_FLOYD_PRISMA_BANDA;Pink Floyd Prisma Banda
 G_CM_PINK_FLOYD_THE_WALL_BRANCA;Pink Floyd The Wall Branca
-G_BL_PINK_FLOYD_WALL_PRETA;Pink Floyd Wall Preta
-G_BL_PIRATAS_DO_CARIBE;Piratas Do Caribe
+G_CM_PINK_FLOYD_WALL_PRETA;Pink Floyd Wall Preta
+G_CM_PIRATAS_DO_CARIBE;Piratas Do Caribe
 G_CM_PIXINGUINHA;Pixinguinha
 G_CM_PODEROSO_CHEFAO;Poderoso Chefao
 G_CM_QUEEN_DOURADA;Queen Dourada
-CMBLG00024;Queen Logo Dourada
+G_CM_RAGE_AGAINST_BRANCA;Rage Against Branca
 G_CM_RAINBOW_LONG_LIVE;Rainbow Long Live
 G_CM_RAINBOW_RISING;Rainbow Rising
 G_CM_RAMMSTEIN;Rammstein
-CMCMGG00149;Ramones Banda Branca
-CMCMGG00118;Ramones Procurados
+G_CM_RAMONES_BANDA_BRANCA;Ramones Banda Branca
+G_CM_RAMONES_PROCURADOS;Ramones Procurados
 G_CM_RAMONES_TRADICIONAL_BRANCA;Ramones Tradicional Branca
-G_BL_RAMONES_TRADICIONAL_PRETA;Ramones Tradicional Preta
+G_CM_RAMONES_TRADICIONAL_PRETA;Ramones Tradicional Preta
 G_CM_RAUL_CHAVE;Raul Chave
-G_BL_RED_HOT_PRETA;Red Hot Preta
+CMCMM00048;Raul Rosto
+G_CM_RED_HOT_BRANCA;Red Hot Branca
+G_CM_RED_HOT_PRETA;Red Hot Preta
 G_CM_RUSH_CORUJA;Rush Coruja
 G_CM_RUSH_ESTRELA;Rush Estrela
 G_CM_RUSH_MOVING_PICTURES;Rush Moving Pictures
@@ -264,54 +292,63 @@ G_CM_SCORPIONS_IN_TRANCE;Scorpions In Trance
 G_CM_SEPULTURA_REMAINS;Sepultura Remains
 G_CM_SEPULTURA_ROOTS;Sepultura Roots
 G_CM_SEPULTURA_S;Sepultura S
-G_BL_SEX_PISTOLS_AMARELA;Sex Pistols Amarela
+G_CM_SEX_PISTOLS_AMARELA;Sex Pistols Amarela
 G_CM_SEX_PISTOLS_FANTA;Sex Pistols Fanta
 G_CM_SLASH_CAVEIRA;Slash Caveira
-CMCMGG00240;Slayer Aguia
+G_CM_SLAYER_AGUIA;Slayer Aguia
 G_CM_SLAYER_CAVEIRA_CAPACETE;Slayer Caveira Capacete
 G_CM_SLAYER_FUZIL;Slayer Fuzil
-CMCMP00311;Slayer Reign In Blood
+G_CM_SLAYER_REIGN_IN_BLOOD;Slayer Reign In Blood
 G_CM_SLAYER_SOUTH;Slayer South
-G_BL_SLIPKNOT_BANDA_NOVA_MASTER;Slipknot Banda Nova Master
+G_CM_SLIPKNOT_BANDA_NOVA_MASTER;Slipknot Banda Nova Master
 G_CM_SLIPKNOT_BANDA_NOVA_VIRUS;Slipknot Banda Nova Virus
+G_CM_SLIPKNOT_BANDA_VELHA_VIRUS;Slipknot Banda Velha Virus
 G_CM_SLIPKNOT_CIRCO;Slipknot Circo
 G_CM_SLIPKNOT_COD_BARRAS;Slipknot Cod Barras
 G_CM_SLIPKNOT_QUADRADINHOS;Slipknot Quadradinhos
 G_CM_SMITHS;Smiths
-CMCMG00393;Smiths Capacete
+G_CM_SMITHS_CAPACETE;Smiths Capacete
 G_CM_SONIC_YOUTH_AZUL;Sonic Youth Azul
 G_CM_SONIC_YOUTH_BRANCA;Sonic Youth Branca
 G_CM_SOUNDGARDEN;Soundgarden
 G_CM_STAR_WARS_CAPACETE;Star Wars Capacete
 G_CM_STONES_LINGUA_BRANCA;Stones Lingua Branca
-G_BL_STONES_LINGUA_PRETA;Stones Lingua Preta
-CMCMG00141;Strokes Branca
-G_BL_STROKES_PRETA;Strokes Preta
-G_BL_SYSTEM_BANDA_NOVA_VIRUS;System Banda Nova Virus
-G_BL_SYSTEM_BONEQUINHOS;System Bonequinhos
+G_CM_STONES_LINGUA_PRETA;Stones Lingua Preta
+G_CM_STROKES_BRANCA;Strokes Branca
+G_CM_STROKES_PRETA;Strokes Preta
+G_CM_SYSTEM_ALVO;System Alvo
+G_CM_SYSTEM_BANDA_GRANDE_MASTER;System Banda Grande Master
+G_CM_SYSTEM_BANDA_NOVA_VIRUS;System Banda Nova Virus
+G_CM_SYSTEM_BONEQUINHOS;System Bonequinhos
 G_CM_SYSTEM_HYPNOTIZE;System Hypnotize
-CMCMP00069;System Mao
+G_CM_SYSTEM_MAO;System Mao
 G_CM_SYSTEM_MEZMERIZE_ALBUM;System Mezmerize Album
-G_BL_SYSTEM_MEZMERIZE_BANDA;System Mezmerize Banda
+G_CM_SYSTEM_MEZMERIZE_BANDA;System Mezmerize Banda
 G_CM_TESTAMENT_BRANCA;Testament Branca
 G_CM_TESTAMENT_DARK;Testament Dark
 CMCMG00373;The Cure Boys
-CMCMM00386;The Cure Preta
-CMCMM00111;The Strokes
+G_CM_THE_CURE_PRETA;The Cure Preta
+G_CM_THE_DOORS_MORRISON_BRANCA;The Doors Morrison Branca
+G_CM_THE_STROKES;The Strokes
 G_CM_THE_WHO;The Who
 G_CM_TIM_MAIA;Tim Maia
 G_CM_TIO_SAM;Tio Sam
 G_CM_TOM_JOBIM;Tom Jobim
-CMBLG00078;Trooper A Pe
-CMBLGG00014;Trooper A Pe Joao
+G_CM_V_DE_VINGANCA_BRANCA;V De Vinganca Branca
 G_CM_V_DE_VINGANCA_PRETA;V De Vinganca Preta
 G_CM_VAN_HALEN_ANJO;Van Halen Anjo
 G_CM_VAN_HALEN_DOURADA;Van Halen Dourada
-CMBLG00038;Van Halen Logo Dourado
+CMCMM00042;Venon Pentagrama
 G_CM_VENON_POSSESSED;Venon Possessed
 G_CM_VENON_PRATA;Venon Prata
 G_CM_VINICIUS;Vinicius
+G_CM_WALKING_DEAD_CARICATURA;Walking Dead Caricatura
+G_CM_WALKING_DEAD_INSIDE;Walking Dead Inside
 G_CM_WALKING_DEAD_MASTER;Walking Dead Master
+G_CM_WALKING_DEAD_VIRUS;Walking Dead Virus
+G_CM_WASP_I;Wasp I
 G_CM_WHITESNAKE_LOVE;Whitesnake Love
+G_CM_YES_FLY_FROM;Yes Fly From
 G_CM_YES_FRAGILE;Yes Fragile
+G_CM_YES_LOGO;Yes Logo
 G_CM_ZILDJIAN;Zildjian

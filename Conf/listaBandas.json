@@ -17,6 +17,7 @@
     "BEATLES": {"Banda" : "Beatles", "Categoria" : "Bandas"},
     "JACK DANIELS": {"Banda" : "Jack Daniels", "Categoria" : "Bandas"},
     "V DE VINGANCA": {"Banda" : "V de Vingança", "Categoria" : "Animes, Games e Quadrinhos"},
+    "CALL OF DUTY": {"Banda" : "Call of Duty", "Categoria" : "Animes, Games e Quadrinhos"},
     "BAZINGA": {"Banda" : "The Big Bang Theory", "Categoria" : "Filmes e Series"},
     "NIRVANA": {"Banda" : "Nirvana", "Categoria" : "Bandas"},
     "LARANJA MECANICA": {"Banda" : "Laranja Mecânica", "Categoria" : "Filmes e Series"},
@@ -26,6 +27,7 @@
     "JUDAS": {"Banda" : "Judas", "Categoria" : "Bandas"},
     "WASP": {"Banda" : "Wasp", "Categoria" : "Bandas"},
     "SARCOFAGO": {"Banda" : "Sarcofago", "Categoria" : "Bandas"},
+    "JAMES BROWN": {"Banda" : "James Brown", "Categoria" : "Bandas"},
     "EXODUS": {"Banda" : "Exodus", "Categoria" : "Bandas"},
     "KREATOR": {"Banda" : "Kreator", "Categoria" : "Bandas"},
     "OBITUARY": {"Banda" : "Obituary", "Categoria" : "Bandas"},
@@ -88,11 +90,13 @@
     "BON JOVI": {"Banda" : "Bon Jovi", "Categoria" : "Bandas"},
     "QUEEN": {"Banda" : "Queen", "Categoria" : "Bandas"},
     "CAVEIRA": {"Banda" : "Caveira", "Categoria" : "Caveiras e Tattoos"},
+    "MARILYN CAVEIRA": {"Banda" : "Caveira", "Categoria" : "Caveiras e Tattoos"},
     "JIMI": {"Banda" : "Jimi Hendrix", "Categoria" : "Bandas"},
     "BEZERRA": {"Banda" : "Bezerra da Silva", "Categoria" : "Sambistas"},
     "NOEL": {"Banda" : "Noel Rosa", "Categoria" : "Sambistas"},
     "DARTH VADER": {"Banda" : "Star Wars", "Categoria" : "Filmes e Series"},
     "KORN": {"Banda" : "Korn", "Categoria" : "Bandas"},
+    "ELVIS": {"Banda" : "Elvis Presley", "Categoria" : "Bandas"},
     "RUSH": {"Banda" : "Rush", "Categoria" : "Bandas"},
     "FOO FIGHTERS": {"Banda" : "Foo Fighters", "Categoria" : "Bandas"},
     "GUNS": {"Banda" : "Guns n' Roses", "Categoria" : "Bandas"},
@@ -184,5 +188,9 @@
     "BURZUFILOSOFEN": {"Banda" : "Filosofem", "Categoria" : "Bandas"},
     "BURZUDET": {"Banda" : "Filosofem", "Categoria" : "Bandas"},
     "BURZUM": {"Banda" : "Burzum", "Categoria" : "Bandas"},
-    "MOTO INDIAN" : {"Banda" : "Moto Indian", "Categoria" : "Motos"}
+    "MOTO INDIAN" : {"Banda" : "Moto Indian", "Categoria" : "Motos"},
+    "DAVID ROSTO": {"Banda" : "Caveira", "Categoria" : "Caveiras e Tattoos"},
+    "INDIO COCAR": {"Banda" : "Índio Cocar", "Categoria" : "Outros"},
+    "ZUMBI HARDCORE": {"Banda" : "Zumbi Hardcore", "Categoria" : "Outros"}
+
 }

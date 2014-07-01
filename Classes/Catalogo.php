@@ -11,18 +11,18 @@
         private $listaCamisasHabilitadas;
 
         function comparaCamisas(Camisa $item1, Camisa $item2){
-            $cmpDescResumida = strcmp($item1->getDescricaoResumida(), $item2->getDescricaoResumida());
-            if ($cmpDescResumida == 0){
-                $cmpTipoModelo = strcmp($item1->getTipoModelo(), $item2->getTipoModelo());
-                if ($cmpTipoModelo == 0){
+            $cmpTipoModelo = strcmp($item1->getTipoModelo(), $item2->getTipoModelo());
+            if ($cmpTipoModelo == 0){
+                $cmpDescResumida = strcmp($item1->getDescricaoResumida(), $item2->getDescricaoResumida());
+                if ($cmpDescResumida == 0){
                     global $tamanhos;
                     $ind1 = array_search($item1->getTamanho(), $tamanhos);
                     $ind2 = array_search($item2->getTamanho(), $tamanhos);
                     return ($ind1 - $ind2);
                 }
-                return $cmpTipoModelo;
+                return $cmpDescResumida;
             }
-            return $cmpDescResumida;
+            return $cmpTipoModelo;
         }
 		
 		public function montaCatalogo($sheetData){
@@ -83,6 +83,7 @@
                 fwrite($csvCamisas, $camisa . "\n");
             }
             fclose($csvCamisas);
+            echo "camisasAgrupadas.csv - gerado<br/>";
 
             $csvCamisas = fopen("camisas.csv", "w");
             //Confere e cria os itens agrupados
@@ -90,19 +91,29 @@
                 fwrite($csvCamisas, $camisa . "\n");
             }
             fclose($csvCamisas);
+            echo "camisas.csv - gerado<br/>";
 
-            $this->geraCatalogoCSV("C:\\xampp\\htdocs\\jfx\\var\\import\\export.csv");
+            $this->geraCatalogoCSV("export.csv");
+            echo "export.csv - gerado<br/>";
 
             // Gera lista de camisas habilitadas na loja, usada como insumo para montar imagens
             usort($this->listaCamisasHabilitadas, array($this, "comparaCamisas"));
             $csvCamisasHabilitadas = fopen("camisasHabilitadas.csv", "w");
+            $csvBabyLooksHabilitadas = fopen("babysHabilitadas.csv", "w");
             //Confere e cria os itens agrupados
             foreach($this->listaCamisasHabilitadas as $camisa){
-                fwrite($csvCamisasHabilitadas, $camisa->getCodigo() . ";" . $camisa->getTitulo() . "\n");
+                if ($camisa->getTipoModelo() == 'CM')
+                    fwrite($csvCamisasHabilitadas, $camisa->getCodigo() . ";" . $camisa->getTitulo() . "\n");
+                else
+                    fwrite($csvBabyLooksHabilitadas, $camisa->getCodigo() . ";" . $camisa->getTitulo() . "\n");
             }
             fclose($csvCamisasHabilitadas);
+            fclose($csvBabyLooksHabilitadas);
+            echo "CamisasHabilitadas.csv - gerado<br/>";
+            echo "BabyLooksHabilitadas.csv - gerado<br/>";
 
-            $this->geraCatalogoDeleteCSV("C:\\xampp\\htdocs\\jfx\\var\\import\\delete.csv");
+            $this->geraCatalogoDeleteCSV("delete.csv");
+            echo "delete.csv - gerado<br/><br/>";
 
 
             echo "<br/>Quantidade de Acessórios: " . count($this->listaAcessorios) . "<br>";

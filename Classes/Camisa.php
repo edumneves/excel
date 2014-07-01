@@ -78,6 +78,8 @@
 
             // Caso não tenha encontrado a banda
             echo "<br>Descricao = " . $descricao . "<br>";
+            echo "Descricao Original = " . $this->getDescricao() . "<br>";
+            echo "Codigo Original = " . $this->getCodigo() . "<br>";
             echo "TipoModelo = " . $tipoModelo . "<br>";
             echo "Replace = " . "CAMISA " . $tipoModeloExtenso . " " . $tamanho . " " . "<br>";
             echo "Nome simples " . $nomeSimples . "<br>";

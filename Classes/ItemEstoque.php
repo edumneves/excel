@@ -64,6 +64,8 @@
         }
 
 		public function ItemEstoque($item){
+
+
 			$this->setCodigo(ImportacaoGlobal::extraiCodigo($item));
 			$this->setCodigoBarra(ImportacaoGlobal::extraiCodigoBarra($item));
 			$this->setDescricao(ImportacaoGlobal::extraiDescricao($item));
@@ -77,7 +79,17 @@
             $this->setTitulo($this->getDescricao());
 
 			$this->configuraItem();
-		}
+
+            echo "Codigo = " . ImportacaoGlobal::extraiCodigo($item);
+            echo " CodigoBarra = " . $this->getCodigoBarra();
+            echo " Descricao = " . $this->getDescricao();
+            echo " Cod Fornecedor = " . $this->getCodFornecedor();
+            echo " Ref Fornecedor = " . $this->getRefFornecedor();
+            echo " Saldo = " . $this->getSaldo();
+            print_r($item);
+            echo " <br/> ";
+
+        }
 		
 		// Função que vai fazer toda a configuração do item
 		abstract public function configuraItem();
@@ -95,10 +107,10 @@
 			
 			// Confere preco de venda
             $precoVenda = ImportacaoGlobal::extraiPrecoVenda($item);
-            if ($precoVenda == "")
+            if ($precoVenda == "" || $precoVenda == 0)
                 $precoVenda = PRECO_VENDA;
 
-			if ($precoVenda <= 0) {
+			if ($precoVenda < 0) {
 				error_log ("Preco venda incorreto!" . $precoVenda);
 				return false;
 			}
@@ -114,14 +126,16 @@
 			}
 			
 			// Confere o estoque, não cadastra itens sem estoque
-
             $saldo = ImportacaoGlobal::extraiSaldo($item);
             if ($saldo == "")
                 $saldo = 0;
 
             if ($saldo <= 0) {
-				echo "Saldo incorreto!" . $saldo;
-				return false;
+                error_log ("Saldo incorreto!" . $saldo);
+				// return false;
+
+                // Zera saldo quando está negativo
+                $saldo = 0;
 			}
 			return true;
 		}
