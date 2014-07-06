@@ -543,16 +543,41 @@
             //Monta Array que vai ser o destino do relatorio
 
             $tipoModeloAnterior = "";
+            $indWorksheet = 1;
             foreach ($listaItensRelatorio as $itemRelatorio) {
                 $tipoModeloAtual = $itemRelatorio->getTipoModelo();
+
+                // Inicializa a variável e seta o título para o primeiro tipo de modelo
                 if ($tipoModeloAnterior == ""){
                     $tipoModeloAnterior = $tipoModeloAtual;
+
+                    $objPHPExcel->getActiveSheet()->setTitle($itemRelatorio->getTipoModeloExtenso());
+                    $this->configuraDimensoesRelatorio($objPHPExcel);
                 }
 
-                // Se mudou o TipoModelo então cria uma linha em branco
+                // Se mudou o TipoModelo então grava os dados e cria uma nova planilha
                 if ($tipoModeloAnterior != "" && (strcmp($tipoModeloAnterior, $tipoModeloAtual)!=0)){
-                    $listaRelatorio[] = array ("", "", "", "", "", "", "", "");
+
                     $tipoModeloAnterior = $tipoModeloAtual;
+
+                    // Grava lista na planilha atual
+                    $objPHPExcel->getActiveSheet()
+                        ->fromArray(
+                            $listaRelatorio,
+                            NULL,
+                            'A1'
+                        );
+
+                    // Limpa lista
+                    $listaRelatorio = [];
+                    $listaRelatorio[] = $this->adicionaCabecalho();
+
+                    //Gera nova planilha
+                    $objWorkSheet = $objPHPExcel->createSheet($indWorksheet);
+                    $objWorkSheet->setTitle($itemRelatorio->getTipoModeloExtenso());
+                    $objPHPExcel->setActiveSheetIndex($indWorksheet);
+                    $this->configuraDimensoesRelatorio($objPHPExcel);
+                    $indWorksheet++;
                 }
 
                 // Adiciona a camisa

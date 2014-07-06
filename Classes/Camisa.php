@@ -71,9 +71,6 @@
             $tamanho = substr($codigo, 4, $tamCodigo -9);
 
             $tamanho = $this->getTamanhoOriginal($tipoModelo, $tamanho);
-            /*
-             * @todo Acertar tamanho das camisas infantis e verificar tamanho das Mangas Caídas
-             */
 
             $descricao = $this->getDescricao();
 
@@ -81,8 +78,6 @@
 
             $descricao = trim(str_replace("CAMISA " . $tipoModeloExtenso . " " . $tamanho . " ", "", $descricao));
 
-            if ($tipoModelo == "IN" || $tipoModelo == "MC")
-                echo "$$$$$$$$$$$$$$$$    CAMISA " . $tipoModeloExtenso . " " . $tamanho . " <br/>";
 
             // @todo Retirar isso quando estiver correto o cadastro das Mangas Caídas (Golas Caídas)
             $descricao = trim(str_replace("CAMISA GOLA CAIDA " . $tamanho . " ", "", $descricao));
@@ -177,6 +172,12 @@
 					return "com manga";
 				case "BL":
 					return "Baby Look";
+                case "BY":
+                    return "Body";
+                case "MC":
+                    return "Gola Caída";
+                case "IN":
+                    return "Infantil";
 			}
 			return "";
 		}
