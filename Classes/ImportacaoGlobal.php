@@ -13,7 +13,7 @@ const PRECO_VENDA = 25;
 const PRECO_CUSTO = 15;
 
 
-$tamanhos = array ("PP", "P", "M", "G", "GG", "XGG");
+$tamanhos = array ("2A", "4A", "6A", "8A","PP", "P", "M", "G", "GG", "XGG", "U");
 
 $arqListaBandasJSON = "./Conf/listaBandas.json";
 $arqListaAcertosJSON = "./Conf/listaAcertos.json";

@@ -27,6 +27,39 @@
             return true;
         }
 
+        private function getTipoModeloExtensoOriginal($tipoModelo){
+            switch ($tipoModelo){
+                case "BL":
+                    return ("BABY");
+                case "CM":
+                    return ("CM");
+                case "BY":
+                    return ("BODY");
+                case "IN":
+                    return ("INFANTIL");
+                case "MC":
+                    return ("MANGA CAIDA");
+            }
+        }
+
+        private function getTamanhoOriginal($tipoModelo, $tamanho) {
+            switch($tipoModelo){
+                case "IN":
+                    switch($tamanho){
+                        case "2A":
+                            return "2 ANOS";
+                        case "4A":
+                            return "4 ANOS";
+                        case "6A":
+                            return "6 ANOS";
+                        case "8A":
+                            return "8 ANOS";
+                    }
+                    break;
+            }
+            return $tamanho;
+        }
+
         private function getDefinicao(){
             global $listaBandas;
             global $listaChaves;
@@ -37,16 +70,28 @@
             $tipoModelo = substr($codigo, 2, 2);
             $tamanho = substr($codigo, 4, $tamCodigo -9);
 
+            $tamanho = $this->getTamanhoOriginal($tipoModelo, $tamanho);
+            /*
+             * @todo Acertar tamanho das camisas infantis e verificar tamanho das Mangas Caídas
+             */
 
             $descricao = $this->getDescricao();
-            if ($tipoModelo == "BL")
-                $tipoModeloExtenso = "BABY";
-            else
-                $tipoModeloExtenso = "CM";
+
+            $tipoModeloExtenso = $this->getTipoModeloExtensoOriginal($tipoModelo);
 
             $descricao = trim(str_replace("CAMISA " . $tipoModeloExtenso . " " . $tamanho . " ", "", $descricao));
+
+            if ($tipoModelo == "IN" || $tipoModelo == "MC")
+                echo "$$$$$$$$$$$$$$$$    CAMISA " . $tipoModeloExtenso . " " . $tamanho . " <br/>";
+
+            // @todo Retirar isso quando estiver correto o cadastro das Mangas Caídas (Golas Caídas)
+            $descricao = trim(str_replace("CAMISA GOLA CAIDA " . $tamanho . " ", "", $descricao));
+
+
             $descricao = trim(str_replace("CAMISA", "", $descricao));
             $descricao = trim(str_replace(" " . $tipoModeloExtenso, "", $descricao));
+
+
             $descricao = trim(str_replace(" " . $tamanho . " ", "", $descricao));
 
             $this->setDescricaoResumida($descricao);

@@ -9,7 +9,9 @@
         private $listaCamisasAgrupadas;
 		private $listaAcessorios;
         private $listaCamisasHabilitadas;
+        private $listaRelatorio;
 
+        // Compara por TipoModelo, Descrição Resumida, Tamanho
         function comparaCamisas(Camisa $item1, Camisa $item2){
             $cmpTipoModelo = strcmp($item1->getTipoModelo(), $item2->getTipoModelo());
             if ($cmpTipoModelo == 0){
@@ -24,8 +26,30 @@
             }
             return $cmpTipoModelo;
         }
-		
-		public function montaCatalogo($sheetData){
+
+        // Compara por TipoModelo, Fornecedor, Descrição Resumida, Tamanho
+        function comparaCamisasRelatorio(Camisa $item1, Camisa $item2){
+            $cmpTipoModelo = strcmp($item1->getTipoModelo(), $item2->getTipoModelo());
+            if ($cmpTipoModelo == 0){
+
+                $cmpFornecedor = strcmp($item1->getCodFornecedor(), $item2->getCodFornecedor());
+                if ($cmpFornecedor == 0){
+                    $cmpDescResumida = strcmp($item1->getDescricaoResumida(), $item2->getDescricaoResumida());
+                    if ($cmpDescResumida == 0){
+                        // Define ordem dos tamanhos de acordo com array global
+                        global $tamanhos;
+                        $ind1 = array_search($item1->getTamanho(), $tamanhos);
+                        $ind2 = array_search($item2->getTamanho(), $tamanhos);
+                        return ($ind1 - $ind2);
+                    }
+                    return $cmpDescResumida;
+                }
+                return $cmpFornecedor;
+            }
+            return $cmpTipoModelo;
+        }
+
+        public function montaCatalogo($sheetData){
 			// Percorre os objetos montando os ites do estoque
 			foreach($sheetData as $item) {
 				$itemEstoque = ItemFactory::criaItemEstoque($item);
@@ -42,7 +66,7 @@
 				} 
 			}
 
-            //Ordena o array pela descricaoResumida, TipoModelo, Tamanho
+            //Ordena o array pelo TipoModelo, descricaoResumida, Tamanho
             usort($this->listaCamisas, array($this, "comparaCamisas"));
             //Confere e cria os itens agrupados
 
@@ -77,13 +101,7 @@
             }
 
 
-            $csvCamisas = fopen("camisasAgrupadas.csv", "w");
-            //Confere e cria os itens agrupados
-            foreach($this->listaCamisasAgrupadas as $camisa){
-                fwrite($csvCamisas, $camisa . "\n");
-            }
-            fclose($csvCamisas);
-            echo "camisasAgrupadas.csv - gerado<br/>";
+            $this->geraCamisasAgrupadas("camisasAgrupadas.csv");
 
             $csvCamisas = fopen("camisas.csv", "w");
             //Confere e cria os itens agrupados
@@ -114,6 +132,10 @@
 
             $this->geraCatalogoDeleteCSV("delete.csv");
             echo "delete.csv - gerado<br/><br/>";
+
+            // Gera relatórios diários para repor estoques
+            $this->geraRelatorioEstoque();
+            $this->geraRelatorioBones();
 
 
             echo "<br/>Quantidade de Acessórios: " . count($this->listaAcessorios) . "<br>";
@@ -450,6 +472,202 @@
             return $header;
         }
 
+        /**
+         * @return array
+         */
+        private function geraCamisasAgrupadas($caminho)
+        {
+            $csvCamisas = fopen($caminho, "w");
+            //Confere e cria os itens agrupados
+            foreach ($this->listaCamisasAgrupadas as $camisa) {
+                fwrite($csvCamisas, $camisa . "\n");
+            }
+            fclose($csvCamisas);
+            echo "camisasAgrupadas.csv - gerado<br/>";
+        }
+
+        private function configuraExcel($objPHPExcel){
+
+            // configura cache
+            $cacheMethod = PHPExcel_CachedObjectStorageFactory::cache_in_memory;
+            PHPExcel_Settings::setCacheStorageMethod($cacheMethod);
+
+            // configura a linguagem
+            $locale = 'pt_br';
+            $validLocale = PHPExcel_Settings::setLocale($locale);
+            if (!$validLocale) {
+                echo 'Unable to set locale to ' . $locale . " - reverting to en_us" . PHP_EOL;
+            }
+        }
+
+        private function geraRelatorioEstoque() {
+
+            // cria a planilha
+            $objPHPExcel = new PHPExcel();
+
+            $this->configuraExcel($objPHPExcel);
+
+            $this->montaRelatorio($objPHPExcel);
+
+
+            // salva o arquivo
+            $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, "Excel2007");
+            $objWriter->save("Relatorio_Estoque.xlsx");
+
+            echo "<br>Gravei o excel<br>";
+        }
+
+        private function adicionaCabecalho() {
+            return
+                array (
+                    "DESCRICAO",
+                    "TAMANHO",       // Tamanho
+                    "SALDO",       // Saldo
+                    "CÓDIGO BARRAS",     // Código de Barras
+                    "",         // Vazio para preencher as movimentações
+                    "CÓDIGO FORNECEDOR",     // Código Fornecedor
+                    "TIPO MODELO"      // Tipo Modelo
+                );
+
+        }
+
+        private function montaRelatorio(PHPExcel $objPHPExcel) {
+            $listaRelatorio = [];
+
+            $listaItensRelatorio = $this->listaCamisas;
+
+            //Ordena o array pelo TipoModelo, descricaoResumida, Tamanho
+            usort($listaItensRelatorio, array($this, "comparaCamisasRelatorio"));
+
+            $listaRelatorio[] = $this->adicionaCabecalho();
+            //Monta Array que vai ser o destino do relatorio
+
+            $tipoModeloAnterior = "";
+            foreach ($listaItensRelatorio as $itemRelatorio) {
+                $tipoModeloAtual = $itemRelatorio->getTipoModelo();
+                if ($tipoModeloAnterior == ""){
+                    $tipoModeloAnterior = $tipoModeloAtual;
+                }
+
+                // Se mudou o TipoModelo então cria uma linha em branco
+                if ($tipoModeloAnterior != "" && (strcmp($tipoModeloAnterior, $tipoModeloAtual)!=0)){
+                    $listaRelatorio[] = array ("", "", "", "", "", "", "", "");
+                    $tipoModeloAnterior = $tipoModeloAtual;
+                }
+
+                // Adiciona a camisa
+                $listaRelatorio[] = array (
+                    $itemRelatorio->getDescricaoResumida(),
+                    $itemRelatorio->getTamanho(),
+                    $itemRelatorio->getSaldo(),
+                    $itemRelatorio->getCodigoBarra(),
+                    "",
+                    $itemRelatorio->getCodFornecedor(),
+                    $itemRelatorio->getTipoModelo()
+                );
+            }
+
+            // Carrega da lista
+            $objPHPExcel->getActiveSheet()
+                ->fromArray(
+                    $listaRelatorio,
+                    NULL,
+                    'A1'
+                );
+
+            $this->configuraDimensoesRelatorio($objPHPExcel);
+        }
+
+        private function configuraDimensoesRelatorio($objPHPExcel){
+            // Ajuste de tamanho das colunas
+            $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setAutoSize(true);
+            $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(4);
+            $objPHPExcel->getActiveSheet()->getColumnDimension('C')->setWidth(4);
+            $objPHPExcel->getActiveSheet()->getColumnDimension('D')->setWidth(2);
+            $objPHPExcel->getActiveSheet()->getColumnDimension('E')->setWidth(2);
+            $objPHPExcel->getActiveSheet()->getColumnDimension('F')->setWidth(7);
+            $objPHPExcel->getActiveSheet()->getColumnDimension('G')->setWidth(4);
+
+        }
+
+        private function geraRelatorioBones(){
+            try {
+                $objPHPExcelBone = PHPExcel_IOFactory::load("./bones.xls");
+            } catch(Exception $e) {
+                die('Error loading file "'.pathinfo("./bones.xls",PATHINFO_BASENAME).'": '.$e->getMessage());
+            }
+
+            $sheetData = $objPHPExcelBone->getActiveSheet()->toArray(null,true,true,true);
+
+            // Apaga a primeira linha
+            unset($sheetData[1]);
+
+            $listaBone = [];
+
+            foreach ($sheetData as $bone) {
+                $codigo = $bone["A"];
+                $tamCodigo = strlen($codigo);
+                $tipoModelo = substr($codigo, 2, 2);
+                $tamanho = substr($codigo, 4, 1);
+
+
+                // Adiciona a camisa
+                $listaBone[] = array (
+                    trim(str_replace("ACESSORIOS BONES ", "", $bone["C"])),  // Descricao Resumida
+                    trim($tamanho),    // Tamanho
+                    trim($bone["H"]), // Saldo
+                    trim($bone["B"]), // Codigo Barra
+                    "", // Vai preencher com a quantidade atualizada
+                    trim($bone["D"]),    //  $itemRelatorio->getCodFornecedor(),
+                    trim($tipoModelo)    //  $itemRelatorio->getTipoModelo()
+                );
+            }
+
+            // ordena descrições
+            usort($listaBone, array($this, "comparaBones"));
+
+            // cria a planilha
+            $objPHPExcel = new PHPExcel();
+
+            $this->configuraExcel($objPHPExcel);
+
+            // Carrega da lista
+            $objPHPExcel->getActiveSheet()
+                ->fromArray(
+                    $listaBone,
+                    NULL,
+                    'A2'
+                );
+
+            // Carrega da lista
+            $objPHPExcel->getActiveSheet()
+                ->fromArray(
+                    $this->adicionaCabecalho(),
+                    NULL,
+                    'A1'
+                );
+
+            $this->configuraDimensoesRelatorio($objPHPExcel);
+
+            // salva o arquivo
+            $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, "Excel2007");
+            $objWriter->save("Relatorio_Estoque_Bones.xlsx");
+
+            echo "<br>Gravei o excel<br>";
+
+        }
+
+        // Compara por TipoModelo, Descrição Resumida, Tamanho
+        function comparaBones($item1, $item2){
+            $cmpDescResumida = strcmp($item1[0], $item2[0]);
+            if ($cmpDescResumida == 0){
+                global $tamanhos;
+                $ind1 = array_search($item1[0], $tamanhos);
+                $ind2 = array_search($item2[0], $tamanhos);
+                return ($ind1 - $ind2);
+            }
+            return $cmpDescResumida;
+        }
 
     }
 

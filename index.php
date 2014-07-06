@@ -26,7 +26,8 @@ include_once 'ItemFactory.php';
 include_once 'Catalogo.php';
 
 //$inputFileName = './relatorio estoque.xls';  // File to read
-$inputFileName = './Estoque_20140625_modificada.xls';  // File to read
+//$inputFileName = './Estoque_20140625_modificada.xls';  // File to read
+$inputFileName = './entrada.xls';  // File to read
 
 //echo 'Loading file ',pathinfo($inputFileName,PATHINFO_BASENAME),' using IOFactory to identify the format<br />';
 try {
