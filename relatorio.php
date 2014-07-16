@@ -6,13 +6,13 @@
  * Time: 22:11
  */
 
-$nomeRel = "relatorio_082013";
+$nomeRel = "relatorio_012014";
 
-$handle = fopen($nomeRel . ".txt", "r");
+$handle = fopen("./Entrada/" . $nomeRel . ".txt", "r");
 
 if ($handle) {
-    $csvRelatorio = fopen($nomeRel . ".csv", "w");
-//    echo "Abri relatorio <br>";
+    $csvRelatorio = fopen("./Saida/" . $nomeRel . ".csv", "w");
+    echo "Abri relatorio <br>";
     $quantCamisas = 0;
     $quantAcessorios = 0;
     while (($line = fgets($handle)) !== false) {
@@ -37,18 +37,16 @@ if ($handle) {
 
             $lineVenda = fgets($handle);
             $vetorVenda = explode(" ", $lineVenda);
-            if ($vetorVenda[0] == "Qtd." && $vetorVenda[1] == "Venda"){
-                $vetorQuantidade = explode(",", $vetorVenda[2]);
 
-                $quantVenda =$vetorQuantidade[0];
-                fwrite($csvRelatorio, $item . ";" . $quantVenda . "\n");
-                echo $item . ";" . $quantVenda . "<br>";
+            $vetorQuantidade = explode(",", $vetorVenda[0]);
+            $quantVenda =$vetorQuantidade[0];
+            fwrite($csvRelatorio, $item . ";" . $quantVenda . "\n");
+  //          echo $item . ";" . $quantVenda . "<br>";
 
-                if ($tipoItem == 'CM')
-                    $quantCamisas = $quantCamisas + $quantVenda;
-                if ($tipoItem == 'AC')
-                    $quantAcessorios = $quantAcessorios+ $quantVenda;
-            }
+            if ($tipoItem == 'CM')
+                $quantCamisas = $quantCamisas + $quantVenda;
+            if ($tipoItem == 'AC')
+                $quantAcessorios = $quantAcessorios+ $quantVenda;
         }
     }
     echo "<br><br> Quantidade de itens processados: <br> Camisas = " . $quantCamisas .

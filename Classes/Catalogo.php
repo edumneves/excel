@@ -101,9 +101,9 @@
             }
 
 
-            $this->geraCamisasAgrupadas("camisasAgrupadas.csv");
+            $this->geraCamisasAgrupadas("./Saida_site/camisasAgrupadas.csv");
 
-            $csvCamisas = fopen("camisas.csv", "w");
+            $csvCamisas = fopen("./Saida_site/camisas.csv", "w");
             //Confere e cria os itens agrupados
             foreach($this->listaCamisas as $camisa){
                 fwrite($csvCamisas, $camisa . "\n");
@@ -111,13 +111,13 @@
             fclose($csvCamisas);
             echo "camisas.csv - gerado<br/>";
 
-            $this->geraCatalogoCSV("export.csv");
+            $this->geraCatalogoCSV("./Saida_site/export.csv");
             echo "export.csv - gerado<br/>";
 
             // Gera lista de camisas habilitadas na loja, usada como insumo para montar imagens
             usort($this->listaCamisasHabilitadas, array($this, "comparaCamisas"));
-            $csvCamisasHabilitadas = fopen("camisasHabilitadas.csv", "w");
-            $csvBabyLooksHabilitadas = fopen("babysHabilitadas.csv", "w");
+            $csvCamisasHabilitadas = fopen("./Saida_site/camisasHabilitadas.csv", "w");
+            $csvBabyLooksHabilitadas = fopen("./Saida_site/babysHabilitadas.csv", "w");
             //Confere e cria os itens agrupados
             foreach($this->listaCamisasHabilitadas as $camisa){
                 if ($camisa->getTipoModelo() == 'CM')
@@ -130,7 +130,7 @@
             echo "CamisasHabilitadas.csv - gerado<br/>";
             echo "BabyLooksHabilitadas.csv - gerado<br/>";
 
-            $this->geraCatalogoDeleteCSV("delete.csv");
+            $this->geraCatalogoDeleteCSV("./Saida_site/delete.csv");
             echo "delete.csv - gerado<br/><br/>";
 
             // Gera relatórios diários para repor estoques
@@ -512,7 +512,7 @@
 
             // salva o arquivo
             $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, "Excel2007");
-            $objWriter->save("Relatorio_Estoque.xlsx");
+            $objWriter->save("./Saida/Relatorio_Estoque.xlsx");
 
             echo "<br>Gravei o excel<br>";
         }
@@ -601,6 +601,7 @@
                 );
 
             $this->configuraDimensoesRelatorio($objPHPExcel);
+            $objPHPExcel->setActiveSheetIndex(0);
         }
 
         private function configuraDimensoesRelatorio($objPHPExcel){
@@ -617,9 +618,9 @@
 
         private function geraRelatorioBones(){
             try {
-                $objPHPExcelBone = PHPExcel_IOFactory::load("./bones.xls");
+                $objPHPExcelBone = PHPExcel_IOFactory::load("./Entrada/bones.xls");
             } catch(Exception $e) {
-                die('Error loading file "'.pathinfo("./bones.xls",PATHINFO_BASENAME).'": '.$e->getMessage());
+                die('Error loading file "'.pathinfo("./Entrada/bones.xls",PATHINFO_BASENAME).'": '.$e->getMessage());
             }
 
             $sheetData = $objPHPExcelBone->getActiveSheet()->toArray(null,true,true,true);
@@ -674,9 +675,11 @@
 
             $this->configuraDimensoesRelatorio($objPHPExcel);
 
+            $objPHPExcel->getActiveSheet()->setTitle("Bones");
+
             // salva o arquivo
             $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, "Excel2007");
-            $objWriter->save("Relatorio_Estoque_Bones.xlsx");
+            $objWriter->save("./Saida/Relatorio_Estoque_Bones.xlsx");
 
             echo "<br>Gravei o excel<br>";
 
