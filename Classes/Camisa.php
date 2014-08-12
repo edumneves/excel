@@ -5,7 +5,8 @@
 	class Camisa extends ItemEstoque {
 		private $tamanho; // PP, P, M, G, GG, XGG
 		private $banda;
-		private $tipoModelo; // Camisa = CM, Camiseta, Baby look = BL
+		private $tipoModelo; // Camisa = CM, Camiseta, Baby look = BL, BY = Body, IN = Infantil, MC = Manga Caida
+
 
         public static function valido($item){
             if (!ItemEstoque::valido($item))
@@ -18,10 +19,20 @@
                 return false;
             }
 
+
+
             // Confere a descrição
             $descricao = ImportacaoGlobal::extraiDescricao($item);
             if (strpos($descricao, "CAMISA") === false){
                 error_log ("Descricao incorreta!" . $descricao);
+                return false;
+            }
+
+            // Confere o tipo modelo
+            $tipoModelo = substr($codigo, 2, 2);
+            $tiposValidos = array("BL", "CM", "BY", "IN", "MC");
+            if (!in_array($tipoModelo, $tiposValidos)){
+                error_log ("Tipo Modelo invalido ! Codigo = " . $codigo);
                 return false;
             }
             return true;
@@ -243,6 +254,11 @@
 
             $this->setTitulo($titulo);
         }
+
+        public function getCodImagem(){
+            return $this->getCodigoBarra();
+        }
+
 
     }
 	

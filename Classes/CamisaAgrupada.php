@@ -3,6 +3,7 @@ include_once 'Camisa.php';
 
 class CamisaAgrupada extends Camisa{
     private $listaCamisas;
+    private $codImagem = "";
 
     function CamisaAgrupada(Camisa $camisa){
         $this->copiaDados($camisa);
@@ -17,6 +18,22 @@ class CamisaAgrupada extends Camisa{
     public function addListaCamisa(Camisa $camisa){
         $this->listaCamisas[] = $camisa->getCodigo();
         $camisa->setTemGrupo(true);
+
+        // Código de barras é da camisa M ou de 2A no caso de infantil
+        if($this->codImagem == ""){
+            $this->codImagem = $camisa->getCodigoBarra();
+        } else {
+            if ($this->getTipoModelo() =="IN" && $camisa->getTamanho() == "2A"){
+                $this->codImagem = $camisa->getCodigoBarra();
+            }
+            else if ($this->getTipoModelo() =="CM" && $camisa->getTamanho() == "M"){
+                $this->codImagem = $camisa->getCodigoBarra();
+            }
+        }
+    }
+
+    public function getCodImagem(){
+        return $this->codImagem;
     }
 
     public function configuraItem()

@@ -10,6 +10,22 @@
 		private $listaAcessorios;
         private $listaCamisasHabilitadas;
         private $listaRelatorio;
+        private $listaBD;
+
+        function getQuantMinEstoque($tipoModelo){
+            switch ($tipoModelo){
+                case "BL":
+                    return 3;
+                case "CM":
+                    return 2;
+                case "BY":
+                    return 2;
+                case "IN":
+                    return 2;
+                case "MC":
+                    return 3;
+            }
+        }
 
         // Compara por TipoModelo, Descrição Resumida, Tamanho
         function comparaCamisas(Camisa $item1, Camisa $item2){
@@ -49,7 +65,9 @@
             return $cmpTipoModelo;
         }
 
-        public function montaCatalogo($sheetData){
+        public function montaCatalogo($sheetData, $listaBDext){
+            $this->listaBD = $listaBDext;
+
 			// Percorre os objetos montando os ites do estoque
 			foreach($sheetData as $item) {
 				$itemEstoque = ItemFactory::criaItemEstoque($item);
@@ -114,6 +132,7 @@
             $this->geraCatalogoCSV("./Saida_site/export.csv");
             echo "export.csv - gerado<br/>";
 
+            /*
             // Gera lista de camisas habilitadas na loja, usada como insumo para montar imagens
             usort($this->listaCamisasHabilitadas, array($this, "comparaCamisas"));
             $csvCamisasHabilitadas = fopen("./Saida_site/camisasHabilitadas.csv", "w");
@@ -129,12 +148,72 @@
             fclose($csvBabyLooksHabilitadas);
             echo "CamisasHabilitadas.csv - gerado<br/>";
             echo "BabyLooksHabilitadas.csv - gerado<br/>";
+            */
+
+            // Gera lista de camisas habilitadas na loja, usada como insumo para montar imagens
+            usort($this->listaCamisasHabilitadas, array($this, "comparaCamisas"));
+            $csvCamisasHabilitadas = fopen("./Saida_site/camisasHabilitadas.csv", "w");
+//            $csvCamisasImagens = fopen("./Saida_site/camisasImagens.csv", "w");
+            //Confere e cria os itens agrupados
+            fwrite($csvCamisasHabilitadas, "sku;titulo;image;media_gallery;small_image;thumbnail;status\n");
+            foreach($this->listaCamisasHabilitadas as $camisa){
+                $temImagem = false;
+                $temImagemCostas = false;
+                //$caminhoFotos = "/Fotos/Loja/Ultimas_fotos/fotos_site_com_marca/";
+
+                $caminhoImport = "/Applications/MAMP/htdocs/jfx/media/import/";
+                $caminhoFotos = "fotos_site_com_marca/";
+                $fileName = $caminhoFotos . "0" . $camisa->getCodImagem() . ".jpg";
+                $fileNameCostas = $caminhoFotos . "0" . $camisa->getCodImagem() . "_C.jpg";
+                $temImagem = file_exists($caminhoImport . $fileName);
+                $temImagemCostas = file_exists($caminhoImport . $fileNameCostas);
+
+                $mediaGallery = $fileName;
+                $small = $caminhoFotos . "small/". "0" . $camisa->getCodImagem() . ".jpg";
+                $thumb = $caminhoFotos . "thumb/". "0" . $camisa->getCodImagem() . ".jpg";
+                $mediaGallery = $fileName;
+
+                //fwrite($csvCamisasHabilitadas,$camisa->getCodigo() . ";" . $camisa->getTitulo() . ";0" . $camisa->getCodImagem() . ";" . $temImagem. ";" . $temImagemCostas . ";" . "\n");
+                if ($temImagem){
+                    if ($temImagemCostas){
+                        $mediaGallery = "\"" . $mediaGallery . ";" . $fileNameCostas . "\"";
+                    }
+                    fwrite($csvCamisasHabilitadas,$camisa->getCodigo() . ";" . $camisa->getTitulo() . ";+" . $fileName . ";" . $mediaGallery . ";" . $small . ";" . $thumb . ";" . "1" . "\n");
+                } else {
+                    // Desabilita produtos sem imagem
+                    fwrite($csvCamisasHabilitadas,$camisa->getCodigo() . ";" . $camisa->getTitulo() . ";" . "" . ";" . "" . ";" . "" . ";" . "" . ";" . "2" . "\n");
+                }
+            }
+            fclose($csvCamisasHabilitadas);
+            echo "CamisasHabilitadas.csv - gerado<br/>";
+
+            // Atualização de preços dos itens
+            $csvCamisasHabilitadas = fopen("./Saida_site/camisasPrecos.csv", "w");
+            fwrite($csvCamisasHabilitadas, "sku;price\n");
+            foreach($this->listaCamisasHabilitadas as $camisa){
+                $preco = 0;
+                switch ($camisa->getTipoModelo()){
+                    case "BY":
+                    case "IN":
+                        $preco = 25;
+                        break;
+                    case "CM":
+                    case "BL":
+                    case "MC":
+                        $preco = 30;
+                        break;
+                }
+                fwrite($csvCamisasHabilitadas,$camisa->getCodigo() . ";" . $preco . "\n");
+            }
+            fclose($csvCamisasHabilitadas);
+
 
             $this->geraCatalogoDeleteCSV("./Saida_site/delete.csv");
             echo "delete.csv - gerado<br/><br/>";
 
             // Gera relatórios diários para repor estoques
-            $this->geraRelatorioEstoque();
+            $this->geraRelatorioEstoque("./Saida/Relatorio_Estoque.xlsx", 0);
+            $this->geraRelatorioEstoque("./Saida/Relatorio_Estoque_Resumido.xlsx", 1);
             $this->geraRelatorioBones();
 
 
@@ -334,14 +413,27 @@
             $textoCamisa[] = "1"; //_media_position
             $textoCamisa[] = "0"; //_media_is_disabled
             //categories
-            if ($camisa->feminina())
-                $textoCamisa[] = "Camisas femininas::1::1::1/Baby Look::1::1::1";
-            else {
-                if ($camisa->getCategoria() == ""){
-                    $textoCamisa[] = "Camisas masculinas::1::1::1/Outros::1::1::1";
-                }
-                else
-                    $textoCamisa[] = "Camisas masculinas::1::1::1/" . $camisa->getCategoria() . "::1::1::1";
+
+            switch($camisa->getTipoModelo()) {
+                case "BL":
+                    $textoCamisa[] = "Camisas femininas::1::1::1/Baby Look::1::1::1";
+                    break;
+                case "CM":
+                    if ($camisa->getCategoria() == ""){
+                        $textoCamisa[] = "Camisas masculinas::1::1::1/Outros::1::1::1";
+                    }
+                    else
+                        $textoCamisa[] = "Camisas masculinas::1::1::1/" . $camisa->getCategoria() . "::1::1::1";
+                    break;
+                case "BY":
+                    $textoCamisa[] = "Artigos infantis::1::1::1/Body::1::1::1";
+                    break;
+                case "IN":
+                    $textoCamisa[] = "Artigos infantis::1::1::1/Camisas infantis::1::1::1";
+                    break;
+                case "MC":
+                    $textoCamisa[] = "Camisas femininas::1::1::1/Gola gaída::1::1::1";
+                    break;
             }
 
 
@@ -500,19 +592,19 @@
             }
         }
 
-        private function geraRelatorioEstoque() {
+        private function geraRelatorioEstoque($nomeRel, $filtra) {
 
             // cria a planilha
             $objPHPExcel = new PHPExcel();
 
             $this->configuraExcel($objPHPExcel);
 
-            $this->montaRelatorio($objPHPExcel);
+            $this->montaRelatorio($objPHPExcel, $filtra);
 
 
             // salva o arquivo
             $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, "Excel2007");
-            $objWriter->save("./Saida/Relatorio_Estoque.xlsx");
+            $objWriter->save($nomeRel);
 
             echo "<br>Gravei o excel<br>";
         }
@@ -531,7 +623,7 @@
 
         }
 
-        private function montaRelatorio(PHPExcel $objPHPExcel) {
+        private function montaRelatorio(PHPExcel $objPHPExcel, $filtra) {
             $listaRelatorio = [];
 
             $listaItensRelatorio = $this->listaCamisas;
@@ -544,6 +636,9 @@
 
             $tipoModeloAnterior = "";
             $indWorksheet = 1;
+            echo "Geração de planilha<br>";
+//            var_dump($this->listaBD);
+            echo "<br><br>";
             foreach ($listaItensRelatorio as $itemRelatorio) {
                 $tipoModeloAtual = $itemRelatorio->getTipoModelo();
 
@@ -578,18 +673,39 @@
                     $objPHPExcel->setActiveSheetIndex($indWorksheet);
                     $this->configuraDimensoesRelatorio($objPHPExcel);
                     $indWorksheet++;
+
+                    echo "Nova aba " . $itemRelatorio->getTipoModelo() . " --> " . $itemRelatorio->getTipoModeloExtenso() . "<br>";
                 }
 
-                // Adiciona a camisa
-                $listaRelatorio[] = array (
-                    $itemRelatorio->getDescricaoResumida(),
-                    $itemRelatorio->getTamanho(),
-                    $itemRelatorio->getSaldo(),
-                    $itemRelatorio->getCodigoBarra(),
-                    "",
-                    $itemRelatorio->getCodFornecedor(),
-                    $itemRelatorio->getTipoModelo()
-                );
+                $codBarraAtual = "0" . $itemRelatorio->getCodigoBarra();
+                $quantEstoqueMinimo = $this->getQuantMinEstoque($tipoModeloAtual);
+                $quantAtual = (int)$itemRelatorio->getSaldo();
+                if ($filtra && array_key_exists($codBarraAtual, $this->listaBD)){
+                    if ($this->listaBD[$codBarraAtual]['ESC'] > 0 && $quantAtual < $quantEstoqueMinimo) {
+                        // Adiciona a camisa
+                        $listaRelatorio[] = array (
+                            $itemRelatorio->getDescricaoResumida(),
+                            $itemRelatorio->getTamanho(),
+                            $itemRelatorio->getSaldo(),
+                            $itemRelatorio->getCodigoBarra(),
+                            "",
+                            $itemRelatorio->getCodFornecedor(),
+                            $itemRelatorio->getTipoModelo()
+                        );
+                    }
+                } else {
+                    // Se não encontrou no escritório Adiciona a camisa
+                    $listaRelatorio[] = array (
+                        $itemRelatorio->getDescricaoResumida(),
+                        $itemRelatorio->getTamanho(),
+                        $itemRelatorio->getSaldo(),
+                        $itemRelatorio->getCodigoBarra(),
+                        "",
+                        $itemRelatorio->getCodFornecedor(),
+                        $itemRelatorio->getTipoModelo()
+                    );
+                }
+
             }
 
             // Carrega da lista
