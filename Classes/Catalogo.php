@@ -12,6 +12,7 @@
         private $listaRelatorio;
         private $listaBD;
 
+        // Estoque mínimo para mostrar em relatório
         function getQuantMinEstoque($tipoModelo){
             switch ($tipoModelo){
                 case "BL":
@@ -19,9 +20,9 @@
                 case "CM":
                     return 2;
                 case "BY":
-                    return 2;
+                    return 3;
                 case "IN":
-                    return 2;
+                    return 3;
                 case "MC":
                     return 3;
             }
