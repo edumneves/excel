@@ -1,201 +1,795 @@
 {
-    "ACDC": {"Banda" : "AC/DC", "Categoria" : "Bandas"},
-    "ALICE IN CHAINS": {"Banda" : "Alice in Chains", "Categoria" : "Bandas"},
-    "AMON AMARTH": {"Banda" : "Amon Amarth", "Categoria" : "Bandas"},
-    "AMY": {"Banda" : "Amy Winehouse", "Categoria" : "Bandas"},
-    "ANGRA": {"Banda" : "Angra", "Categoria" : "Bandas"},
-    "ANTHRAX": {"Banda" : "Anthrax", "Categoria" : "Bandas"},
-    "ARTIC MONKEYS": {"Banda" : "Artic Monkeys", "Categoria" : "Bandas"},
-    "BLACK SABBATH": {"Banda" : "Black Sabbath", "Categoria" : "Bandas"},
-    "METALLICA": {"Banda" : "Metallica", "Categoria" : "Bandas"},
-    "BAD RELIGION": {"Banda" : "Bad Religion", "Categoria" : "Bandas"},
-    "PINK FLOYD": {"Banda" : "Pink Floyd", "Categoria" : "Bandas"},
-    "RAMONES": {"Banda" : "Ramones", "Categoria" : "Bandas"},
-    "STONES": {"Banda" : "Rolling Stones", "Categoria" : "Bandas"},
-    "PASSARO VERMELHO": {"Banda" : "Passaro Vermelho", "Categoria" : "Outros"},
-    "RED HOT": {"Banda" : "Red Hot Chili Peppers", "Categoria" : "Bandas"},
-    "BEATLES": {"Banda" : "Beatles", "Categoria" : "Bandas"},
-    "JACK DANIELS": {"Banda" : "Jack Daniels", "Categoria" : "Bandas"},
-    "V DE VINGANCA": {"Banda" : "V de Vingança", "Categoria" : "Animes, Games e Quadrinhos"},
-    "CALL OF DUTY": {"Banda" : "Call of Duty", "Categoria" : "Animes, Games e Quadrinhos"},
-    "BAZINGA": {"Banda" : "The Big Bang Theory", "Categoria" : "Filmes e Series"},
-    "NIRVANA": {"Banda" : "Nirvana", "Categoria" : "Bandas"},
-    "LARANJA MECANICA": {"Banda" : "Laranja Mecânica", "Categoria" : "Filmes e Series"},
-    "GAMES": {"Banda" : "Game of Thrones", "Categoria" : "Filmes e Series"},
-    "GAME OF THRONES": {"Banda" : "Game of Thrones", "Categoria" : "Filmes e Series"},
-    "SLAYER": {"Banda" : "Slayer", "Categoria" : "Bandas"},
-    "THE CLASH": {"Banda" : "The Clash", "Categoria" : "Bandas"},
-    "GHOST": {"Banda" : "Ghost", "Categoria" : "Bandas"},
-    "JUDAS": {"Banda" : "Judas", "Categoria" : "Bandas"},
-    "WASP": {"Banda" : "Wasp", "Categoria" : "Bandas"},
-    "SARCOFAGO": {"Banda" : "Sarcofago", "Categoria" : "Bandas"},
-    "JAMES BROWN": {"Banda" : "James Brown", "Categoria" : "Bandas"},
-    "EXODUS": {"Banda" : "Exodus", "Categoria" : "Bandas"},
-    "KREATOR": {"Banda" : "Kreator", "Categoria" : "Bandas"},
-    "OBITUARY": {"Banda" : "Obituary", "Categoria" : "Bandas"},
-    "MEGADETH": {"Banda" : "Megadeth", "Categoria" : "Bandas"},
-    "DEEP PURPLE": {"Banda" : "Deep Purple", "Categoria" : "Bandas"},
-    "PANTERA": {"Banda" : "Pantera", "Categoria" : "Bandas"},
-    "OZZY": {"Banda" : "Ozzy Osbourne", "Categoria" : "Bandas"},
-    "SCORPIONS": {"Banda" : "Scorpions", "Categoria" : "Bandas"},
-    "YES": {"Banda" : "Yes", "Categoria" : "Bandas"},
-    "KISS": {"Banda" : "Kiss", "Categoria" : "Bandas"},
-    "BEATELS": {"Banda" : "Beatles", "Categoria" : "Bandas"},
-    "DIO": {"Banda" : "Dio", "Categoria" : "Bandas"},
-    "BACK SABBATH": {"Banda" : "Black Sabbath", "Categoria" : "Bandas"},
-    "RAINBOW": {"Banda" : "Rainbow", "Categoria" : "Bandas"},
-    "TESTAMENT": {"Banda" : "Testament", "Categoria" : "Bandas"},
-    "VENON": {"Banda" : "Venon", "Categoria" : "Bandas"},
-    "DEICEIDE": {"Banda" : "Deicide", "Categoria" : "Bandas"},
-    "DEICIDE": {"Banda" : "Deicide", "Categoria" : "Bandas"},
-    "DESTRUCTION": {"Banda" : "Destruction", "Categoria" : "Bandas"},
-    "SEPULTURA": {"Banda" : "Sepultura", "Categoria" : "Bandas"},
-    "BLACK ANGEL": {"Banda" : "Black Angel", "Categoria" : "Bandas"},
-    "MERCYFUL FATE": {"Banda" : "Mercyful Fate", "Categoria" : "Bandas"},
-    "HELLOWEEN": {"Banda" : "Helloween", "Categoria" : "Bandas"},
-    "DRI": {"Banda" : "DRI", "Categoria" : "Bandas"},
-    "MORBID ANGEL": {"Banda" : "Morbid Angel", "Categoria" : "Bandas"},
-    "LYNYRD": {"Banda" : "Lynyrd Skynyrd", "Categoria" : "Bandas"},
-    "HARLEY": {"Banda" : "Harley-Davidson", "Categoria" : "Motos"},
-    "SEX PISTOLS": {"Banda" : "Sex Pistols", "Categoria" : "Bandas"},
-    "VAN HALEN": {"Banda" : "Van Halen", "Categoria" : "Bandas"},
-    "ENGENHEIROS": {"Banda" : "Engenheiros do Hawaii", "Categoria" : "Bandas"},
-    "JETHRO TULL": {"Banda" : "Jethro Tull", "Categoria" : "Bandas"},
-    "BLACK LABEL SOCIETY": {"Banda" : "Black Label Society", "Categoria" : "Bandas"},
-    "SMITHS": {"Banda" : "The Smiths", "Categoria" : "Bandas"},
-    "SONIC YOUTH": {"Banda" : "Sonic Youth", "Categoria" : "Bandas"},
-    "PATERA": {"Banda" : "Pantera", "Categoria" : "Bandas"},
-    "THE WHO": {"Banda" : "The Who", "Categoria" : "Bandas"},
-    "STAR WARS": {"Banda" : "Star Wars", "Categoria" : "Filmes e Series"},
-    "GIBSON": {"Banda" : "Guitarra", "Categoria" : "Instrumentos"},
-    "FENDER": {"Banda" : "Guitarra", "Categoria" : "Instrumentos"},
-    "PODEROSO CHEFAO": {"Banda" : "O Poderoso Chefão", "Categoria" : "Filmes e Series"},
-    "HEINEKEN": {"Banda" : "Heineken", "Categoria" : "Outros"},
-    "MISFITS": {"Banda" : "Misfits", "Categoria" : "Bandas"},
-    "THE STROKES": {"Banda" : "The Strokes", "Categoria" : "Bandas"},
-    "IRON": {"Banda" : "Iron Maiden", "Categoria" : "Bandas"},
-    "LED ZEPPELING": {"Banda" : "Led Zeppelin", "Categoria" : "Bandas"},
-    "LED ZEPPELIN": {"Banda" : "Led Zeppelin", "Categoria" : "Bandas"},
-    "MOTORHEAD": {"Banda" : "Motorhead", "Categoria" : "Bandas"},
-    "MARSHALL": {"Banda" : "Instrumentos Musicais", "Categoria" : "Instrumentos"},
-    "EVANESCENCE": {"Banda" : "Evanescence", "Categoria" : "Bandas"},
-    "LEGIAO": {"Banda" : "Legião Urbana", "Categoria" : "Bandas"},
-    "SYSTEM": {"Banda" : "System Of A Down", "Categoria" : "Bandas"},
-    "GREEN DAY": {"Banda" : "Green Day", "Categoria" : "Bandas"},
-    "PEARL": {"Banda" : "Pearl Jam", "Categoria" : "Bandas"},
-    "PEARL JAM": {"Banda" : "Pearl Jam", "Categoria" : "Bandas"},
-    "DOORS": {"Banda" : "The Doors", "Categoria" : "Bandas"},
-    "THE DOORS": {"Banda" : "The Doors", "Categoria" : "Bandas"},
-    "JANIS": {"Banda" : "Janis Joplin", "Categoria" : "Bandas"},
-    "RAUL": {"Banda" : "Raul Seixas", "Categoria" : "Bandas"},
-    "LINKIN": {"Banda" : "Linkin Park", "Categoria" : "Bandas"},
-    "BON JOVI": {"Banda" : "Bon Jovi", "Categoria" : "Bandas"},
-    "QUEEN": {"Banda" : "Queen", "Categoria" : "Bandas"},
-    "CAVEIRA": {"Banda" : "Caveira", "Categoria" : "Caveiras e Tattoos"},
-    "MARILYN CAVEIRA": {"Banda" : "Caveira", "Categoria" : "Caveiras e Tattoos"},
-    "JIMI": {"Banda" : "Jimi Hendrix", "Categoria" : "Bandas"},
-    "BEZERRA": {"Banda" : "Bezerra da Silva", "Categoria" : "Sambistas"},
-    "NOEL": {"Banda" : "Noel Rosa", "Categoria" : "Sambistas"},
-    "DARTH VADER": {"Banda" : "Star Wars", "Categoria" : "Filmes e Series"},
-    "KORN": {"Banda" : "Korn", "Categoria" : "Bandas"},
-    "ELVIS": {"Banda" : "Elvis Presley", "Categoria" : "Bandas"},
-    "RUSH": {"Banda" : "Rush", "Categoria" : "Bandas"},
-    "FOO FIGHTERS": {"Banda" : "Foo Fighters", "Categoria" : "Bandas"},
-    "GUNS": {"Banda" : "Guns n' Roses", "Categoria" : "Bandas"},
-    "STROKES": {"Banda" : "The Strokes", "Categoria" : "Bandas"},
-    "LED": {"Banda" : "Led Zeppelin", "Categoria" : "Bandas"},
-    "JOAO NOGUEIRA": {"Banda" : "João Nogueira", "Categoria" : "Sambistas"},
-    "TOM JOBIM": {"Banda" : "Tom Jobin", "Categoria" : "Sambistas"},
-    "TOJOBIM": {"Banda" : "Tom Jobin", "Categoria" : "Sambistas"},
-    "VINICIUS": {"Banda" : "Vinícius de Morais", "Categoria" : "Sambistas"},
-    "JASON": {"Banda" : "Terror", "Categoria" : "Filmes e Series"},
-    "TIM MAIA": {"Banda" : "Tim Maia", "Categoria" : "Bandas"},
-    "TIMAIA": {"Banda" : "Tim Maia", "Categoria" : "Bandas"},
-    "CORINGA": {"Banda" : "Quadrinhos", "Categoria" : "Animes, Games e Quadrinhos"},
-    "SLASH": {"Banda" : "Slash", "Categoria" : "Bandas"},
-    "OASIS": {"Banda" : "Oasis", "Categoria" : "Bandas"},
-    "DREAM THEATER": {"Banda" : "Dream Theater", "Categoria" : "Bandas"},
-    "HENDRIX": {"Banda" : "Jimi Hendrix", "Categoria" : "Bandas"},
-    "AUDIOSLAVE": {"Banda" : "Audioslave", "Categoria" : "Bandas"},
-    "IBANEZ": {"Banda" : "Instrumentos Musicais", "Categoria" : "Instrumentos"},
-    "BATHORY": {"Banda" : "Bathory", "Categoria" : "Bandas"},
-    "MAYHEM": {"Banda" : "Mayhem", "Categoria" : "Bandas"},
-    "MAYHEN": {"Banda" : "Mayhem", "Categoria" : "Bandas"},
-    "MAYHEAZUL": {"Banda" : "Mayhem", "Categoria" : "Bandas"},
-    "ENGENEIROS": {"Banda" : "Engenheiros do Hawaii", "Categoria" : "Bandas"},
-    "ZILDJIAN": {"Banda" : "Instrumentos Musicais", "Categoria" : "Instrumentos"},
-    "DARK THRONE": {"Banda" : "Darkthrone", "Categoria" : "Bandas"},
-    "DIMMU BORGIR": {"Banda" : "Dimmu Borgir", "Categoria" : "Bandas"},
-    "JUSTICEIRO": {"Banda" : "Quadrinhos", "Categoria" : "Animes, Games e Quadrinhos"},
-    "CANNIBAL CORPSES": {"Banda" : "Cannibal Corpse", "Categoria" : "Bandas"},
-    "CANNIBAL CORPSE": {"Banda" : "Cannibal Corpse", "Categoria" : "Bandas"},
-    "RAGE AGAINST": {"Banda" : "Rage Against the Machine", "Categoria" : "Bandas"},
-    "DEF LEPPPARD": {"Banda" : "Def Leppard", "Categoria" : "Bandas"},
-    "DEF LEPPARD": {"Banda" : "Def Leppard", "Categoria" : "Bandas"},
-    "WHITESNAKE": {"Banda" : "Whitesnake", "Categoria" : "Bandas"},
-    "DEATH LOGO": {"Banda" : "Death", "Categoria" : "Bandas"},
-    "ALICE": {"Banda" : "Alice in Chains", "Categoria" : "Bandas"},
-    "DARK SIDE": {"Banda" : "Pink Floyd", "Categoria" : "Bandas"},
-    "JOY DIVISION": {"Banda" : "Joy Division", "Categoria" : "Bandas"},
-    "KILLERS": {"Banda" : "The Killers", "Categoria" : "Bandas"},
-    "CAPACETE STORMTROOPER": {"Banda" : "Star Wars", "Categoria" : "Filmes e Series"},
-    "DAVID CAVEIRA": {"Banda" : "David Bowie", "Categoria" : "Bandas"},
-    "TIO SAM": {"Banda" : "Quadrinhos", "Categoria" : "Animes, Games e Quadrinhos"},
-    "GUITARRA": {"Banda" : "Caveira", "Categoria" : "Caveiras e Tattoos"},
-    "CANDEIA": {"Banda" : "Candeia", "Categoria" : "Sambistas"},
-    "MEXICANA TATTOO": {"Banda" : "Tattoo", "Categoria" : "Caveiras e Tattoos"},
-    "CARPA": {"Banda" : "Tattoo", "Categoria" : "Caveiras e Tattoos"},
-    "BATERIA": {"Banda" : "Instrumentos Musicais", "Categoria" : "Instrumentos"},
-    "CHUCKY": {"Banda" : "Terror", "Categoria" : "Filmes e Series"},
-    "CARTOLA": {"Banda" : "Cartola", "Categoria" : "Sambistas"},
-    "GOD OF WAR": {"Banda" : "Games", "Categoria" : "Animes, Games e Quadrinhos"},
-    "PIXINGUINHA": {"Banda" : "Pixinguinha", "Categoria" : "Sambistas"},
-    "JIM CAVEIRA": {"Banda" : "The Doors", "Categoria" : "Bandas"},
-    "DEATH NOTE": {"Banda" : "Death Note", "Categoria" : "Animes, Games e Quadrinhos"},
-    "BLEACH": {"Banda" : "Bleach", "Categoria" : "Animes, Games e Quadrinhos"},
-    "ONE PEACE": {"Banda" : "One Piece", "Categoria" : "Animes, Games e Quadrinhos"},
-    "ONE PIECE": {"Banda" : "One Piece", "Categoria" : "Animes, Games e Quadrinhos"},
-    "JHONNY CASH": {"Banda" : "Johnny Cash", "Categoria" : "Bandas"},
-    "JOHNNY CASH": {"Banda" : "Johnny Cash", "Categoria" : "Bandas"},
-    "SOUNDGARDEN": {"Banda" : "Soundgarden", "Categoria" : "Bandas"},
-    "CURE BOYS": {"Banda" : "The Cure", "Categoria" : "Bandas"},
-    "THE CURE": {"Banda" : "The Cure", "Categoria" : "Bandas"},
-    "LEAGUE OF LEGENDS": {"Banda" : "Games", "Categoria" : "Animes, Games e Quadrinhos"},
-    "ASSASSINS CREED": {"Banda" : "Games", "Categoria" : "Animes, Games e Quadrinhos"},
-    "TROOPER A PE": {"Banda" : "Star Wars", "Categoria" : "Filmes e Series"},
-    "AVENGED": {"Banda" : "Avenged Sevenfold", "Categoria" : "Bandas"},
-    "SLIPKNOT": {"Banda" : "Slipknot", "Categoria" : "Bandas"},
-    "MARILYN MANSON": {"Banda" : "Marilyn Manson", "Categoria" : "Bandas"},
-    "PIRATAS DO CARIBE": {"Banda" : "Filmes", "Categoria" : "Filmes e Series"},
-    "RAMMSTEIN": {"Banda" : "Rammstein", "Categoria" : "Bandas"},
-    "HELLRAISER": {"Banda" : "Hellraiser", "Categoria" : "Bandas"},
-    "WALKING DEAD": {"Banda" : "The Walking Dead", "Categoria" : "Filmes e Series"},
-    "WALKING": {"Banda" : "The Walking Dead", "Categoria" : "Filmes e Series"},
-    "WALKINDEAD": {"Banda" : "The Walking Dead", "Categoria" : "Filmes e Series"},
-    "DISTURBED": {"Banda" : "Disturbed", "Categoria" : "Bandas"},
-    "CANNIBAL ESVICERATION": {"Banda" : "Cannibal Corpse", "Categoria" : "Bandas"},
-    "BLIND GUARDIAN": {"Banda" : "Blind Guardian", "Categoria" : "Bandas"},
-    "DORRS": {"Banda" : "The Doors", "Categoria" : "Bandas"},
-    "ASKING": {"Banda" : "Asking Alexandria", "Categoria" : "Bandas"},
-    "EDDIE": {"Banda" : "Iron Maiden", "Categoria" : "Bandas"},
-    "MARIO LUIGI": {"Banda" : "Games", "Categoria" : "Animes, Games e Quadrinhos"},
-    "NARUTO": {"Banda" : "Naruto", "Categoria" : "Animes, Games e Quadrinhos"},
-    "OFFSPRING": {"Banda" : "The Offspring", "Categoria" : "Bandas"},
-    "SYSTEALVO": {"Banda" : "System Of A Down", "Categoria" : "Bandas"},
-    "SYSTEBANDA": {"Banda" : "System Of A Down", "Categoria" : "Bandas"},
-    "SYSTEMEZMERIZE": {"Banda" : "System Of A Down", "Categoria" : "Bandas"},
-    "SYSTEBONEQUINHOS": {"Banda" : "System Of A Down", "Categoria" : "Bandas"},
-    "SYSTEHYPNOTIZE": {"Banda" : "System Of A Down", "Categoria" : "Bandas"},
-    "SYSTEMAO": {"Banda" : "System Of A Down", "Categoria" : "Bandas"},
-    "DREATHEATER": {"Banda" : "Dream Theater", "Categoria" : "Bandas"},
-    "BURZUFILOSOFEN": {"Banda" : "Filosofem", "Categoria" : "Bandas"},
-    "ARCTIC MONKEYS": {"Banda" : "Artic Monkeys", "Categoria" : "Bandas"},
-    "BURZUDET": {"Banda" : "Filosofem", "Categoria" : "Bandas"},
-    "BURZUM": {"Banda" : "Burzum", "Categoria" : "Bandas"},
-    "MOTO INDIAN" : {"Banda" : "Moto Indian", "Categoria" : "Motos"},
-    "DAVID ROSTO": {"Banda" : "Caveira", "Categoria" : "Caveiras e Tattoos"},
-    "CAVEIRINHAS": {"Banda" : "Caveira", "Categoria" : "Caveiras e Tattoos"},
-    "INDIO COCAR": {"Banda" : "Índio Cocar", "Categoria" : "Outros"},
-    "ZUMBI HARDCORE": {"Banda" : "Zumbi Hardcore", "Categoria" : "Outros"}
+    "ACDC": {
+        "Banda": "AC/DC",
+        "Categoria": "Bandas"
+    },
+    "ALICE IN CHAINS": {
+        "Banda": "Alice in Chains",
+        "Categoria": "Bandas"
+    },
+    "AMON AMARTH": {
+        "Banda": "Amon Amarth",
+        "Categoria": "Bandas"
+    },
+    "AMY": {
+        "Banda": "Amy Winehouse",
+        "Categoria": "Bandas"
+    },
+    "ANGRA": {
+        "Banda": "Angra",
+        "Categoria": "Bandas"
+    },
+    "ANTHRAX": {
+        "Banda": "Anthrax",
+        "Categoria": "Bandas"
+    },
+    "ARTIC MONKEYS": {
+        "Banda": "Artic Monkeys",
+        "Categoria": "Bandas"
+    },
+    "BLACK SABBATH": {
+        "Banda": "Black Sabbath",
+        "Categoria": "Bandas"
+    },
+    "METALLICA": {
+        "Banda": "Metallica",
+        "Categoria": "Bandas"
+    },
+    "BAD RELIGION": {
+        "Banda": "Bad Religion",
+        "Categoria": "Bandas"
+    },
+    "PINK FLOYD": {
+        "Banda": "Pink Floyd",
+        "Categoria": "Bandas"
+    },
+    "RAMONES": {
+        "Banda": "Ramones",
+        "Categoria": "Bandas"
+    },
+    "STONES": {
+        "Banda": "Rolling Stones",
+        "Categoria": "Bandas"
+    },
+    "PASSARO VERMELHO": {
+        "Banda": "Passaro Vermelho",
+        "Categoria": "Outros"
+    },
+    "RED HOT": {
+        "Banda": "Red Hot Chili Peppers",
+        "Categoria": "Bandas"
+    },
+    "BEATLES": {
+        "Banda": "Beatles",
+        "Categoria": "Bandas"
+    },
+    "JACK DANIELS": {
+        "Banda": "Jack Daniels",
+        "Categoria": "Bandas"
+    },
+    "V DE VINGANCA": {
+        "Banda": "V de Vingança",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "CALL OF DUTY": {
+        "Banda": "Call of Duty",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "BAZINGA": {
+        "Banda": "The Big Bang Theory",
+        "Categoria": "Filmes e Series"
+    },
+    "NIRVANA": {
+        "Banda": "Nirvana",
+        "Categoria": "Bandas"
+    },
+    "LARANJA MECANICA": {
+        "Banda": "Laranja Mecânica",
+        "Categoria": "Filmes e Series"
+    },
+    "GAMES": {
+        "Banda": "Game of Thrones",
+        "Categoria": "Filmes e Series"
+    },
+    "GAME OF THRONES": {
+        "Banda": "Game of Thrones",
+        "Categoria": "Filmes e Series"
+    },
+    "SLAYER": {
+        "Banda": "Slayer",
+        "Categoria": "Bandas"
+    },
+    "THE CLASH": {
+        "Banda": "The Clash",
+        "Categoria": "Bandas"
+    },
+    "GHOST": {
+        "Banda": "Ghost",
+        "Categoria": "Bandas"
+    },
+    "JUDAS": {
+        "Banda": "Judas",
+        "Categoria": "Bandas"
+    },
+    "WASP": {
+        "Banda": "Wasp",
+        "Categoria": "Bandas"
+    },
+    "SARCOFAGO": {
+        "Banda": "Sarcofago",
+        "Categoria": "Bandas"
+    },
+    "JAMES BROWN": {
+        "Banda": "James Brown",
+        "Categoria": "Bandas"
+    },
+    "EXODUS": {
+        "Banda": "Exodus",
+        "Categoria": "Bandas"
+    },
+    "KREATOR": {
+        "Banda": "Kreator",
+        "Categoria": "Bandas"
+    },
+    "OBITUARY": {
+        "Banda": "Obituary",
+        "Categoria": "Bandas"
+    },
+    "MEGADETH": {
+        "Banda": "Megadeth",
+        "Categoria": "Bandas"
+    },
+    "DEEP PURPLE": {
+        "Banda": "Deep Purple",
+        "Categoria": "Bandas"
+    },
+    "PANTERA": {
+        "Banda": "Pantera",
+        "Categoria": "Bandas"
+    },
+    "OZZY": {
+        "Banda": "Ozzy Osbourne",
+        "Categoria": "Bandas"
+    },
+    "SCORPIONS": {
+        "Banda": "Scorpions",
+        "Categoria": "Bandas"
+    },
+    "YES": {
+        "Banda": "Yes",
+        "Categoria": "Bandas"
+    },
+    "KISS": {
+        "Banda": "Kiss",
+        "Categoria": "Bandas"
+    },
+    "BEATELS": {
+        "Banda": "Beatles",
+        "Categoria": "Bandas"
+    },
+    "DIO": {
+        "Banda": "Dio",
+        "Categoria": "Bandas"
+    },
+    "BACK SABBATH": {
+        "Banda": "Black Sabbath",
+        "Categoria": "Bandas"
+    },
+    "RAINBOW": {
+        "Banda": "Rainbow",
+        "Categoria": "Bandas"
+    },
+    "TESTAMENT": {
+        "Banda": "Testament",
+        "Categoria": "Bandas"
+    },
+    "VENON": {
+        "Banda": "Venon",
+        "Categoria": "Bandas"
+    },
+    "DEICEIDE": {
+        "Banda": "Deicide",
+        "Categoria": "Bandas"
+    },
+    "DEICIDE": {
+        "Banda": "Deicide",
+        "Categoria": "Bandas"
+    },
+    "DESTRUCTION": {
+        "Banda": "Destruction",
+        "Categoria": "Bandas"
+    },
+    "SEPULTURA": {
+        "Banda": "Sepultura",
+        "Categoria": "Bandas"
+    },
+    "BLACK ANGEL": {
+        "Banda": "Black Angel",
+        "Categoria": "Bandas"
+    },
+    "MERCYFUL FATE": {
+        "Banda": "Mercyful Fate",
+        "Categoria": "Bandas"
+    },
+    "HELLOWEEN": {
+        "Banda": "Helloween",
+        "Categoria": "Bandas"
+    },
+    "DRI": {
+        "Banda": "DRI",
+        "Categoria": "Bandas"
+    },
+    "MORBID ANGEL": {
+        "Banda": "Morbid Angel",
+        "Categoria": "Bandas"
+    },
+    "LYNYRD": {
+        "Banda": "Lynyrd Skynyrd",
+        "Categoria": "Bandas"
+    },
+    "HARLEY": {
+        "Banda": "Harley-Davidson",
+        "Categoria": "Motos"
+    },
+    "SEX PISTOLS": {
+        "Banda": "Sex Pistols",
+        "Categoria": "Bandas"
+    },
+    "VAN HALEN": {
+        "Banda": "Van Halen",
+        "Categoria": "Bandas"
+    },
+    "ENGENHEIROS": {
+        "Banda": "Engenheiros do Hawaii",
+        "Categoria": "Bandas"
+    },
+    "JETHRO TULL": {
+        "Banda": "Jethro Tull",
+        "Categoria": "Bandas"
+    },
+    "BLACK LABEL SOCIETY": {
+        "Banda": "Black Label Society",
+        "Categoria": "Bandas"
+    },
+    "SMITHS": {
+        "Banda": "The Smiths",
+        "Categoria": "Bandas"
+    },
+    "SONIC YOUTH": {
+        "Banda": "Sonic Youth",
+        "Categoria": "Bandas"
+    },
+    "PATERA": {
+        "Banda": "Pantera",
+        "Categoria": "Bandas"
+    },
+    "THE WHO": {
+        "Banda": "The Who",
+        "Categoria": "Bandas"
+    },
+    "STAR WARS": {
+        "Banda": "Star Wars",
+        "Categoria": "Filmes e Series"
+    },
+    "GIBSON": {
+        "Banda": "Guitarra",
+        "Categoria": "Instrumentos"
+    },
+    "FENDER": {
+        "Banda": "Guitarra",
+        "Categoria": "Instrumentos"
+    },
+    "PODEROSO CHEFAO": {
+        "Banda": "O Poderoso Chefão",
+        "Categoria": "Filmes e Series"
+    },
+    "HEINEKEN": {
+        "Banda": "Heineken",
+        "Categoria": "Outros"
+    },
+    "MISFITS": {
+        "Banda": "Misfits",
+        "Categoria": "Bandas"
+    },
+    "THE STROKES": {
+        "Banda": "The Strokes",
+        "Categoria": "Bandas"
+    },
+    "IRON": {
+        "Banda": "Iron Maiden",
+        "Categoria": "Bandas"
+    },
+    "LED ZEPPELING": {
+        "Banda": "Led Zeppelin",
+        "Categoria": "Bandas"
+    },
+    "LED ZEPPELIN": {
+        "Banda": "Led Zeppelin",
+        "Categoria": "Bandas"
+    },
+    "MOTORHEAD": {
+        "Banda": "Motorhead",
+        "Categoria": "Bandas"
+    },
+    "MARSHALL": {
+        "Banda": "Instrumentos Musicais",
+        "Categoria": "Instrumentos"
+    },
+    "EVANESCENCE": {
+        "Banda": "Evanescence",
+        "Categoria": "Bandas"
+    },
+    "LEGIAO": {
+        "Banda": "Legião Urbana",
+        "Categoria": "Bandas"
+    },
+    "SYSTEM": {
+        "Banda": "System Of A Down",
+        "Categoria": "Bandas"
+    },
+    "GREEN DAY": {
+        "Banda": "Green Day",
+        "Categoria": "Bandas"
+    },
+    "PEARL": {
+        "Banda": "Pearl Jam",
+        "Categoria": "Bandas"
+    },
+    "PEARL JAM": {
+        "Banda": "Pearl Jam",
+        "Categoria": "Bandas"
+    },
+    "DOORS": {
+        "Banda": "The Doors",
+        "Categoria": "Bandas"
+    },
+    "THE DOORS": {
+        "Banda": "The Doors",
+        "Categoria": "Bandas"
+    },
+    "JANIS": {
+        "Banda": "Janis Joplin",
+        "Categoria": "Bandas"
+    },
+    "RAUL": {
+        "Banda": "Raul Seixas",
+        "Categoria": "Bandas"
+    },
+    "LINKIN": {
+        "Banda": "Linkin Park",
+        "Categoria": "Bandas"
+    },
+    "BON JOVI": {
+        "Banda": "Bon Jovi",
+        "Categoria": "Bandas"
+    },
+    "QUEEN": {
+        "Banda": "Queen",
+        "Categoria": "Bandas"
+    },
+    "CAVEIRA": {
+        "Banda": "Caveira",
+        "Categoria": "Caveiras e Tattoos"
+    },
+    "MARILYN CAVEIRA": {
+        "Banda": "Caveira",
+        "Categoria": "Caveiras e Tattoos"
+    },
+    "JIMI": {
+        "Banda": "Jimi Hendrix",
+        "Categoria": "Bandas"
+    },
+    "BEZERRA": {
+        "Banda": "Bezerra da Silva",
+        "Categoria": "Sambistas"
+    },
+    "NOEL": {
+        "Banda": "Noel Rosa",
+        "Categoria": "Sambistas"
+    },
+    "DARTH VADER": {
+        "Banda": "Star Wars",
+        "Categoria": "Filmes e Series"
+    },
+    "KORN": {
+        "Banda": "Korn",
+        "Categoria": "Bandas"
+    },
+    "ELVIS": {
+        "Banda": "Elvis Presley",
+        "Categoria": "Bandas"
+    },
+    "RUSH": {
+        "Banda": "Rush",
+        "Categoria": "Bandas"
+    },
+    "FOO FIGHTERS": {
+        "Banda": "Foo Fighters",
+        "Categoria": "Bandas"
+    },
+    "GUNS": {
+        "Banda": "Guns n' Roses",
+        "Categoria": "Bandas"
+    },
+    "STROKES": {
+        "Banda": "The Strokes",
+        "Categoria": "Bandas"
+    },
+    "LED": {
+        "Banda": "Led Zeppelin",
+        "Categoria": "Bandas"
+    },
+    "JOAO NOGUEIRA": {
+        "Banda": "João Nogueira",
+        "Categoria": "Sambistas"
+    },
+    "TOM JOBIM": {
+        "Banda": "Tom Jobin",
+        "Categoria": "Sambistas"
+    },
+    "TOJOBIM": {
+        "Banda": "Tom Jobin",
+        "Categoria": "Sambistas"
+    },
+    "VINICIUS": {
+        "Banda": "Vinícius de Morais",
+        "Categoria": "Sambistas"
+    },
+    "JASON": {
+        "Banda": "Terror",
+        "Categoria": "Filmes e Series"
+    },
+    "TIM MAIA": {
+        "Banda": "Tim Maia",
+        "Categoria": "Bandas"
+    },
+    "TIMAIA": {
+        "Banda": "Tim Maia",
+        "Categoria": "Bandas"
+    },
+    "CORINGA": {
+        "Banda": "Quadrinhos",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "SLASH": {
+        "Banda": "Slash",
+        "Categoria": "Bandas"
+    },
+    "OASIS": {
+        "Banda": "Oasis",
+        "Categoria": "Bandas"
+    },
+    "DREAM THEATER": {
+        "Banda": "Dream Theater",
+        "Categoria": "Bandas"
+    },
+    "HENDRIX": {
+        "Banda": "Jimi Hendrix",
+        "Categoria": "Bandas"
+    },
+    "AUDIOSLAVE": {
+        "Banda": "Audioslave",
+        "Categoria": "Bandas"
+    },
+    "IBANEZ": {
+        "Banda": "Instrumentos Musicais",
+        "Categoria": "Instrumentos"
+    },
+    "BATHORY": {
+        "Banda": "Bathory",
+        "Categoria": "Bandas"
+    },
+    "MAYHEM": {
+        "Banda": "Mayhem",
+        "Categoria": "Bandas"
+    },
+    "MAYHEN": {
+        "Banda": "Mayhem",
+        "Categoria": "Bandas"
+    },
+    "MAYHEAZUL": {
+        "Banda": "Mayhem",
+        "Categoria": "Bandas"
+    },
+    "ENGENEIROS": {
+        "Banda": "Engenheiros do Hawaii",
+        "Categoria": "Bandas"
+    },
+    "ZILDJIAN": {
+        "Banda": "Instrumentos Musicais",
+        "Categoria": "Instrumentos"
+    },
+    "DARK THRONE": {
+        "Banda": "Darkthrone",
+        "Categoria": "Bandas"
+    },
+    "DIMMU BORGIR": {
+        "Banda": "Dimmu Borgir",
+        "Categoria": "Bandas"
+    },
+    "JUSTICEIRO": {
+        "Banda": "Quadrinhos",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "CANNIBAL CORPSES": {
+        "Banda": "Cannibal Corpse",
+        "Categoria": "Bandas"
+    },
+    "CANNIBAL CORPSE": {
+        "Banda": "Cannibal Corpse",
+        "Categoria": "Bandas"
+    },
+    "RAGE AGAINST": {
+        "Banda": "Rage Against the Machine",
+        "Categoria": "Bandas"
+    },
+    "DEF LEPPPARD": {
+        "Banda": "Def Leppard",
+        "Categoria": "Bandas"
+    },
+    "DEF LEPPARD": {
+        "Banda": "Def Leppard",
+        "Categoria": "Bandas"
+    },
+    "WHITESNAKE": {
+        "Banda": "Whitesnake",
+        "Categoria": "Bandas"
+    },
+    "DEATH LOGO": {
+        "Banda": "Death",
+        "Categoria": "Bandas"
+    },
+    "ALICE": {
+        "Banda": "Alice in Chains",
+        "Categoria": "Bandas"
+    },
+    "DARK SIDE": {
+        "Banda": "Pink Floyd",
+        "Categoria": "Bandas"
+    },
+    "JOY DIVISION": {
+        "Banda": "Joy Division",
+        "Categoria": "Bandas"
+    },
+    "KILLERS": {
+        "Banda": "The Killers",
+        "Categoria": "Bandas"
+    },
+    "CAPACETE STORMTROOPER": {
+        "Banda": "Star Wars",
+        "Categoria": "Filmes e Series"
+    },
+    "DAVID CAVEIRA": {
+        "Banda": "David Bowie",
+        "Categoria": "Bandas"
+    },
+    "TIO SAM": {
+        "Banda": "Quadrinhos",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "GUITARRA": {
+        "Banda": "Caveira",
+        "Categoria": "Caveiras e Tattoos"
+    },
+    "CANDEIA": {
+        "Banda": "Candeia",
+        "Categoria": "Sambistas"
+    },
+    "MEXICANA TATTOO": {
+        "Banda": "Tattoo",
+        "Categoria": "Caveiras e Tattoos"
+    },
+    "CARPA": {
+        "Banda": "Tattoo",
+        "Categoria": "Caveiras e Tattoos"
+    },
+    "BATERIA": {
+        "Banda": "Instrumentos Musicais",
+        "Categoria": "Instrumentos"
+    },
+    "CHUCKY": {
+        "Banda": "Terror",
+        "Categoria": "Filmes e Series"
+    },
+    "CARTOLA": {
+        "Banda": "Cartola",
+        "Categoria": "Sambistas"
+    },
+    "GOD OF WAR": {
+        "Banda": "Games",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "PIXINGUINHA": {
+        "Banda": "Pixinguinha",
+        "Categoria": "Sambistas"
+    },
+    "JIM CAVEIRA": {
+        "Banda": "The Doors",
+        "Categoria": "Bandas"
+    },
+    "DEATH NOTE": {
+        "Banda": "Death Note",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "BLEACH": {
+        "Banda": "Bleach",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "ONE PEACE": {
+        "Banda": "One Piece",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "ONE PIECE": {
+        "Banda": "One Piece",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "JHONNY CASH": {
+        "Banda": "Johnny Cash",
+        "Categoria": "Bandas"
+    },
+    "JOHNNY CASH": {
+        "Banda": "Johnny Cash",
+        "Categoria": "Bandas"
+    },
+    "SOUNDGARDEN": {
+        "Banda": "Soundgarden",
+        "Categoria": "Bandas"
+    },
+    "CURE BOYS": {
+        "Banda": "The Cure",
+        "Categoria": "Bandas"
+    },
+    "THE CURE": {
+        "Banda": "The Cure",
+        "Categoria": "Bandas"
+    },
+    "LEAGUE OF LEGENDS": {
+        "Banda": "Games",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "ASSASSINS CREED": {
+        "Banda": "Games",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "TROOPER A PE": {
+        "Banda": "Star Wars",
+        "Categoria": "Filmes e Series"
+    },
+    "AVENGED": {
+        "Banda": "Avenged Sevenfold",
+        "Categoria": "Bandas"
+    },
+    "SLIPKNOT": {
+        "Banda": "Slipknot",
+        "Categoria": "Bandas"
+    },
+    "MARILYN MANSON": {
+        "Banda": "Marilyn Manson",
+        "Categoria": "Bandas"
+    },
+    "PIRATAS DO CARIBE": {
+        "Banda": "Filmes",
+        "Categoria": "Filmes e Series"
+    },
+    "RAMMSTEIN": {
+        "Banda": "Rammstein",
+        "Categoria": "Bandas"
+    },
+    "HELLRAISER": {
+        "Banda": "Hellraiser",
+        "Categoria": "Bandas"
+    },
+    "WALKING DEAD": {
+        "Banda": "The Walking Dead",
+        "Categoria": "Filmes e Series"
+    },
+    "WALKING": {
+        "Banda": "The Walking Dead",
+        "Categoria": "Filmes e Series"
+    },
+    "WALKINDEAD": {
+        "Banda": "The Walking Dead",
+        "Categoria": "Filmes e Series"
+    },
+    "DISTURBED": {
+        "Banda": "Disturbed",
+        "Categoria": "Bandas"
+    },
+    "CANNIBAL ESVICERATION": {
+        "Banda": "Cannibal Corpse",
+        "Categoria": "Bandas"
+    },
+    "BLIND GUARDIAN": {
+        "Banda": "Blind Guardian",
+        "Categoria": "Bandas"
+    },
+    "DORRS": {
+        "Banda": "The Doors",
+        "Categoria": "Bandas"
+    },
+    "ASKING": {
+        "Banda": "Asking Alexandria",
+        "Categoria": "Bandas"
+    },
+    "EDDIE": {
+        "Banda": "Iron Maiden",
+        "Categoria": "Bandas"
+    },
+    "MARIO LUIGI": {
+        "Banda": "Games",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "NARUTO": {
+        "Banda": "Naruto",
+        "Categoria": "Animes, Games e Quadrinhos"
+    },
+    "OFFSPRING": {
+        "Banda": "The Offspring",
+        "Categoria": "Bandas"
+    },
+    "SYSTEALVO": {
+        "Banda": "System Of A Down",
+        "Categoria": "Bandas"
+    },
+    "SYSTEBANDA": {
+        "Banda": "System Of A Down",
+        "Categoria": "Bandas"
+    },
+    "SYSTEMEZMERIZE": {
+        "Banda": "System Of A Down",
+        "Categoria": "Bandas"
+    },
+    "SYSTEBONEQUINHOS": {
+        "Banda": "System Of A Down",
+        "Categoria": "Bandas"
+    },
+    "SYSTEHYPNOTIZE": {
+        "Banda": "System Of A Down",
+        "Categoria": "Bandas"
+    },
+    "SYSTEMAO": {
+        "Banda": "System Of A Down",
+        "Categoria": "Bandas"
+    },
+    "DREATHEATER": {
+        "Banda": "Dream Theater",
+        "Categoria": "Bandas"
+    },
+    "BURZUFILOSOFEN": {
+        "Banda": "Filosofem",
+        "Categoria": "Bandas"
+    },
+    "ARCTIC MONKEYS": {
+        "Banda": "Artic Monkeys",
+        "Categoria": "Bandas"
+    },
+    "BURZUDET": {
+        "Banda": "Filosofem",
+        "Categoria": "Bandas"
+    },
+    "BURZUM": {
+        "Banda": "Burzum",
+        "Categoria": "Bandas"
+    },
+    "MOTO INDIAN": {
+        "Banda": "Moto Indian",
+        "Categoria": "Motos"
+    },
+    "DAVID ROSTO": {
+        "Banda": "Caveira",
+        "Categoria": "Caveiras e Tattoos"
+    },
+    "CAVEIRINHAS": {
+        "Banda": "Caveira",
+        "Categoria": "Caveiras e Tattoos"
+    },
+    "INDIO COCAR": {
+        "Banda": "Índio Cocar",
+        "Categoria": "Outros"
+    },
+    "ZUMBI HARDCORE": {
+        "Banda": "Zumbi Hardcore",
+        "Categoria": "Outros"
+    }
 
 }

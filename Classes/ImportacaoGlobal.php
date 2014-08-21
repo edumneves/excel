@@ -1,19 +1,19 @@
 <?php
-const IND_COD 			= 'A';
-const IND_COD_BARRA 	= 'B';
-const IND_DESC 			= 'C';
-const IND_COD_FORN 		= 'D';
-const IND_REF_FORN 		= 'E';
-const IND_PREC_CUSTO 	= 'F';
-const IND_PREC_VENDA 	= 'G';
-const IND_SALDO 		= 'H';
-const IND_SALDO_PESO 	= 'I';
+const IND_COD = 'A';
+const IND_COD_BARRA = 'B';
+const IND_DESC = 'C';
+const IND_COD_FORN = 'D';
+const IND_REF_FORN = 'E';
+const IND_PREC_CUSTO = 'F';
+const IND_PREC_VENDA = 'G';
+const IND_SALDO = 'H';
+const IND_SALDO_PESO = 'I';
 
 const PRECO_VENDA = 30;
 const PRECO_CUSTO = 15;
 
 
-$tamanhos = array ("2A", "4A", "6A", "8A","PP", "P", "M", "G", "GG", "XGG", "U");
+$tamanhos = array("2A", "4A", "6A", "8A", "PP", "P", "M", "G", "GG", "XGG", "U");
 
 $arqListaBandasJSON = "./Conf/listaBandas.json";
 $arqListaAcertosJSON = "./Conf/listaAcertos.json";
@@ -29,7 +29,8 @@ $listaChaves = array_keys($listaBandas);
 
 print_r($listaChaves);
 
-function binary_search(array $a, $first, $last, $key){
+function binary_search(array $a, $first, $last, $key)
+{
     $lo = $first;
     $hi = $last - 1;
 
@@ -49,9 +50,11 @@ function binary_search(array $a, $first, $last, $key){
 
 }
 
-class ImportacaoGlobal {
+class ImportacaoGlobal
+{
 
-    public static function getTipoItem(array $item){
+    public static function getTipoItem(array $item)
+    {
         $tipoItem = substr(ImportacaoGlobal::extraiCodigo($item), 0, 2);
         switch ($tipoItem) {
             case "AC":
@@ -62,71 +65,88 @@ class ImportacaoGlobal {
         return null;
     }
 
-    public static function extraiCodigo(array $item){
+    public static function extraiCodigo(array $item)
+    {
         $texto = trim($item[IND_COD]);
-        $texto = preg_replace( '/\s+/', ' ', $texto);
+        $texto = preg_replace('/\s+/', ' ', $texto);
         return ($texto);
     }
-    public static function extraiCodigoBarra(array $item){
+
+    public static function extraiCodigoBarra(array $item)
+    {
         $texto = trim($item[IND_COD_BARRA]);
-        $texto = preg_replace( '/\s+/', ' ', $texto);
+        $texto = preg_replace('/\s+/', ' ', $texto);
         return ($texto);
     }
-    public static function extraiDescricao(array $item){
+
+    public static function extraiDescricao(array $item)
+    {
         global $listaSubstituicoes;
         global $listaAcertos;
 
         $texto = trim($item[IND_DESC]);
-        $texto = preg_replace( '/\s+/', ' ', $texto);
+        $texto = preg_replace('/\s+/', ' ', $texto);
 
         $codigo = ImportacaoGlobal::extraiCodigo($item);
 
         //Faz replace dos acertos de texto
-        foreach($listaAcertos as $chave => $valor){
-            if ($chave == $codigo){
+        foreach ($listaAcertos as $chave => $valor) {
+            if ($chave == $codigo) {
                 $texto = $valor;
             }
         }
 
 
         //Faz replace dos acertos de texto
-        foreach($listaSubstituicoes as $chave => $valor){
+        foreach ($listaSubstituicoes as $chave => $valor) {
             $texto = str_replace($chave, $valor, $texto);
         }
 
         return ($texto);
     }
-    public static function extraiCodFornecedor(array $item){
+
+    public static function extraiCodFornecedor(array $item)
+    {
         $texto = trim($item[IND_COD_FORN]);
-        $texto = preg_replace( '/\s+/', ' ', $texto);
+        $texto = preg_replace('/\s+/', ' ', $texto);
         return ($texto);
     }
-    public static function extraiRefFornecedor(array $item){
+
+    public static function extraiRefFornecedor(array $item)
+    {
         $texto = trim($item[IND_REF_FORN]);
-        $texto = preg_replace( '/\s+/', ' ', $texto);
+        $texto = preg_replace('/\s+/', ' ', $texto);
         return ($texto);
     }
-    public static function extraiPrecoCusto(array $item){
+
+    public static function extraiPrecoCusto(array $item)
+    {
         $texto = trim($item[IND_PREC_CUSTO]);
-        $texto = preg_replace( '/\s+/', ' ', $texto);
+        $texto = preg_replace('/\s+/', ' ', $texto);
         return ($texto);
     }
-    public static function extraiPrecoVenda(array $item){
+
+    public static function extraiPrecoVenda(array $item)
+    {
         $texto = trim($item[IND_PREC_VENDA]);
-        $texto = preg_replace( '/\s+/', ' ', $texto);
+        $texto = preg_replace('/\s+/', ' ', $texto);
         return ($texto);
     }
-    public static function extraiSaldo(array $item){
+
+    public static function extraiSaldo(array $item)
+    {
         $texto = trim($item[IND_SALDO]);
-        $texto = preg_replace( '/\s+/', ' ', $texto);
+        $texto = preg_replace('/\s+/', ' ', $texto);
         return ($texto);
     }
-    public static function extraiSaldoPeso(array $item){
+
+    public static function extraiSaldoPeso(array $item)
+    {
         $texto = trim($item[IND_SALDO_PESO]);
-        $texto = preg_replace( '/\s+/', ' ', $texto);
+        $texto = preg_replace('/\s+/', ' ', $texto);
         return ($texto);
 
-        
+
     }
 }
 

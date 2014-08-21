@@ -10,7 +10,8 @@ include_once 'PHPExcel/IOFactory.php';
 
 $nomeRel = "./Saida/Relatorio_Fornecedor_Camisa.xlsx";
 
-function configuraDimensoesRelatorio($objPHPExcel){
+function configuraDimensoesRelatorio($objPHPExcel)
+{
     // Ajuste de tamanho das colunas
     $sheet = $objPHPExcel->getActiveSheet();
     $sheet->getColumnDimension('A')->setWidth(2);
@@ -24,11 +25,11 @@ function configuraDimensoesRelatorio($objPHPExcel){
     $sheet->getColumnDimension('I')->setWidth(8);
     $sheet->getColumnDimension('J')->setWidth(8);
 
-    $sheet->getStyle('A1:'. $objPHPExcel->getActiveSheet()->getHighestColumn() . '1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+    $sheet->getStyle('A1:' . $objPHPExcel->getActiveSheet()->getHighestColumn() . '1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 
-    $sheet->getStyle('D2:D'. $objPHPExcel->getActiveSheet()->getHighestRow())->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
-    $sheet->getStyle('E2:E'. $objPHPExcel->getActiveSheet()->getHighestRow())->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
-    $sheet->getStyle('E2:E'. $objPHPExcel->getActiveSheet()->getHighestRow())
+    $sheet->getStyle('D2:D' . $objPHPExcel->getActiveSheet()->getHighestRow())->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+    $sheet->getStyle('E2:E' . $objPHPExcel->getActiveSheet()->getHighestRow())->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
+    $sheet->getStyle('E2:E' . $objPHPExcel->getActiveSheet()->getHighestRow())
         ->getNumberFormat()
         ->setFormatCode(PHPExcel_Style_NumberFormat::FORMAT_TEXT);
 
@@ -106,8 +107,8 @@ function configuraDimensoesRelatorio($objPHPExcel){
     )->getBorders()->getAllBorders()->setBorderStyle(PHPExcel_Style_Border::BORDER_THICK);
 
     // Adiciona formula de sugestao
-    for($row = 3; $row <= $sheet->getHighestRow(); $row++){
-       $sheet->setCellValue("K". $row, "=CEILING(MAX(I". $row . ":J" . $row . ")*1.5,1)-SUM(G" . $row . ":H" . $row . ")");
+    for ($row = 3; $row <= $sheet->getHighestRow(); $row++) {
+        $sheet->setCellValue("K" . $row, "=CEILING(MAX(I" . $row . ":J" . $row . ")*1.5,1)-SUM(G" . $row . ":H" . $row . ")");
     }
 
     // Comentário na coluna de vendas
@@ -117,7 +118,6 @@ function configuraDimensoesRelatorio($objPHPExcel){
     $objCommentRichText = $sheet->getComment('J2')->getText()->createTextRun('Quantidade de vendas do mês atual.');
     $objCommentRichText->getFont()->setBold(true);
     $sheet->getComment('J2')->setWidth(200);
-
 
 
     // Comentário na coluna de sugestão
@@ -143,20 +143,21 @@ function configuraDimensoesRelatorio($objPHPExcel){
     $sheet->mergeCells('I1:J1');
 }
 
-function adicionaCabecalho(){
-   return array (
-       "Codigo",
-       "Forn.",
-       "Descricao",
-       "Tam.",
-       "Ref.",
-       "Ped.",
-       "Escr.",
-       "Loja",
-       "media 3 meses",
-       "Mes atual",
-       "Sugestao"
-   );
+function adicionaCabecalho()
+{
+    return array(
+        "Codigo",
+        "Forn.",
+        "Descricao",
+        "Tam.",
+        "Ref.",
+        "Ped.",
+        "Escr.",
+        "Loja",
+        "media 3 meses",
+        "Mes atual",
+        "Sugestao"
+    );
 }
 
 
@@ -249,7 +250,7 @@ while ($row = ibase_fetch_object($sth)) {
     $fornecedorAtual = $row->NOMEFOR;
 
     // Inicializa a variável e seta o título para o primeiro tipo de modelo
-    if ($fornecedorAnterior == ""){
+    if ($fornecedorAnterior == "") {
         $fornecedorAnterior = $fornecedorAtual;
 
         $objPHPExcel->getActiveSheet()->setTitle($fornecedorAnterior);
@@ -257,7 +258,7 @@ while ($row = ibase_fetch_object($sth)) {
     }
 
     // Se mudou o fornecedor então grava os dados e cria uma nova planilha
-    if ($fornecedorAnterior != "" && (strcmp($fornecedorAnterior, $fornecedorAtual)!=0)){
+    if ($fornecedorAnterior != "" && (strcmp($fornecedorAnterior, $fornecedorAtual) != 0)) {
 
         $fornecedorAnterior = $fornecedorAtual;
 
@@ -290,8 +291,8 @@ while ($row = ibase_fetch_object($sth)) {
     $loja = (int)trim($row->LOJA);
     if ($loja < 0)
         $loja = 0;
-    
-    $produtos[] = array (
+
+    $produtos[] = array(
         trim($row->CODIGO),
         trim($row->NOMEFOR),
         trim($row->DESCRICAO),
@@ -316,7 +317,7 @@ $objPHPExcel->getActiveSheet()
     );
 
 
-for ($i =0 ; $i < $indWorksheet; $i++){
+for ($i = 0; $i < $indWorksheet; $i++) {
     $objPHPExcel->setActiveSheetIndex($i);
     configuraDimensoesRelatorio($objPHPExcel);
 }
@@ -325,7 +326,6 @@ $objPHPExcel->setActiveSheetIndex(0);
 
 ibase_free_result($sth);
 ibase_close($dbh);
-
 
 
 // salva o arquivo

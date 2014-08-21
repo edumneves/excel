@@ -26,9 +26,9 @@ if ($handle) {
         $tipoItem = substr($vetorItem[0], 0, 2);
 
 //        echo "<pre>     " . $vetorItem[0] . " tamanho = " . $tamItem . " Tipo item = " . $tipoItem . "</pre><br>";
-        if (($tamItem == 10 || $tamItem == 11 ||$tamItem == 12) &&
+        if (($tamItem == 10 || $tamItem == 11 || $tamItem == 12) &&
             ($tipoItem == 'CM' || $tipoItem == 'AC')
-        ){
+        ) {
 //            echo "<pre>         ENTREI</pre><br>";
             $item = $vetorItem[0];
 
@@ -39,14 +39,14 @@ if ($handle) {
             $vetorVenda = explode(" ", $lineVenda);
 
             $vetorQuantidade = explode(",", $vetorVenda[0]);
-            $quantVenda =$vetorQuantidade[0];
+            $quantVenda = $vetorQuantidade[0];
             fwrite($csvRelatorio, $item . ";" . $quantVenda . "\n");
-  //          echo $item . ";" . $quantVenda . "<br>";
+            //          echo $item . ";" . $quantVenda . "<br>";
 
             if ($tipoItem == 'CM')
                 $quantCamisas = $quantCamisas + $quantVenda;
             if ($tipoItem == 'AC')
-                $quantAcessorios = $quantAcessorios+ $quantVenda;
+                $quantAcessorios = $quantAcessorios + $quantVenda;
         }
     }
     echo "<br><br> Quantidade de itens processados: <br> Camisas = " . $quantCamisas .

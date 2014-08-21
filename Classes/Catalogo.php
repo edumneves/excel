@@ -5,7 +5,8 @@ include_once 'CamisaAgrupada.php';
 include_once 'ImportacaoGlobal.php';
 include_once 'Conf.php';
 
-class Catalogo {
+class Catalogo
+{
     private $listaCamisas;
     private $listaCamisasAgrupadas;
     private $listaAcessorios;
@@ -14,22 +15,24 @@ class Catalogo {
     private $listaBD;
 
     // Estoque mínimo para mostrar em relatório
-    function getQuantMinEstoque($tipoModelo){
+    function getQuantMinEstoque($tipoModelo)
+    {
         global $rel_quant_min;
 
-        if (array_key_exists($tipoModelo, $rel_quant_min)){
+        if (array_key_exists($tipoModelo, $rel_quant_min)) {
             return $rel_quant_min[$tipoModelo];
         }
-        error_log ("Tipo de modelo (" . $tipoModelo . ") sem quantidade mínima definido. Usando 0.");
+        error_log("Tipo de modelo (" . $tipoModelo . ") sem quantidade mínima definido. Usando 0.");
         return 0;
     }
 
     // Compara por TipoModelo, Descrição Resumida, Tamanho
-    function comparaCamisas(Camisa $item1, Camisa $item2){
+    function comparaCamisas(Camisa $item1, Camisa $item2)
+    {
         $cmpTipoModelo = strcmp($item1->getTipoModelo(), $item2->getTipoModelo());
-        if ($cmpTipoModelo == 0){
+        if ($cmpTipoModelo == 0) {
             $cmpDescResumida = strcmp($item1->getDescricaoResumida(), $item2->getDescricaoResumida());
-            if ($cmpDescResumida == 0){
+            if ($cmpDescResumida == 0) {
                 global $tamanhos;
                 $ind1 = array_search($item1->getTamanho(), $tamanhos);
                 $ind2 = array_search($item2->getTamanho(), $tamanhos);
@@ -41,14 +44,15 @@ class Catalogo {
     }
 
     // Compara por TipoModelo, Fornecedor, Descrição Resumida, Tamanho
-    function comparaCamisasRelatorio(Camisa $item1, Camisa $item2){
+    function comparaCamisasRelatorio(Camisa $item1, Camisa $item2)
+    {
         $cmpTipoModelo = strcmp($item1->getTipoModelo(), $item2->getTipoModelo());
-        if ($cmpTipoModelo == 0){
+        if ($cmpTipoModelo == 0) {
 
             $cmpFornecedor = strcmp($item1->getCodFornecedor(), $item2->getCodFornecedor());
-            if ($cmpFornecedor == 0){
+            if ($cmpFornecedor == 0) {
                 $cmpDescResumida = strcmp($item1->getDescricaoResumida(), $item2->getDescricaoResumida());
-                if ($cmpDescResumida == 0){
+                if ($cmpDescResumida == 0) {
                     // Define ordem dos tamanhos de acordo com array global
                     global $tamanhos;
                     $ind1 = array_search($item1->getTamanho(), $tamanhos);
@@ -62,15 +66,16 @@ class Catalogo {
         return $cmpTipoModelo;
     }
 
-    public function montaCatalogo($sheetData, $listaBDext){
+    public function montaCatalogo($sheetData, $listaBDext)
+    {
         $this->listaBD = $listaBDext;
 
         // Percorre os objetos montando os ites do estoque
-        foreach($sheetData as $item) {
+        foreach ($sheetData as $item) {
             $itemEstoque = ItemFactory::criaItemEstoque($item);
-            if (is_object($itemEstoque)){
+            if (is_object($itemEstoque)) {
                 $tipoItem = get_class($itemEstoque);
-                switch ($tipoItem){
+                switch ($tipoItem) {
                     case "Acessorio":
                         $this->listaAcessorios[] = $itemEstoque;
                         break;
@@ -86,14 +91,14 @@ class Catalogo {
         //Confere e cria os itens agrupados
 
         $camisaAgrupada = new CamisaAgrupada($this->listaCamisas[0]);
-        for ($indCamisa = 1, $indCamisaAnterior = 0; $indCamisa < count($this->listaCamisas); $indCamisa++){
+        for ($indCamisa = 1, $indCamisaAnterior = 0; $indCamisa < count($this->listaCamisas); $indCamisa++) {
             $camisaAtual = $this->listaCamisas[$indCamisa];
             $camisaAnterior = $this->listaCamisas[$indCamisaAnterior];
 
             // Se as camisas são iguais
-            if (strcmp($camisaAnterior->getTitulo(), $camisaAtual->getTitulo())==0){
+            if (strcmp($camisaAnterior->getTitulo(), $camisaAtual->getTitulo()) == 0) {
                 // Se não tiver agrupamento, cria um novo e adiciona a camisa anterior
-                if (!isset($camisaAgrupada)){
+                if (!isset($camisaAgrupada)) {
                     $camisaAgrupada = new CamisaAgrupada($camisaAnterior);
                     $camisaAgrupada->addListaCamisa($camisaAnterior);
                 }
@@ -103,7 +108,7 @@ class Catalogo {
             } else {
                 // Se as camisas são diferentes
                 // Se só tem uma camisa diferente, não precisa criar grupamento
-                if ($indCamisa - $indCamisaAnterior <= 1){
+                if ($indCamisa - $indCamisaAnterior <= 1) {
                     if (isset($camisaAgrupada))
                         unset ($camisaAgrupada);
                 } else {
@@ -120,7 +125,7 @@ class Catalogo {
 
         $csvCamisas = fopen("./Saida_site/camisas.csv", "w");
         //Confere e cria os itens agrupados
-        foreach($this->listaCamisas as $camisa){
+        foreach ($this->listaCamisas as $camisa) {
             fwrite($csvCamisas, $camisa . "\n");
         }
         fclose($csvCamisas);
@@ -156,7 +161,7 @@ class Catalogo {
 
 
         fwrite($csvCamisasFaltando, "sku;titulo;codBarra;CodFornecedor;TipoModelo;\n");
-        foreach($this->listaCamisasHabilitadas as $camisa){
+        foreach ($this->listaCamisasHabilitadas as $camisa) {
             $temImagem = false;
             $temImagemCostas = false;
             //$caminhoFotos = "/Fotos/Loja/Ultimas_fotos/fotos_site_com_marca/";
@@ -169,22 +174,22 @@ class Catalogo {
             $temImagemCostas = file_exists($caminhoImport . $fileNameCostas);
 
             $mediaGallery = $fileName;
-            $small = $caminhoFotos . "small/". "0" . $camisa->getCodImagem() . ".jpg";
-            $thumb = $caminhoFotos . "thumb/". "0" . $camisa->getCodImagem() . ".jpg";
+            $small = $caminhoFotos . "small/" . "0" . $camisa->getCodImagem() . ".jpg";
+            $thumb = $caminhoFotos . "thumb/" . "0" . $camisa->getCodImagem() . ".jpg";
             $mediaGallery = $fileName;
 
             //fwrite($csvCamisasHabilitadas,$camisa->getCodigo() . ";" . $camisa->getTitulo() . ";0" . $camisa->getCodImagem() . ";" . $temImagem. ";" . $temImagemCostas . ";" . "\n");
-            if ($temImagem){
-                if ($temImagemCostas){
+            if ($temImagem) {
+                if ($temImagemCostas) {
                     $mediaGallery = "\"" . $mediaGallery . ";" . $fileNameCostas . "\"";
                 }
-                fwrite($csvCamisasHabilitadas,$camisa->getCodigo() . ";" . $camisa->getTitulo() . ";+" . $fileName . ";" . $mediaGallery . ";" . $small . ";" . $thumb . ";" . "1" . "\n");
+                fwrite($csvCamisasHabilitadas, $camisa->getCodigo() . ";" . $camisa->getTitulo() . ";+" . $fileName . ";" . $mediaGallery . ";" . $small . ";" . $thumb . ";" . "1" . "\n");
             } else {
                 // Desabilita produtos sem imagem
-                fwrite($csvCamisasHabilitadas,$camisa->getCodigo() . ";" . $camisa->getTitulo() . ";" . "" . ";" . "" . ";" . "" . ";" . "" . ";" . "2" . "\n");
+                fwrite($csvCamisasHabilitadas, $camisa->getCodigo() . ";" . $camisa->getTitulo() . ";" . "" . ";" . "" . ";" . "" . ";" . "" . ";" . "2" . "\n");
 
                 // Grava no arquivo indicando que não tem foto
-                fwrite($csvCamisasFaltando,$camisa->getCodigo() . ";" . $camisa->getTitulo() . ";" . "0" . $camisa->getCodImagem() . ";" . $camisa->getCodFornecedor() . ";" . $camisa->getTipoModelo() . "\n");
+                fwrite($csvCamisasFaltando, $camisa->getCodigo() . ";" . $camisa->getTitulo() . ";" . "0" . $camisa->getCodImagem() . ";" . $camisa->getCodFornecedor() . ";" . $camisa->getTipoModelo() . "\n");
 
             }
         }
@@ -195,9 +200,9 @@ class Catalogo {
         // Atualização de preços dos itens
         $csvCamisasHabilitadas = fopen("./Saida_site/camisasPrecos.csv", "w");
         fwrite($csvCamisasHabilitadas, "sku;price\n");
-        foreach($this->listaCamisasHabilitadas as $camisa){
+        foreach ($this->listaCamisasHabilitadas as $camisa) {
             $preco = 0;
-            switch ($camisa->getTipoModelo()){
+            switch ($camisa->getTipoModelo()) {
                 case "BY":
                 case "IN":
                     $preco = 25;
@@ -208,7 +213,7 @@ class Catalogo {
                     $preco = 30;
                     break;
             }
-            fwrite($csvCamisasHabilitadas,$camisa->getCodigo() . ";" . $preco . "\n");
+            fwrite($csvCamisasHabilitadas, $camisa->getCodigo() . ";" . $preco . "\n");
         }
         fclose($csvCamisasHabilitadas);
 
@@ -227,7 +232,8 @@ class Catalogo {
         echo "Quantidade de Camisas agrupadas: " . count($this->listaCamisasAgrupadas) . "<br/>";
     }
 
-    public function geraCatalogoDeleteCSV($caminho){
+    public function geraCatalogoDeleteCSV($caminho)
+    {
         $csv = fopen($caminho, "w");
 
         $header = array();
@@ -235,14 +241,14 @@ class Catalogo {
         $header[] = "magmi:delete";
         fputcsv($csv, $header, ",");
 
-        foreach($this->listaCamisas as $camisa){
+        foreach ($this->listaCamisas as $camisa) {
             $listaApagar = array();
             $listaApagar[] = $camisa->getCodigo();
             $listaApagar[] = "1";
             fputcsv($csv, $listaApagar, ",");
         }
 
-        foreach($this->listaCamisasAgrupadas as $camisa){
+        foreach ($this->listaCamisasAgrupadas as $camisa) {
             $listaApagar = array();
             $listaApagar[] = $camisa->getCodigo();
             $listaApagar[] = "1";
@@ -253,25 +259,27 @@ class Catalogo {
 
     }
 
-    public function geraCatalogoCSV($caminho){
+    public function geraCatalogoCSV($caminho)
+    {
 
         $csv = fopen($caminho, "w");
 
         $header = $this->geraHeader();
         fputcsv($csv, $header, ",");
 
-        foreach($this->listaCamisas as $camisa){
+        foreach ($this->listaCamisas as $camisa) {
             fputcsv($csv, $this->geraCamisa($camisa), ",");
         }
-        foreach($this->listaCamisasAgrupadas as $camisa){
+        foreach ($this->listaCamisasAgrupadas as $camisa) {
             fputcsv($csv, $this->geraCamisa($camisa), ",");
         }
         fclose($csv);
     }
 
-    private function geraCamisa ( $camisa){
+    private function geraCamisa($camisa)
+    {
         $textoCamisa = array();
-        $textoCamisa[] = $camisa->getCodigo();  //sku
+        $textoCamisa[] = $camisa->getCodigo(); //sku
         //$header[] = "_store";
         $textoCamisa[] = "Camisas"; // _attribute_set
 
@@ -287,8 +295,8 @@ class Catalogo {
                     else
                         $textoCamisa[] = "Camisas masculinas";
                     $textoCamisa[] = "Default Category";    //_root_category*/
-        $textoCamisa[] = "base";                // _product_websites
-        $textoCamisa[] = $camisa->getBanda();   // banda
+        $textoCamisa[] = "base"; // _product_websites
+        $textoCamisa[] = $camisa->getBanda(); // banda
 
         // color
         if ($camisa->getCor() == "")
@@ -318,7 +326,7 @@ class Catalogo {
         $textoCamisa[] = $camisa->getTipoModeloExtenso(); // modelo
         //msrp
         // msrp_display_actual_price_type
-        if ($camisa->isSimpleProduct()){
+        if ($camisa->isSimpleProduct()) {
             if ($camisa->getTemGrupo())
                 $textoCamisa[] = "No Carrinho";
             else
@@ -357,12 +365,11 @@ class Catalogo {
         //$header[] = "url_path";
 
         //visibility
-        if ($camisa->isSimpleProduct()){
+        if ($camisa->isSimpleProduct()) {
             if (!$camisa->getTemGrupo()) {
                 $textoCamisa[] = "4";
                 $this->listaCamisasHabilitadas[] = $camisa;
-            }
-            else
+            } else
                 $textoCamisa[] = "1";
         } else {
             $this->listaCamisasHabilitadas[] = $camisa;
@@ -382,7 +389,7 @@ class Catalogo {
         $textoCamisa[] = "1"; //use_config_max_sale_qty
 
         //is_in_stock
-        if($camisa->getSaldo()>0 || !$camisa->isSimpleProduct()) {
+        if ($camisa->getSaldo() > 0 || !$camisa->isSimpleProduct()) {
             $textoCamisa[] = "1";
         } else
             $textoCamisa[] = "0";
@@ -419,15 +426,14 @@ class Catalogo {
         $textoCamisa[] = "0"; //_media_is_disabled
         //categories
 
-        switch($camisa->getTipoModelo()) {
+        switch ($camisa->getTipoModelo()) {
             case "BL":
                 $textoCamisa[] = "Camisas femininas::1::1::1/Baby Look::1::1::1";
                 break;
             case "CM":
-                if ($camisa->getCategoria() == ""){
+                if ($camisa->getCategoria() == "") {
                     $textoCamisa[] = "Camisas masculinas::1::1::1/Outros::1::1::1";
-                }
-                else
+                } else
                     $textoCamisa[] = "Camisas masculinas::1::1::1/" . $camisa->getCategoria() . "::1::1::1";
                 break;
             case "BY":
@@ -443,15 +449,15 @@ class Catalogo {
 
 
         //configurable_attributes
-        if ($camisa->isSimpleProduct()){
+        if ($camisa->isSimpleProduct()) {
             $textoCamisa[] = "";
-        } else{
+        } else {
             $textoCamisa[] = "tamanho";
         }
         //simples_skus
-        if ($camisa->isSimpleProduct()){
+        if ($camisa->isSimpleProduct()) {
             $textoCamisa[] = "";
-        } else{
+        } else {
             $textoCamisa[] = $camisa->getListaSkus();
         }
 
@@ -583,7 +589,8 @@ class Catalogo {
         echo "camisasAgrupadas.csv - gerado<br/>";
     }
 
-    private function configuraExcel($objPHPExcel){
+    private function configuraExcel($objPHPExcel)
+    {
 
         // configura cache
         $cacheMethod = PHPExcel_CachedObjectStorageFactory::cache_in_memory;
@@ -597,7 +604,8 @@ class Catalogo {
         }
     }
 
-    private function geraRelatorioEstoque($nomeRel, $filtra) {
+    private function geraRelatorioEstoque($nomeRel, $filtra)
+    {
 
         // cria a planilha
         $objPHPExcel = new PHPExcel();
@@ -617,21 +625,23 @@ class Catalogo {
         echo "<br>Gravei o excel<br>";
     }
 
-    private function adicionaCabecalho() {
+    private function adicionaCabecalho()
+    {
         return
-            array (
+            array(
                 "DESCRICAO",
-                "TAMANHO",       // Tamanho
-                "SALDO",       // Saldo
-                "CÓDIGO BARRAS",     // Código de Barras
-                "",         // Vazio para preencher as movimentações
-                "CÓDIGO FORNECEDOR",     // Código Fornecedor
-                "TIPO MODELO"      // Tipo Modelo
+                "TAMANHO", // Tamanho
+                "SALDO", // Saldo
+                "CÓDIGO BARRAS", // Código de Barras
+                "", // Vazio para preencher as movimentações
+                "CÓDIGO FORNECEDOR", // Código Fornecedor
+                "TIPO MODELO" // Tipo Modelo
             );
 
     }
 
-    private function montaRelatorio(PHPExcel $objPHPExcel, $filtra) {
+    private function montaRelatorio(PHPExcel $objPHPExcel, $filtra)
+    {
         $listaRelatorio = [];
 
         $listaItensRelatorio = $this->listaCamisas;
@@ -651,7 +661,7 @@ class Catalogo {
             $tipoModeloAtual = $itemRelatorio->getTipoModelo();
 
             // Inicializa a variável e seta o título para o primeiro tipo de modelo
-            if ($tipoModeloAnterior == ""){
+            if ($tipoModeloAnterior == "") {
                 $tipoModeloAnterior = $tipoModeloAtual;
 
                 $objPHPExcel->getActiveSheet()->setTitle($itemRelatorio->getTipoModeloExtenso());
@@ -659,7 +669,7 @@ class Catalogo {
             }
 
             // Se mudou o TipoModelo então grava os dados e cria uma nova planilha
-            if ($tipoModeloAnterior != "" && (strcmp($tipoModeloAnterior, $tipoModeloAtual)!=0)){
+            if ($tipoModeloAnterior != "" && (strcmp($tipoModeloAnterior, $tipoModeloAtual) != 0)) {
 
                 $tipoModeloAnterior = $tipoModeloAtual;
 
@@ -689,10 +699,10 @@ class Catalogo {
             $codBarraAtual = "0" . $itemRelatorio->getCodigoBarra();
             $quantEstoqueMinimo = $this->getQuantMinEstoque($tipoModeloAtual);
             $quantAtual = (int)$itemRelatorio->getSaldo();
-            if ($filtra && array_key_exists($codBarraAtual, $this->listaBD)){
+            if ($filtra && array_key_exists($codBarraAtual, $this->listaBD)) {
                 if ($this->listaBD[$codBarraAtual]['ESC'] > 0 && $quantAtual < $quantEstoqueMinimo) {
                     // Adiciona a camisa
-                    $listaRelatorio[] = array (
+                    $listaRelatorio[] = array(
                         $itemRelatorio->getDescricaoResumida(),
                         $itemRelatorio->getTamanho(),
                         $itemRelatorio->getSaldo(),
@@ -704,7 +714,7 @@ class Catalogo {
                 }
             } else {
                 // Se não encontrou no escritório Adiciona a camisa
-                $listaRelatorio[] = array (
+                $listaRelatorio[] = array(
                     $itemRelatorio->getDescricaoResumida(),
                     $itemRelatorio->getTamanho(),
                     $itemRelatorio->getSaldo(),
@@ -729,7 +739,8 @@ class Catalogo {
         $objPHPExcel->setActiveSheetIndex(0);
     }
 
-    private function configuraDimensoesRelatorio($objPHPExcel){
+    private function configuraDimensoesRelatorio($objPHPExcel)
+    {
         // Ajuste de tamanho das colunas
         $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setAutoSize(true);
         $objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(4);
@@ -749,7 +760,6 @@ class Catalogo {
                 )
             )
         );
-
 
 
         // Colunas de Sugestão e Pedido em negrito
@@ -777,14 +787,15 @@ class Catalogo {
 
     }
 
-    private function geraRelatorioBones(){
+    private function geraRelatorioBones()
+    {
         try {
             $objPHPExcelBone = PHPExcel_IOFactory::load("./Entrada/bones.xls");
-        } catch(Exception $e) {
-            die('Error loading file "'.pathinfo("./Entrada/bones.xls",PATHINFO_BASENAME).'": '.$e->getMessage());
+        } catch (Exception $e) {
+            die('Error loading file "' . pathinfo("./Entrada/bones.xls", PATHINFO_BASENAME) . '": ' . $e->getMessage());
         }
 
-        $sheetData = $objPHPExcelBone->getActiveSheet()->toArray(null,true,true,true);
+        $sheetData = $objPHPExcelBone->getActiveSheet()->toArray(null, true, true, true);
 
         // Apaga a primeira linha
         unset($sheetData[1]);
@@ -799,14 +810,14 @@ class Catalogo {
 
 
             // Adiciona a camisa
-            $listaBone[] = array (
-                trim(str_replace("ACESSORIOS BONES ", "", $bone["C"])),  // Descricao Resumida
-                trim($tamanho),    // Tamanho
+            $listaBone[] = array(
+                trim(str_replace("ACESSORIOS BONES ", "", $bone["C"])), // Descricao Resumida
+                trim($tamanho), // Tamanho
                 trim($bone["H"]), // Saldo
                 trim($bone["B"]), // Codigo Barra
                 "", // Vai preencher com a quantidade atualizada
-                trim($bone["D"]),    //  $itemRelatorio->getCodFornecedor(),
-                trim($tipoModelo)    //  $itemRelatorio->getTipoModelo()
+                trim($bone["D"]), //  $itemRelatorio->getCodFornecedor(),
+                trim($tipoModelo) //  $itemRelatorio->getTipoModelo()
             );
         }
 
@@ -850,9 +861,10 @@ class Catalogo {
     }
 
     // Compara por TipoModelo, Descrição Resumida, Tamanho
-    function comparaBones($item1, $item2){
+    function comparaBones($item1, $item2)
+    {
         $cmpDescResumida = strcmp($item1[0], $item2[0]);
-        if ($cmpDescResumida == 0){
+        if ($cmpDescResumida == 0) {
             global $tamanhos;
             $ind1 = array_search($item1[0], $tamanhos);
             $ind2 = array_search($item2[0], $tamanhos);

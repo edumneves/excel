@@ -1,11 +1,13 @@
 <?php
 include_once 'Camisa.php';
 
-class CamisaAgrupada extends Camisa{
+class CamisaAgrupada extends Camisa
+{
     private $listaCamisas;
     private $codImagem = "";
 
-    function CamisaAgrupada(Camisa $camisa){
+    function CamisaAgrupada(Camisa $camisa)
+    {
         $this->copiaDados($camisa);
         $this->setTamanho("");
         $this->setCodigoBarra("");
@@ -15,24 +17,25 @@ class CamisaAgrupada extends Camisa{
         $this->setCodigo("G_" . $this->getTipoModelo() . "_" . str_replace(" ", "_", $this->getDescricaoResumida()));
     }
 
-    public function addListaCamisa(Camisa $camisa){
+    public function addListaCamisa(Camisa $camisa)
+    {
         $this->listaCamisas[] = $camisa->getCodigo();
         $camisa->setTemGrupo(true);
 
         // Código de barras é da camisa M ou de 2A no caso de infantil
-        if($this->codImagem == ""){
+        if ($this->codImagem == "") {
             $this->codImagem = $camisa->getCodigoBarra();
         } else {
-            if ($this->getTipoModelo() =="IN" && $camisa->getTamanho() == "2A"){
+            if ($this->getTipoModelo() == "IN" && $camisa->getTamanho() == "2A") {
                 $this->codImagem = $camisa->getCodigoBarra();
-            }
-            else if ($this->getTipoModelo() =="CM" && $camisa->getTamanho() == "M"){
+            } else if ($this->getTipoModelo() == "CM" && $camisa->getTamanho() == "M") {
                 $this->codImagem = $camisa->getCodigoBarra();
             }
         }
     }
 
-    public function getCodImagem(){
+    public function getCodImagem()
+    {
         return $this->codImagem;
     }
 
@@ -49,9 +52,10 @@ class CamisaAgrupada extends Camisa{
         return $retorno . $codigoCamisas;
     }
 
-    public function getListaSkus(){
+    public function getListaSkus()
+    {
         $codigoCamisas = "";
-        foreach($this->listaCamisas as $codCamisaAtual){
+        foreach ($this->listaCamisas as $codCamisaAtual) {
             if ($codigoCamisas != "")
                 $codigoCamisas .= ",";
 
@@ -60,7 +64,8 @@ class CamisaAgrupada extends Camisa{
         return $codigoCamisas;
     }
 
-    public function isSimpleProduct(){
+    public function isSimpleProduct()
+    {
         return false;
     }
 

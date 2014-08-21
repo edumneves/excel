@@ -10,9 +10,9 @@
 $ini_array = parse_ini_file("conf/excel.ini", true);
 
 //Configuração de Banco de Dados
-$host       = $ini_array["BANCO_DADOS"]["HOST"];
-$username   = $ini_array["BANCO_DADOS"]["USERNAME"];
-$password   = $ini_array["BANCO_DADOS"]["PASSWORD"];
+$host = $ini_array["BANCO_DADOS"]["HOST"];
+$username = $ini_array["BANCO_DADOS"]["USERNAME"];
+$password = $ini_array["BANCO_DADOS"]["PASSWORD"];
 
 // Configuração utilizada no relatório de estoque, quantidade mínima para mostrar a camisa no relatório
 $rel_quant_min = array();
