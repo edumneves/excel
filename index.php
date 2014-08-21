@@ -21,16 +21,18 @@ include_once 'ItemEstoque.php';
 include_once 'Camisa.php';
 include_once 'ItemFactory.php';
 include_once 'Catalogo.php';
+include_once 'Conf.php';
 
 //$inputFileName = './relatorio estoque.xls';  // File to read
 //$inputFileName = './Estoque_20140625_modificada.xls';  // File to read
 //$inputFileName = './Entrada/entrada.xls';  // File to read
 //$inputFileName = './Entrada/entrada_julho.xls';  // File to read
-$inputFileName = './Entrada/rel_estoque_loja_20140811.xlsx';  // File to read
+$inputFileName = './Entrada/rel_estoque_20140814.xlsx';  // File to read
 
-$host = 'localhost:/Users/edumneves/REM_ago.FDB';
-$username = 'sysdba';
-$password = 'masterkey';
+global $host;
+global $username;
+global $password;
+
 
 $dbh = ibase_connect($host, $username, $password);
 $stmt = "select
@@ -44,20 +46,16 @@ WHERE p1.empresa = '01' and p2.empresa = '02'
 order BY p1.codbarra";
 $sth = ibase_query($dbh, $stmt);
 
-//echo "<br><br>";
 $listaBD = array();
 while ($row = ibase_fetch_object($sth)) {
     $codBarra = trim($row->CODBARRA);
     $saldoEsc = (int)trim($row->SALDO_ESC);
     $saldoLoja = (int)trim($row->SALDO_LOJA);
 
-//    echo "Codigo = " . $codBarra . " Esc = " . $saldoEsc . " Loja = " . $saldoLoja . "<br>";
     $listaBD[$codBarra]['ESC'] = $saldoEsc;
     $listaBD[$codBarra]['LOJA'] = $saldoLoja;
 }
-//echo "<br><br>";
-//var_dump($listaBD);
-//echo "<br><br>";
+
 
 ibase_free_result($sth);
 ibase_close($dbh);
@@ -81,38 +79,7 @@ $catalogoFisico = new Catalogo;
 $catalogoFisico->montaCatalogo($sheetData, $listaBD);
 
 
-/*
- *
-    [1] => Array
-    (
-        [A] => CODIGO
-        [B] => CODIGO BARRA
-        [C] => DESCRICAO
-        [D] => COD.FORNECEDOR
-        [E] => REF.FORNECEDOR
-        [F] => PRECO CUSTO
-        [G] => PRECO VENDA
-        [H] => SALDO
-        [I] => SALDO PESO
-    )
 
-    [2] => Array
-    (
-        [A] => ACIMASM00001
-        [B] => 52741
-        [C] => ACESSORIOS IMAS MEDIOS BANDAS
-        [D] =>
-        [E] =>
-        [F] => 3
-        [G] => 6
-        [H] => 0
-        [I] => 0
-    )
-    
-	
- *
- *
- */
 
 ?>
 <body>

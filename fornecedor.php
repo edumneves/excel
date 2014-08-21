@@ -160,7 +160,7 @@ function adicionaCabecalho(){
 }
 
 
-$host = 'localhost:/Users/edumneves/REM_ago.FDB';
+$host = 'localhost:/Loja/REM_ago.FDB';
 $username = 'sysdba';
 $password = 'masterkey';
 

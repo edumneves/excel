@@ -3,6 +3,7 @@ include_once 'ItemFactory.php';
 include_once 'Camisa.php';
 include_once 'CamisaAgrupada.php';
 include_once 'ImportacaoGlobal.php';
+include_once 'Conf.php';
 
 class Catalogo {
     private $listaCamisas;
@@ -14,18 +15,13 @@ class Catalogo {
 
     // Estoque mínimo para mostrar em relatório
     function getQuantMinEstoque($tipoModelo){
-        switch ($tipoModelo){
-            case "BL":
-                return 3;
-            case "CM":
-                return 2;
-            case "BY":
-                return 3;
-            case "IN":
-                return 3;
-            case "MC":
-                return 3;
+        global $rel_quant_min;
+
+        if (array_key_exists($tipoModelo, $rel_quant_min)){
+            return $rel_quant_min[$tipoModelo];
         }
+        error_log ("Tipo de modelo (" . $tipoModelo . ") sem quantidade mínima definido. Usando 0.");
+        return 0;
     }
 
     // Compara por TipoModelo, Descrição Resumida, Tamanho
@@ -154,9 +150,12 @@ class Catalogo {
         // Gera lista de camisas habilitadas na loja, usada como insumo para montar imagens
         usort($this->listaCamisasHabilitadas, array($this, "comparaCamisas"));
         $csvCamisasHabilitadas = fopen("./Saida_site/camisasHabilitadas.csv", "w");
-//            $csvCamisasImagens = fopen("./Saida_site/camisasImagens.csv", "w");
+        $csvCamisasFaltando = fopen("./Saida_site/camisasFaltandoFoto.csv", "w");
         //Confere e cria os itens agrupados
         fwrite($csvCamisasHabilitadas, "sku;titulo;image;media_gallery;small_image;thumbnail;status\n");
+
+
+        fwrite($csvCamisasFaltando, "sku;titulo;codBarra;CodFornecedor;TipoModelo;\n");
         foreach($this->listaCamisasHabilitadas as $camisa){
             $temImagem = false;
             $temImagemCostas = false;
@@ -183,9 +182,14 @@ class Catalogo {
             } else {
                 // Desabilita produtos sem imagem
                 fwrite($csvCamisasHabilitadas,$camisa->getCodigo() . ";" . $camisa->getTitulo() . ";" . "" . ";" . "" . ";" . "" . ";" . "" . ";" . "2" . "\n");
+
+                // Grava no arquivo indicando que não tem foto
+                fwrite($csvCamisasFaltando,$camisa->getCodigo() . ";" . $camisa->getTitulo() . ";" . "0" . $camisa->getCodImagem() . ";" . $camisa->getCodFornecedor() . ";" . $camisa->getTipoModelo() . "\n");
+
             }
         }
         fclose($csvCamisasHabilitadas);
+        fclose($csvCamisasFaltando);
         echo "CamisasHabilitadas.csv - gerado<br/>";
 
         // Atualização de preços dos itens
@@ -607,6 +611,9 @@ class Catalogo {
         $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, "Excel2007");
         $objWriter->save($nomeRel);
 
+        $objPHPExcel->disconnectWorksheets();
+        unset($objPHPExcel);
+
         echo "<br>Gravei o excel<br>";
     }
 
@@ -834,6 +841,9 @@ class Catalogo {
         // salva o arquivo
         $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, "Excel2007");
         $objWriter->save("./Saida/Relatorio_Estoque_Bones.xlsx");
+
+        $objPHPExcel->disconnectWorksheets();
+        unset($objPHPExcel);
 
         echo "<br>Gravei o excel<br>";
 

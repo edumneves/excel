@@ -1,13 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Classes/Catalogo.php" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22c02f3-b377-4fb9-98ec-3652213b6203" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fornecedor.php" />
+    <list default="true" id="0adfa102-cca5-4d96-8a9e-c9f6a3a5e8e5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/Conf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Conf/excel.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exporta.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Conf/sample.excel.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testaBanco.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/APC.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/APC.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Acessorio.php" afterPath="$PROJECT_DIR$/Classes/Acessorio.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Cell/AdvancedValueBinder.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Cell/AdvancedValueBinder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style/Alignment.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style/Alignment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/AutoFilter.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/AutoFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Autoloader.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Autoloader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/BIFFwriter.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/BIFFwriter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/BaseDrawing.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/BaseDrawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style/Border.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style/Border.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style/Borders.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style/Borders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/CHANGELOG.TXT" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/CHANGELOG.TXT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/CSV.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/CSV.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/CSV.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/CSV.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/CacheBase.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/CacheBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorageFactory.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorageFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Camisa.php" afterPath="$PROJECT_DIR$/Classes/Camisa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/CamisaAgrupada.php" afterPath="$PROJECT_DIR$/Classes/CamisaAgrupada.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Catalogo.php" afterPath="$PROJECT_DIR$/Classes/Catalogo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Cell.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Cell.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/CellIterator.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/CellIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE/ChainedBlockStream.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE/ChainedBlockStream.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel2007/Chart.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel2007/Chart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Chart.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Chart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/CholeskyDecomposition.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/CholeskyDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/CodePage.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/CodePage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style/Color.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style/Color.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/AutoFilter/Column.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/AutoFilter/Column.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/ColumnDimension.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/ColumnDimension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Comment.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Comments.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style/Conditional.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style/Conditional.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/ContentTypes.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/ContentTypes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF/Core.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF/Core.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart/DataSeries.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart/DataSeries.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart/DataSeriesValues.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart/DataSeriesValues.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Cell/DataType.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Cell/DataType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Cell/DataValidation.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Cell/DataValidation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Database.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Date.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Date.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/DateTime.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/DateTime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/DefaultReadFilter.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/DefaultReadFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Cell/DefaultValueBinder.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Cell/DefaultValueBinder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DgContainer.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DgContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DggContainer.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DggContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/DiscISAM.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/DiscISAM.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/DocProps.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/DocProps.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/DocumentProperties.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/DocumentProperties.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/DocumentSecurity.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/DocumentSecurity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF/DomPDF.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF/DomPDF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Drawing.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Drawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/Drawing.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/Drawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Drawing.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Drawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Duvidas.txt" afterPath="$PROJECT_DIR$/Classes/Duvidas.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Edu.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Edu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/EigenvalueDecomposition.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/EigenvalueDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Engineering.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Engineering.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/utils/Error.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/utils/Error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel5/Escher.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel5/Escher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Escher.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Escher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel2003XML.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel2003XML.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel2007.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel2007.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel5.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Excel5.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Excel5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Exception.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Exception.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Exception.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/ExceptionHandler.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/ExceptionHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/File.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/File.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE/PPS/File.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE/PPS/File.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style/Fill.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style/Fill.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Financial.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Financial.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Font.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Font.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style/Font.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style/Font.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Font.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Font.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/FormulaParser.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/FormulaParser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/FormulaToken.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/FormulaToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Function.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Functions.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Gnumeric.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Gnumeric.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/HTML.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/HTML.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/HTML.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/HTML.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/HashTable.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/HashTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/HeaderFooter.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/HeaderFooter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/HeaderFooterDrawing.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/HeaderFooterDrawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Cell/Hyperlink.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Cell/Hyperlink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/ICache.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/ICache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/IComparable.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/IComparable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/IOFactory.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/IOFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/IReadFilter.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/IReadFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/IReader.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/IReader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/RichText/ITextElement.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/RichText/ITextElement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Cell/IValueBinder.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Cell/IValueBinder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/IWriter.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/IWriter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/Igbinary.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/Igbinary.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/ImportacaoGlobal.html" afterPath="$PROJECT_DIR$/Classes/ImportacaoGlobal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/ImportacaoGlobal.php" afterPath="$PROJECT_DIR$/Classes/ImportacaoGlobal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/ItemEstoque.php" afterPath="$PROJECT_DIR$/Classes/ItemEstoque.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/ItemFactory.php" afterPath="$PROJECT_DIR$/Classes/ItemFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/LMQuadTest.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/LMQuadTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/LUDecomposition.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/LUDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/LagrangeInterpolation.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/LagrangeInterpolation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/LagrangeInterpolation2.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/LagrangeInterpolation2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Layout.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Layout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Legend.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Legend.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/LevenbergMarquardt.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/LevenbergMarquardt.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Logical.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Logical.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/LookupRef.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/LookupRef.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/MagicSquareExample.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/MagicSquareExample.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/MathTrig.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/MathTrig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/utils/Maths.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/utils/Maths.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/Matrix.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/Matrix.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/Memcache.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/Memcache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/Memory.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/Memory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/MemoryDrawing.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/MemoryDrawing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/MemoryGZip.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/MemoryGZip.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/MemorySerialized.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/MemorySerialized.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/NamedRange.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/NamedRange.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style/NumberFormat.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style/NumberFormat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLERead.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLERead.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/OOCalc.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/OOCalc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Renderer/PHP Charting Libraries.txt" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Renderer/PHP Charting Libraries.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/PHPTemp.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/PHPTemp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE/PPS.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE/PPS.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/PageMargins.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/PageMargins.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/PageSetup.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/PageSetup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Parser.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Parser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/PasswordHasher.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/PasswordHasher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart/PlotArea.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart/PlotArea.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style/Protection.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style/Protection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/Protection.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/Protection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/QRDecomposition.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/QRDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/ReferenceHelper.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/ReferenceHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Rels.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Rels.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/RichText.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/RichText.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE/PPS/Root.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE/PPS/Root.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/Row.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/Row.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/RowDimension.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/RowDimension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/RowIterator.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/RowIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/RichText/Run.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/RichText/Run.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/SQLite.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/SQLite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/SQLite3.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/SQLite3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/SYLK.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/SYLK.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Settings.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/Drawing/Shadow.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/Drawing/Shadow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/SheetView.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet/SheetView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/SingularValueDecomposition.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/SingularValueDecomposition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Token/Stack.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Token/Stack.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Statistical.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/Statistical.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/Stats.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/Stats.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/String.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/String.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/StringTable.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/StringTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Style.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Style.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Style.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Style.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TamanhoCamisa.php" afterPath="$PROJECT_DIR$/Classes/TamanhoCamisa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/tests/TestMatrix.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/tests/TestMatrix.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/TextData.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/TextData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/RichText/TextElement.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/RichText/TextElement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel2007/Theme.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Reader/Excel2007/Theme.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Theme.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Theme.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Title.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Title.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/Wincache.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/CachedObjectStorage/Wincache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Workbook.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Workbook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Workbook.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Workbook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Worksheet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Worksheet.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/Worksheet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Worksheet.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Worksheet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/WorksheetIterator.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/WorksheetIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/WriterPart.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel2007/WriterPart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/XMLWriter.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/XMLWriter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Xf.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/Excel5/Xf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/ZipArchive.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/ZipArchive.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/ZipStreamWrapper.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/ZipStreamWrapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/benchmark.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/benchmark.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/bestFitClass.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/bestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/cs/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/cs/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/da/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/da/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/de/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/de/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/en/uk/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/en/uk/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/es/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/es/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/fi/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/fi/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/fr/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/fr/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/hu/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/hu/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/it/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/it/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/nl/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/nl/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/no/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/no/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/pl/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/pl/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/pt/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/pt/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/pt/br/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/pt/br/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/ru/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/ru/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/sv/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/sv/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/tr/config" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/tr/config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/excel.htm" afterPath="$PROJECT_DIR$/excel.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/excel.iml" afterPath="$PROJECT_DIR$/.idea/excel.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/exponentialBestFitClass.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/exponentialBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fornecedor.php" afterPath="$PROJECT_DIR$/fornecedor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/functionlist.txt" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Calculation/functionlist.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/cs/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/cs/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/da/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/da/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/de/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/de/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/es/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/es/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/fi/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/fi/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/fr/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/fr/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/hu/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/hu/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/it/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/it/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/nl/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/nl/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/no/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/no/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/pl/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/pl/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/pt/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/pt/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/pt/br/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/pt/br/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/ru/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/ru/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/sv/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/sv/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/locale/tr/functions" afterPath="$PROJECT_DIR$/Classes/PHPExcel/locale/tr/functions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/PCLZip/gnu-lgpl.txt" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/PCLZip/gnu-lgpl.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Renderer/jpgraph.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Chart/Renderer/jpgraph.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/linearBestFitClass.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/linearBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conf/listaAcertos.json" afterPath="$PROJECT_DIR$/Conf/listaAcertos.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conf/listaBandas.json" afterPath="$PROJECT_DIR$/Conf/listaBandas.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conf/listaSubstituicoes.json" afterPath="$PROJECT_DIR$/Conf/listaSubstituicoes.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/logarithmicBestFitClass.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/logarithmicBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF/mPDF.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF/mPDF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/magicento.xml" afterPath="$PROJECT_DIR$/.idea/magicento.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magmi.php" afterPath="$PROJECT_DIR$/magmi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/PCLZip/pclzip.lib.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/PCLZip/pclzip.lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/polyfit.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/polyfit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/polynomialBestFitClass.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/polynomialBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/powerBestFitClass.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/powerBestFitClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/PCLZip/readme.txt" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/PCLZip/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relatorio.php" afterPath="$PROJECT_DIR$/relatorio.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF/tcPDF.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Writer/PDF/tcPDF.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teste.php" afterPath="$PROJECT_DIR$/teste.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/tile.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/JAMA/examples/tile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/trendClass.php" afterPath="$PROJECT_DIR$/Classes/PHPExcel/Shared/trend/trendClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="excel.iws" />
@@ -34,42 +289,7 @@
       <file leaf-file-name="Catalogo.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="798" column="66" selection-start="31941" selection-end="31977" vertical-scroll-proportion="-24.625" vertical-offset="11379" max-vertical-offset="12360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fornecedor.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fornecedor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="50" selection-start="4691" selection-end="4691" vertical-scroll-proportion="0.62057334" vertical-offset="1492" max-vertical-offset="5100">
-              <folding>
-                <marker date="1408019117000" expanded="true" signature="6016:7972" placeholder="SELECT * FRO..CODIGO..." />
-                <marker date="1408019117000" expanded="true" signature="6034:7483" placeholder="SELECT TABEL..EXTRACT..." />
-                <marker date="1408019117000" expanded="true" signature="6224:6319" placeholder="SELECT P1.SA..PRODUTO..." />
-                <marker date="1408019117000" expanded="true" signature="6463:7483" placeholder="SELECT EXTRA..ITENS_VENDA..." />
-                <marker date="1408019117000" expanded="true" signature="7340:7412" placeholder="--AND P.CODB..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="10" selection-start="1701" selection-end="1701" vertical-scroll-proportion="-14.833333" vertical-offset="574" max-vertical-offset="1830">
-              <folding>
-                <marker date="1407805654000" expanded="true" signature="950:1151" placeholder="select p1.co..produto..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportacaoGlobal.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="27" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0" vertical-offset="787" max-vertical-offset="2460">
+            <state line="203" column="26" selection-start="9234" selection-end="9234" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="13065">
               <folding />
             </state>
           </provider>
@@ -78,55 +298,91 @@
       <file leaf-file-name="Camisa.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1296" selection-end="1750" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="4050">
+            <state line="171" column="34" selection-start="6354" selection-end="6354" vertical-scroll-proportion="0.0" vertical-offset="2402" max-vertical-offset="4050">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CamisaAgrupada.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/CamisaAgrupada.php">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1159" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1095">
+            <state line="194" column="5" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.7083333" vertical-offset="2502" max-vertical-offset="3405">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="magmi.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/magmi.php">
+      <file leaf-file-name="sample.excel.ini" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Conf/sample.excel.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="38" selection-start="0" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitattributes" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitattributes">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="0" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1365">
               <folding>
-                <marker date="1405425738000" expanded="true" signature="245:266" placeholder="SELECT * FRO..PRODUTO..." />
+                <marker date="1408620035000" expanded="true" signature="924:1125" placeholder="select p1.co..produto..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listaAcertos.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Conf/listaAcertos.json">
+      <file leaf-file-name="ImportacaoGlobal.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+            <state line="127" column="0" selection-start="3788" selection-end="3788" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2490">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="relatorio.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/relatorio.php">
+      <file leaf-file-name="Conf.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/Conf.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="54" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="945">
+            <state line="18" column="14" selection-start="491" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Acessorio.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/Acessorio.php">
+      <file leaf-file-name="excel.ini" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Conf/excel.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="5" column="1" selection-start="107" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="255">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testaBanco.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testaBanco.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="145" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1380">
+              <folding>
+                <marker date="1408579780000" expanded="true" signature="352:2308" placeholder="SELECT * FRO..CODIGO..." />
+                <marker date="1408579780000" expanded="true" signature="370:1819" placeholder="SELECT TABEL..EXTRACT..." />
+                <marker date="1408579780000" expanded="true" signature="560:655" placeholder="SELECT P1.SA..PRODUTO..." />
+                <marker date="1408579780000" expanded="true" signature="799:1819" placeholder="SELECT EXTRA..ITENS_VENDA..." />
+                <marker date="1408579780000" expanded="true" signature="1676:1748" placeholder="--AND P.CODB..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,34 +400,23 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Conf/listaSubstituicoes.json" />
+        <option value="$PROJECT_DIR$/Conf/excel.ini" />
+        <option value="$PROJECT_DIR$/testaBanco.php" />
+        <option value="$PROJECT_DIR$/Classes/Conf.php" />
+        <option value="$PROJECT_DIR$/Classes/Catalogo.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Classes/ItemEstoque.php" />
         <option value="$PROJECT_DIR$/Classes/ImportacaoGlobal.php" />
-        <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/test1.php" />
-        <option value="$PROJECT_DIR$/test2.php" />
-        <option value="$PROJECT_DIR$/magmi.php" />
-        <option value="$PROJECT_DIR$/Conf/listaAcertos.json" />
-        <option value="$PROJECT_DIR$/Classes/CamisaAgrupada.php" />
         <option value="$PROJECT_DIR$/Classes/Camisa.php" />
-        <option value="$PROJECT_DIR$/Conf/listaBandas.json" />
-        <option value="$PROJECT_DIR$/relatorio.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/Classes/Catalogo.php" />
-        <option value="$PROJECT_DIR$/fornecedor.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php MAMP">
-    <include_path>
-      <path value="." />
-      <path value="C:\xampp\php\PEAR" />
-    </include_path>
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php" />
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1054" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -199,7 +444,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,23 +462,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="excel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.sourceCode.TypeScript" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="com.magicento.ui.forms.MagicentoSettingsForm" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="cata&#10;index.p&#10;camisa&#10;teste&#10;saldo in&#10;log" />
-    <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bin/php/php5.5.3/bin" />
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
-  <component name="RunManager" selected="PHP Script.fornecedor.php">
-    <configuration default="false" name="fornecedor.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/fornecedor.php">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Conf" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.index.php">
+    <configuration default="false" name="testaBanco.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/testaBanco.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
       <RunnerSettings RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
       <method />
@@ -249,15 +531,17 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="d540b31f-4f49-4fb8-949a-3970c83159e9" server_name="Importacao Excel">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="PHP Script.fornecedor.php" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.testaBanco.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.index.php" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.fornecedor.php" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.index.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.testaBanco.php" />
       </list>
     </recent_temporary>
   </component>
@@ -281,79 +565,32 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c22c02f3-b377-4fb9-98ec-3652213b6203" name="Default" comment="" />
-      <created>1390351047816</created>
-      <updated>1390351047816</updated>
+      <changelist id="0adfa102-cca5-4d96-8a9e-c9f6a3a5e8e5" name="Default" comment="" />
+      <created>1408578603499</created>
+      <updated>1408578603499</updated>
     </task>
-    <task id="LOCAL-00001" summary="Criação de formatador de relatorio.">
-      <created>1392808299784</created>
-      <updated>1392808299784</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Ajustes na geração das planilhas.&#10;">
-      <created>1404212720102</created>
-      <updated>1404212720102</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Criação de funcionalidade para exportar relatório de estoque.">
-      <created>1404651314408</created>
-      <updated>1404651314408</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Exportação de relatório: &#10; - Divisão de camisas por tipo de modelo.">
-      <created>1404652440248</created>
-      <updated>1404652440248</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Exportação de relatório: &#10; - Divisão de camisas por tipo de modelo.">
-      <created>1405553659390</created>
-      <updated>1405553659390</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Exportação de relatório: &#10;  - Criação de relatório resumido e conexão com o banco de dados.">
-      <created>1407846423807</created>
-      <updated>1407846423807</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="1">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1054" extended-state="0" />
+    <frame x="0" y="22" width="1920" height="970" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46637428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34517765" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32623428" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -371,370 +608,388 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Criação de formatador de relatorio." />
-    <MESSAGE value="Ajustes na geração das planilhas.&#10;" />
-    <MESSAGE value="Criação de funcionalidade para exportar relatório de estoque." />
-    <MESSAGE value="Exportação de relatório: &#10; - Divisão de camisas por tipo de modelo." />
-    <MESSAGE value="Exportação de relatório: &#10;  - Criação de relatório resumido e conexão com o banco de dados." />
-    <option name="LAST_COMMIT_MESSAGE" value="Exportação de relatório: &#10;  - Criação de relatório resumido e conexão com o banco de dados." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
+    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="52" selection-start="5977" selection-end="5995" vertical-scroll-proportion="0.0" vertical-offset="1302" max-vertical-offset="3281" />
+        <state line="203" column="26" selection-start="9234" selection-end="9234" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="34" selection-start="6354" selection-end="6354" vertical-scroll-proportion="0.0" vertical-offset="2402" max-vertical-offset="4050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="9" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.0" vertical-offset="2502" max-vertical-offset="3405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/sample.excel.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="24" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1479">
+        <state line="81" column="0" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1365">
           <folding>
-            <marker date="1407805654000" expanded="true" signature="950:1151" placeholder="select p1.co..produto..." />
+            <marker date="1408620035000" expanded="true" signature="924:1125" placeholder="select p1.co..produto..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7650">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="27" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="2720">
+        <state line="127" column="0" selection-start="3788" selection-end="3788" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2490">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ItemFactory.php">
+    <entry file="file://$PROJECT_DIR$/Classes/Conf.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="3349">
+        <state line="18" column="14" selection-start="491" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
+    <entry file="file://$PROJECT_DIR$/Conf/excel.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="52" selection-start="5977" selection-end="5995" vertical-scroll-proportion="0.0" vertical-offset="1302" max-vertical-offset="3281" />
+        <state line="5" column="1" selection-start="107" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="255">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/testaBanco.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="21" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1462">
+        <state line="13" column="0" selection-start="145" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1380">
           <folding>
-            <marker date="1407805654000" expanded="true" signature="950:1151" placeholder="select p1.co..produto..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relatorio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="40" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="27" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="2720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ItemFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="3349">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="52" selection-start="5977" selection-end="5995" vertical-scroll-proportion="0.0" vertical-offset="1302" max-vertical-offset="3281" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="21" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1462">
-          <folding>
-            <marker date="1407805654000" expanded="true" signature="950:1151" placeholder="select p1.co..produto..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relatorio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="40" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="27" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="2720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ItemFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="3349">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="52" selection-start="5977" selection-end="5995" vertical-scroll-proportion="0.0" vertical-offset="1302" max-vertical-offset="3281" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="21" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1462">
-          <folding>
-            <marker date="1407805654000" expanded="true" signature="950:1151" placeholder="select p1.co..produto..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relatorio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="50" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ItemFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="2765" max-vertical-offset="3349">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="52" selection-start="5977" selection-end="5995" vertical-scroll-proportion="0.0" vertical-offset="1302" max-vertical-offset="3281" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="22" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1462">
-          <folding>
-            <marker date="1407805654000" expanded="true" signature="950:1151" placeholder="select p1.co..produto..." />
+            <marker date="1408579780000" expanded="true" signature="352:2308" placeholder="SELECT * FRO..CODIGO..." />
+            <marker date="1408579780000" expanded="true" signature="370:1819" placeholder="SELECT TABEL..EXTRACT..." />
+            <marker date="1408579780000" expanded="true" signature="560:655" placeholder="SELECT P1.SA..PRODUTO..." />
+            <marker date="1408579780000" expanded="true" signature="799:1819" placeholder="SELECT EXTRA..ITENS_VENDA..." />
+            <marker date="1408579780000" expanded="true" signature="1676:1748" placeholder="--AND P.CODB..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="44" selection-start="9781" selection-end="9781" vertical-scroll-proportion="0.0" vertical-offset="4012" max-vertical-offset="7650">
+        <state line="203" column="26" selection-start="9234" selection-end="9234" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13065">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
+    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="44" selection-start="9781" selection-end="9781" vertical-scroll-proportion="0.0" vertical-offset="4012" max-vertical-offset="7650">
+        <state line="21" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="4050">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="44" selection-start="9781" selection-end="9781" vertical-scroll-proportion="0.0" vertical-offset="4012" max-vertical-offset="7650">
+        <state line="194" column="5" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.0" vertical-offset="2910" max-vertical-offset="3315">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/PHPExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="5" vertical-scroll-proportion="-1.0814732" vertical-offset="969" max-vertical-offset="13685" />
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excel.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="74" selection-start="5499" selection-end="5499" vertical-scroll-proportion="0.7901554" vertical-offset="3085" max-vertical-offset="3495" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_defines.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="258" column="8" selection-start="5336" selection-end="5336" vertical-scroll-proportion="0.3586207" vertical-offset="3766" max-vertical-offset="20475" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaSubstituicoes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="623" selection-end="623" vertical-scroll-proportion="0.37383178" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ItemFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="48" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="525" />
-      </provider>
-    </entry>
-    <entry file="uml://PHP/\Camisa">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>PHP</ID>
-          <OriginalElement>\Camisa</OriginalElement>
-          <nodes>
-            <node x="200.0" y="806.0">\Camisa</node>
-            <node x="-269.0" y="-266.0">\ItemEstoque</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="\Camisa" target="\ItemEstoque">
-              <point x="0.0" y="-202.0" />
-              <point x="0.0" y="378.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-509.0" y="797.0" />
-          <SelectedNodes>
-            <node>\ItemEstoque</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="66" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.41666666" vertical-offset="735" max-vertical-offset="4080" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="242" selection-end="597" vertical-scroll-proportion="0.046875" vertical-offset="330" max-vertical-offset="1290" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaBandas.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="69" selection-start="2182" selection-end="2182" vertical-scroll-proportion="-17.583334" vertical-offset="43" max-vertical-offset="3090" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="27" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0" vertical-offset="787" max-vertical-offset="2460">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magmi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="38" selection-start="0" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420">
-          <folding>
-            <marker date="1405425738000" expanded="true" signature="245:266" placeholder="SELECT * FRO..PRODUTO..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teste.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.4434251" vertical-offset="0" max-vertical-offset="2535" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/CamisaAgrupada.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1159" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/listaAcertos.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/relatorio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="54" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Acessorio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="877">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1296" selection-end="1750" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="4050">
-          <folding />
-        </state>
+        <state line="113" column="25" selection-start="3349" selection-end="3358" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="4080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="10" selection-start="1701" selection-end="1701" vertical-scroll-proportion="-14.833333" vertical-offset="574" max-vertical-offset="1830">
+        <state line="48" column="0" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1320">
           <folding>
-            <marker date="1407805654000" expanded="true" signature="950:1151" placeholder="select p1.co..produto..." />
+            <marker date="1408620035000" expanded="true" signature="924:1125" placeholder="select p1.co..produto..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="2460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Conf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="491" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/excel.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="107" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testaBanco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="145" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1380">
+          <folding>
+            <marker date="1408579780000" expanded="true" signature="352:2308" placeholder="SELECT * FRO..CODIGO..." />
+            <marker date="1408579780000" expanded="true" signature="370:1819" placeholder="SELECT TABEL..EXTRACT..." />
+            <marker date="1408579780000" expanded="true" signature="560:655" placeholder="SELECT P1.SA..PRODUTO..." />
+            <marker date="1408579780000" expanded="true" signature="799:1819" placeholder="SELECT EXTRA..ITENS_VENDA..." />
+            <marker date="1408579780000" expanded="true" signature="1676:1748" placeholder="--AND P.CODB..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="798" column="66" selection-start="31941" selection-end="31977" vertical-scroll-proportion="-24.625" vertical-offset="11379" max-vertical-offset="12360">
+        <state line="203" column="26" selection-start="9234" selection-end="9234" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13065">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fornecedor.php">
+    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="50" selection-start="4691" selection-end="4691" vertical-scroll-proportion="0.62057334" vertical-offset="1492" max-vertical-offset="5100">
+        <state line="21" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="4050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="25" selection-start="3349" selection-end="3358" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="4080" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1320">
           <folding>
-            <marker date="1408019117000" expanded="true" signature="6016:7972" placeholder="SELECT * FRO..CODIGO..." />
-            <marker date="1408019117000" expanded="true" signature="6034:7483" placeholder="SELECT TABEL..EXTRACT..." />
-            <marker date="1408019117000" expanded="true" signature="6224:6319" placeholder="SELECT P1.SA..PRODUTO..." />
-            <marker date="1408019117000" expanded="true" signature="6463:7483" placeholder="SELECT EXTRA..ITENS_VENDA..." />
-            <marker date="1408019117000" expanded="true" signature="7340:7412" placeholder="--AND P.CODB..." />
+            <marker date="1408620035000" expanded="true" signature="924:1125" placeholder="select p1.co..produto..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="2460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Conf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="491" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/excel.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="107" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testaBanco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="145" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1380">
+          <folding>
+            <marker date="1408579780000" expanded="true" signature="352:2308" placeholder="SELECT * FRO..CODIGO..." />
+            <marker date="1408579780000" expanded="true" signature="370:1819" placeholder="SELECT TABEL..EXTRACT..." />
+            <marker date="1408579780000" expanded="true" signature="560:655" placeholder="SELECT P1.SA..PRODUTO..." />
+            <marker date="1408579780000" expanded="true" signature="799:1819" placeholder="SELECT EXTRA..ITENS_VENDA..." />
+            <marker date="1408579780000" expanded="true" signature="1676:1748" placeholder="--AND P.CODB..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="26" selection-start="9234" selection-end="9234" vertical-scroll-proportion="0.0" vertical-offset="2716" max-vertical-offset="13065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="42" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="4050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="25" selection-start="3349" selection-end="3358" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="4080" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1320">
+          <folding>
+            <marker date="1408620035000" expanded="true" signature="924:1125" placeholder="select p1.co..produto..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="2460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Conf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="491" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/excel.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="107" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testaBanco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="145" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1380">
+          <folding>
+            <marker date="1408579780000" expanded="true" signature="352:2308" placeholder="SELECT * FRO..CODIGO..." />
+            <marker date="1408579780000" expanded="true" signature="370:1819" placeholder="SELECT TABEL..EXTRACT..." />
+            <marker date="1408579780000" expanded="true" signature="560:655" placeholder="SELECT P1.SA..PRODUTO..." />
+            <marker date="1408579780000" expanded="true" signature="799:1819" placeholder="SELECT EXTRA..ITENS_VENDA..." />
+            <marker date="1408579780000" expanded="true" signature="1676:1748" placeholder="--AND P.CODB..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testaBanco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="145" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1380">
+          <folding>
+            <marker date="1408579780000" expanded="true" signature="352:2308" placeholder="SELECT * FRO..CODIGO..." />
+            <marker date="1408579780000" expanded="true" signature="370:1819" placeholder="SELECT TABEL..EXTRACT..." />
+            <marker date="1408579780000" expanded="true" signature="560:655" placeholder="SELECT P1.SA..PRODUTO..." />
+            <marker date="1408579780000" expanded="true" signature="799:1819" placeholder="SELECT EXTRA..ITENS_VENDA..." />
+            <marker date="1408579780000" expanded="true" signature="1676:1748" placeholder="--AND P.CODB..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/excel.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="107" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/relatorio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="7" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.7826087" vertical-offset="318" max-vertical-offset="870" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exporta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="90" selection-end="90" vertical-scroll-proportion="0.16304348" vertical-offset="0" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Conf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="491" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="246" column="36" selection-start="5852" selection-end="5852" vertical-scroll-proportion="0.58303887" vertical-offset="3195" max-vertical-offset="4545" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="0" selection-start="3788" selection-end="3788" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="26" selection-start="9234" selection-end="9234" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="13065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1365">
+          <folding>
+            <marker date="1408620035000" expanded="true" signature="924:1125" placeholder="select p1.co..produto..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="34" selection-start="6354" selection-end="6354" vertical-scroll-proportion="0.0" vertical-offset="2402" max-vertical-offset="4050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/sample.excel.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="5" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.7083333" vertical-offset="2502" max-vertical-offset="3405">
+          <folding />
         </state>
       </provider>
     </entry>

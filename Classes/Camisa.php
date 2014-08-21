@@ -115,17 +115,17 @@
             }
 
             // Faz as buscas pelos nomes simples, duplo e triplo
-            $idx = binary_search($listaChaves, 0, sizeof($listaChaves), $nomeTriplo);
-            if ($idx >= 0)
-                return ($listaBandas[$listaChaves[$idx]]);
+            $idx_search = binary_search($listaChaves, 0, sizeof($listaChaves), $nomeTriplo);
+            if ($idx_search >= 0)
+                return ($listaBandas[$listaChaves[$idx_search]]);
 
-            $idx = binary_search($listaChaves, 0, sizeof($listaChaves), $nomeDuplo);
-            if ($idx >= 0)
-                return ($listaBandas[$listaChaves[$idx]]);
+            $idx_search = binary_search($listaChaves, 0, sizeof($listaChaves), $nomeDuplo);
+            if ($idx_search >= 0)
+                return ($listaBandas[$listaChaves[$idx_search]]);
 
-            $idx = binary_search($listaChaves, 0, sizeof($listaChaves), $nomeSimples);
-            if ($idx >= 0)
-                return ($listaBandas[$listaChaves[$idx]]);
+            $idx_search = binary_search($listaChaves, 0, sizeof($listaChaves), $nomeSimples);
+            if ($idx_search >= 0)
+                return ($listaBandas[$listaChaves[$idx_search]]);
 
             // Caso não tenha encontrado a banda
             echo "<br>Descricao = " . $descricao . "<br>";

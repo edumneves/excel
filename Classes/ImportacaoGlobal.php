@@ -9,7 +9,7 @@ const IND_PREC_VENDA 	= 'G';
 const IND_SALDO 		= 'H';
 const IND_SALDO_PESO 	= 'I';
 
-const PRECO_VENDA = 25;
+const PRECO_VENDA = 30;
 const PRECO_CUSTO = 15;
 
 
@@ -125,6 +125,8 @@ class ImportacaoGlobal {
         $texto = trim($item[IND_SALDO_PESO]);
         $texto = preg_replace( '/\s+/', ' ', $texto);
         return ($texto);
+
+        
     }
 }
 
