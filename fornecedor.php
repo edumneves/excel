@@ -6,11 +6,12 @@
  * Time: 21:14
  */
 set_include_path(get_include_path() . PATH_SEPARATOR . 'Classes/');
-include_once 'PHPExcel/IOFactory.php';
+include_once 'Classes/PHPExcel/IOFactory.php';
+include_once 'Classes/Conf.php';
 
 $nomeRel = "./Saida/Relatorio_Fornecedor_Camisa.xlsx";
 
-function configuraDimensoesRelatorio($objPHPExcel)
+function configuraDimensoesRelatorio(PHPExcel $objPHPExcel)
 {
     // Ajuste de tamanho das colunas
     $sheet = $objPHPExcel->getActiveSheet();
@@ -161,9 +162,9 @@ function adicionaCabecalho()
 }
 
 
-$host = 'localhost:/Loja/REM_ago.FDB';
-$username = 'sysdba';
-$password = 'masterkey';
+global $host;
+global $username;
+global $password;
 
 $dbh = ibase_connect($host, $username, $password);
 

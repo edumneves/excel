@@ -7,7 +7,7 @@
  */
 
 // Arquivo de configuração
-$ini_array = parse_ini_file("conf/excel.ini", true);
+$ini_array = parse_ini_file("Conf/excel.ini", true);
 
 //Configuração de Banco de Dados
 $host = $ini_array["BANCO_DADOS"]["HOST"];
