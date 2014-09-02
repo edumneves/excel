@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0adfa102-cca5-4d96-8a9e-c9f6a3a5e8e5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/magmi.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Conf.php" afterPath="$PROJECT_DIR$/Classes/Conf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conf/excel.ini" afterPath="$PROJECT_DIR$/Conf/excel.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exporta.php" afterPath="$PROJECT_DIR$/exporta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fornecedor.php" afterPath="$PROJECT_DIR$/fornecedor.php" />
+    <list default="true" id="0adfa102-cca5-4d96-8a9e-c9f6a3a5e8e5" name="Default" comment="Criando php para exportar base para upload via magmi.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Catalogo.php" afterPath="$PROJECT_DIR$/Classes/Catalogo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="excel.iws" />
@@ -33,7 +29,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="10" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="3405">
+            <state line="191" column="10" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="2865" max-vertical-offset="3405">
               <folding />
             </state>
           </provider>
@@ -54,18 +50,51 @@
       <file leaf-file-name="Catalogo.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="13" selection-start="4733" selection-end="4733" vertical-scroll-proportion="0.0" vertical-offset="1485" max-vertical-offset="13245">
+            <state line="711" column="31" selection-start="26617" selection-end="26617" vertical-scroll-proportion="-14.666667" vertical-offset="10313" max-vertical-offset="13320">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exporta.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Camisa.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="634" selection-end="634" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="4365">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemEstoque.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="246" column="36" selection-start="5852" selection-end="5852" vertical-scroll-proportion="-20.625" vertical-offset="3195" max-vertical-offset="4545">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exporta.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exporta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.6969231" vertical-offset="27" max-vertical-offset="960">
+            <state line="27" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="-12.625" vertical-offset="27" max-vertical-offset="960">
               <folding>
                 <marker date="1408892056000" expanded="true" signature="361:489" placeholder="select codig..produto..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fornecedor.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fornecedor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="151" column="20" selection-start="5771" selection-end="5771" vertical-scroll-proportion="0.0" vertical-offset="2265" max-vertical-offset="5115">
+              <folding>
+                <marker date="1408624241000" expanded="true" signature="6041:7997" placeholder="SELECT * FRO..CODIGO..." />
+                <marker date="1408624241000" expanded="true" signature="6059:7508" placeholder="SELECT TABEL..EXTRACT..." />
+                <marker date="1408624241000" expanded="true" signature="6249:6344" placeholder="SELECT P1.SA..PRODUTO..." />
+                <marker date="1408624241000" expanded="true" signature="6488:7508" placeholder="SELECT EXTRA..ITENS_VENDA..." />
+                <marker date="1408624241000" expanded="true" signature="7365:7437" placeholder="--AND P.CODB..." />
               </folding>
             </state>
           </provider>
@@ -80,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="excel.ini" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="excel.ini" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Conf/excel.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="6" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="11" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="0.24480712" vertical-offset="0" max-vertical-offset="674">
               <folding />
             </state>
           </provider>
@@ -103,16 +132,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/testaBanco.php" />
-        <option value="$PROJECT_DIR$/Classes/Catalogo.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Classes/ItemEstoque.php" />
         <option value="$PROJECT_DIR$/Classes/ImportacaoGlobal.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Classes/Camisa.php" />
         <option value="$PROJECT_DIR$/fornecedor.php" />
         <option value="$PROJECT_DIR$/Classes/Conf.php" />
         <option value="$PROJECT_DIR$/Conf/excel.ini" />
         <option value="$PROJECT_DIR$/exporta.php" />
+        <option value="$PROJECT_DIR$/Classes/Camisa.php" />
+        <option value="$PROJECT_DIR$/Classes/Catalogo.php" />
       </list>
     </option>
   </component>
@@ -201,7 +230,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Conf" />
+              <option name="myItemId" value="Classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -217,7 +246,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jfx" />
   </component>
@@ -226,7 +255,7 @@
       <recent name="$PROJECT_DIR$/Conf" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.exporta.php">
+  <component name="RunManager" selected="PHP Script.index.php">
     <configuration default="false" name="testaBanco.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/testaBanco.php">
       <RunnerSettings RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
@@ -268,9 +297,9 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.exporta.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHP Script.fornecedor.php" />
-        <item index="2" class="java.lang.String" itemvalue="PHP Script.index.php" />
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.index.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.exporta.php" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.fornecedor.php" />
         <item index="3" class="java.lang.String" itemvalue="PHP Script.testaBanco.php" />
       </list>
     </recent_temporary>
@@ -307,7 +336,11 @@
       <created>1408622133922</created>
       <updated>1408622133922</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Criando php para exportar base para upload via magmi.">
+      <created>1408892288961</created>
+      <updated>1408892288961</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -328,12 +361,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -350,7 +383,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Ajuste no projeto para novo tema." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajuste no projeto para novo tema." />
+    <MESSAGE value="Criando php para exportar base para upload via magmi." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando php para exportar base para upload via magmi." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -579,29 +613,14 @@
         <state line="55" column="7" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.7826087" vertical-offset="318" max-vertical-offset="870" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="36" selection-start="5852" selection-end="5852" vertical-scroll-proportion="0.58303887" vertical-offset="3195" max-vertical-offset="4545" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Conf/sample.excel.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.28645834" vertical-offset="0" max-vertical-offset="576" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="5" selection-start="5959" selection-end="5959" vertical-scroll-proportion="-13.625" vertical-offset="2343" max-vertical-offset="4365" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/ImportacaoGlobal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="147" column="0" selection-start="3827" selection-end="3827" vertical-scroll-proportion="0.40366971" vertical-offset="1809" max-vertical-offset="2790" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fornecedor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="24" selection-start="5877" selection-end="5877" vertical-scroll-proportion="0.2293578" vertical-offset="2130" max-vertical-offset="5115" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testaBanco.php">
@@ -624,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="13" selection-start="4733" selection-end="4733" vertical-scroll-proportion="0.0" vertical-offset="1485" max-vertical-offset="13245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/Conf.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="30" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="435">
@@ -638,31 +650,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="419" selection-end="419" vertical-scroll-proportion="0.28081122" vertical-offset="0" max-vertical-offset="1215" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="10" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="3405">
+        <state line="191" column="10" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0" vertical-offset="2865" max-vertical-offset="3405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="2" selection-start="599" selection-end="599" vertical-scroll-proportion="-0.4076923" vertical-offset="565" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fornecedor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="20" selection-start="5771" selection-end="5771" vertical-scroll-proportion="0.0" vertical-offset="2265" max-vertical-offset="5115">
+          <folding>
+            <marker date="1408624241000" expanded="true" signature="6041:7997" placeholder="SELECT * FRO..CODIGO..." />
+            <marker date="1408624241000" expanded="true" signature="6059:7508" placeholder="SELECT TABEL..EXTRACT..." />
+            <marker date="1408624241000" expanded="true" signature="6249:6344" placeholder="SELECT P1.SA..PRODUTO..." />
+            <marker date="1408624241000" expanded="true" signature="6488:7508" placeholder="SELECT EXTRA..ITENS_VENDA..." />
+            <marker date="1408624241000" expanded="true" signature="7365:7437" placeholder="--AND P.CODB..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exporta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="-12.625" vertical-offset="27" max-vertical-offset="960">
+          <folding>
+            <marker date="1408892056000" expanded="true" signature="361:489" placeholder="select codig..produto..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Camisa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="634" selection-end="634" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="4365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ItemEstoque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="246" column="36" selection-start="5852" selection-end="5852" vertical-scroll-proportion="-20.625" vertical-offset="3195" max-vertical-offset="4545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Catalogo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="711" column="31" selection-start="26617" selection-end="26617" vertical-scroll-proportion="-14.666667" vertical-offset="10313" max-vertical-offset="13320">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Conf/excel.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="11" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="0.24480712" vertical-offset="0" max-vertical-offset="674">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exporta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.6969231" vertical-offset="27" max-vertical-offset="960">
-          <folding>
-            <marker date="1408892056000" expanded="true" signature="361:489" placeholder="select codig..produto..." />
-          </folding>
         </state>
       </provider>
     </entry>

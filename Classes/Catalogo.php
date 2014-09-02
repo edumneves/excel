@@ -222,8 +222,9 @@ class Catalogo
         echo "delete.csv - gerado<br/><br/>";
 
         // Gera relatórios diários para repor estoques
-        $this->geraRelatorioEstoque("./Saida/Relatorio_Estoque.xlsx", 0);
-        $this->geraRelatorioEstoque("./Saida/Relatorio_Estoque_Resumido.xlsx", 1);
+        $this->geraRelatorioEstoque("./Saida/Relatorio_Estoque.xlsx", 0, 0);
+        $this->geraRelatorioEstoque("./Saida/Relatorio_Estoque_Resumido.xlsx", 1, 0);
+        $this->geraRelatorioEstoque("./Saida/Relatorio_Estoque_Resumido_Escritorio.xlsx", 1, 1);
         $this->geraRelatorioBones();
 
 
@@ -604,7 +605,7 @@ class Catalogo
         }
     }
 
-    private function geraRelatorioEstoque($nomeRel, $filtra)
+    private function geraRelatorioEstoque($nomeRel, $filtra, $filtra_escritorio)
     {
 
         // cria a planilha
@@ -612,7 +613,7 @@ class Catalogo
 
         $this->configuraExcel($objPHPExcel);
 
-        $this->montaRelatorio($objPHPExcel, $filtra);
+        $this->montaRelatorio($objPHPExcel, $filtra, $filtra_escritorio);
 
 
         // salva o arquivo
@@ -640,7 +641,7 @@ class Catalogo
 
     }
 
-    private function montaRelatorio(PHPExcel $objPHPExcel, $filtra)
+    private function montaRelatorio(PHPExcel $objPHPExcel, $filtra, $filtra_escritorio)
     {
         $listaRelatorio = [];
 
@@ -693,15 +694,30 @@ class Catalogo
                 $this->configuraDimensoesRelatorio($objPHPExcel);
                 $indWorksheet++;
 
-                echo "Nova aba " . $itemRelatorio->getTipoModelo() . " --> " . $itemRelatorio->getTipoModeloExtenso() . "<br>";
+                echo "Nova aba " . $itemRelatorio->getTipoModelo() . " --> " . $itemRelatorio->getTipoModeloExtenso() . "<br>\n\r";
             }
 
             $codBarraAtual = "0" . $itemRelatorio->getCodigoBarra();
             $quantEstoqueMinimo = $this->getQuantMinEstoque($tipoModeloAtual);
             $quantAtual = (int)$itemRelatorio->getSaldo();
             if ($filtra && array_key_exists($codBarraAtual, $this->listaBD)) {
-                if ($this->listaBD[$codBarraAtual]['ESC'] > 0 && $quantAtual < $quantEstoqueMinimo) {
-                    // Adiciona a camisa
+                if ($quantAtual < $quantEstoqueMinimo) {
+                    if (!$filtra_escritorio || $this->listaBD[$codBarraAtual]['ESC'] > 0) {
+                        // Adiciona a camisa
+                        $listaRelatorio[] = array(
+                            $itemRelatorio->getDescricaoResumida(),
+                            $itemRelatorio->getTamanho(),
+                            $itemRelatorio->getSaldo(),
+                            $itemRelatorio->getCodigoBarra(),
+                            "",
+                            $itemRelatorio->getCodFornecedor(),
+                            $itemRelatorio->getTipoModelo()
+                        );
+                    }
+                }
+            } else {
+                if (!$filtra) {
+                    // Se não encontrou no escritório Adiciona a camisa
                     $listaRelatorio[] = array(
                         $itemRelatorio->getDescricaoResumida(),
                         $itemRelatorio->getTamanho(),
@@ -712,17 +728,6 @@ class Catalogo
                         $itemRelatorio->getTipoModelo()
                     );
                 }
-            } else {
-                // Se não encontrou no escritório Adiciona a camisa
-                $listaRelatorio[] = array(
-                    $itemRelatorio->getDescricaoResumida(),
-                    $itemRelatorio->getTamanho(),
-                    $itemRelatorio->getSaldo(),
-                    $itemRelatorio->getCodigoBarra(),
-                    "",
-                    $itemRelatorio->getCodFornecedor(),
-                    $itemRelatorio->getTipoModelo()
-                );
             }
 
         }
